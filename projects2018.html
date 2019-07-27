@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>MIT Assistive Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta charset="utf-8">
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <link href="favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  </head>
+
+  <body>
+
+    <div class="topnav" id="topNav">
+      <a href="./index.html" class="logo"><div id="logoContent"></div></a>
+      <a href="./about.html" style="margin-right: 20px;">About us</a>
+      <!--<a href="./apply.html">Apply</a>-->
+      <a href="./projects.html" class="active">Projects</a>
+      <a href="./events.html">Hackathon</a>
+      <a href="./home.html">Home</a>
+      <a href="javascript:void(0);" class="icon logo" onclick="myFunction()">
+        <div id="menuBarButton" style="width: 50px; height: 50px;"><div class="open1"></div><div class="open3"></div><div class="open2"></div></div>
+      </a>
+    </div>
+
+    <div class='seperator'></div>
+
+    <div style="width: 100vw; height: 300px; background-color: #000; background-image: url(./2018all.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;"> <h2 style="font-family: 'Raleway', Sans-Serif; color: var(--colorW); width: 100%; text-align: center; padding-top: 140px; font-size: 48px; margin-top: 10px; text-shadow: 2px 2px var(--color1), -2px -2px var(--color2);">Projects</h2></div>
+
+    <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 8%; padding-top: 40px; padding-right: 8%">
+
+      <div class="flight-types year">
+        <input type="radio" name="flight-type" value="2019" id="2019" onclick="location.href='./projects.html'"/>
+        <label for="2019">
+            2019
+        </label>
+
+        <input type="radio" name="flight-type" value="2018" id="2018" onclick="location.href='./projects2018.html'" checked />
+        <label for="2018">
+            2018
+        </label>
+
+        <input type="radio" name="flight-type" value="2017" id="2017" onclick="location.href='./projects2017.html'" />
+        <label for="2017">
+            2017
+        </label>
+
+        <input type="radio" name="flight-type" value="2016" id="2016" onclick="location.href='./projects2016.html'"/>
+        <label for="2016">
+            2016
+        </label>
+
+        <input type="radio" name="flight-type" value="2015" id="2015" onclick="location.href='./projects2015.html'"/>
+        <label for="2015">
+            2015
+        </label>
+
+      </div>
+
+      <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)">2018</x></h1>
+
+      <br>
+
+      <table class="projectsTable">
+
+        <thead>
+        <tr>
+        <th><img src="collab.png" style="width: 170px;"><h3 style="color: var(--colorB); font-size: 22px; margin-bottom: 0px">Co-Designer Collaboration</h3></th>
+        <th><img src="tech.png" style="width: 170px;"><h3 style="color: var(--colorB); font-size: 22px; margin-bottom: 0px">Technical Skills</h3></th>
+        <th><img src="func.png" style="width: 170px;"><h3 style="color: var(--colorB); font-size: 22px; margin-bottom: 0px">Functionality</h3></th>
+        </tr>
+        </thead>
+        <tr>
+        <td>
+          <div>
+          <img src="first.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block;">Team Adrianna</h3>
+          </div>
+          <p class="desc">Travel Shower Aid</p>
+          <br><p class="pressText" onclick="showDetail(this)" data-title="Team Adriana" data-wincat="Co-Designer Collaboration" data-winleague="1" data-desc="Worked on the design of a portable device to help Adrianna safely and comfortably shower while traveling" data-img="./teamAdrianna.jpg">More Details</p>
+
+        </td>
+        <td>
+
+          <div>
+          <img src="first.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block;">Team Ellen</h3>
+          </div>
+          <p class="desc">One-handed Zip Mechanism</p>
+          <br><p class="pressText" onclick="showDetail(this)" data-title="Team Ellen (Zipper)" data-wincat="Technical Skills" data-winleague="1" data-desc="Designed a mechanism to make closing zippers with one arm easier" data-img="./teamEllen_zipper.jpg">More Details</p>
+
+        </td>
+        <td>
+
+          <div>
+          <img src="first.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block;">Team Kate</h3>
+          </div>
+          <p class="desc">Connecting Earbuds to Cochlear Implants</p>
+          <br><br><p class="pressText" onclick="showDetail(this)" data-title="Team Kate" data-wincat="Functionality" data-winleague="1" data-desc='Designed and fabricated a device that allowed Kate, who uses cochlear implants, to use earbuds.<br>Their work was documented here <a href="https://www.instructables.com/id/CiPod-Wireless/" target="_blank">Airpod Wireless Earbuds</a>, <a href="https://www.instructables.com/id/CiPods-Earbuds-Attachment-for-Cochlear-Implants/" target="_blank">Wired Earbuds</a>.' data-img="./teamKate.jpg">More Details</p>
+
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+          <div>
+          <img src="second.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block">Team Juan</h3>
+          </div>
+        <p class="desc">Improved Chair Performance for Power Soccer</p>
+        <br><p class="pressText" onclick="showDetail(this)" data-title="Team Juan" data-wincat="Co-Designer Collaboration" data-winleague="2" data-desc="Modified Juan's wheelchair to play power soccer more competitively (within the rules of the league), like improved kicking performance via ultra capacitor energy storage and wireless communication between team members" data-img="./teamJuan.jpg">More Details</p>
+
+        </td>
+        <td>
+
+          <div>
+          <img src="second.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block">Team Ellen</h3>
+          </div>
+          <p class="desc">BP Monitoring for One Arm</p>
+          <br><p class="pressText" onclick="showDetail(this)" data-title="Team Ellen (Blood Pressure)" data-wincat="Technical Skills" data-winleague="2" data-desc="Prototyped two wearable devices for blood pressure monitoring: <br> <ol><li>modifying existing blood pressure monitoring devices to be easily used by someone with one arm </li><li> a prototype device using novel sensing mechanisms described in published literature</li></ol>" data-img="./teamEllen2.jpg">More Details</p>
+
+        </td>
+        <td>
+
+          <div>
+          <img src="second.png" style="height: 100px; display: inline-block; vertical-align: middle; object-fit: contain; margin-right: -20px; margin-top: -20px; margin-left: -80px; transform: rotate(10deg)">
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder; display: inline-block">Team Annette</h3>
+          </div>
+          <p class="desc">Vibrating Door Alert</p>
+          <br><p class="pressText" onclick="showDetail(this)" data-title="Team Annette" data-wincat="Functionality" data-winleague="2" data-desc="Designed and fabricated a prototype of a wearable arm band that vibrates to alert Annette, who is deaf, when her doorbell rings" data-img="./teamAnnette.jpg">More Details</p>
+
+        </td>
+        </tr>
+        </tbody>
+        </table>
+
+      <br>
+
+      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Other 2018 Projects</h2>
+
+      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
+
+      <p><b style="color: var(--color2)">Team Evan</b> worked with an occupational therapist on designing an improved swtich-adapted pourer to dispense liquid from its original container</p>
+
+      <p><b style="color: var(--color1)">Team Elizabeth</b> prototyped a rear view camera and display mount for a power wheelchair</p>
+
+      <p><b style="color: var(--color2)">Team Jeffrey</b> worked on adapting a collision avoidance cane</p>
+
+      <p><b style="color: var(--color1)">Team Paul</b> worked on improving the design of an arm brace to allow for coordination between arms, with increased breathability and reduced weight</p>
+
+      <p><b style="color: var(--color2)">Team Stephanie</b> worked on designing and prototyping an accessible version of the game corn hole</p>
+
+      <p><b style="color: var(--color1)">Team Steven</b> worked on prototyping a device to help open mail, remove letters from envelopes, and hold them for reading without requiring fine motor control</p>
+
+      <p><b style="color: var(--color2)">Team Taylor</b> developed an app that allows users to replace the default keyboard on Apple devices with keyboards (e.g. Dvorak right) that are easier to use for people with limited fine motor coordination</p>
+
+      </div>
+
+      <div class="seperator"></div>
+
+      <script>
+
+      function showDetail(identifier){
+
+        title = $(identifier).data('title')
+        cat = $(identifier).data('wincat')
+        league = $(identifier).data('winleague')
+        desc = $(identifier).data('desc')
+        img = $(identifier).data('img')
+
+        document.getElementById('popup').className = ''
+
+        document.getElementById('pTitle').innerHTML = title
+        document.getElementById('pDesc').innerHTML = desc
+
+        document.getElementById('pImg').style.backgroundImage = 'url(' + img + ')'
+
+        if (league == 1) {
+
+          document.getElementById('pWin').innerHTML = "Project won <b>first</b> place in " + cat
+
+        } else if (league == 2) {
+
+          document.getElementById('pWin').innerHTML = "Project won <b>second</b> place in " + cat
+
+        }
+
+        resizePopup()
+
+      }
+
+      function resizePopup() {
+
+        height = window.innerHeight;
+
+        document.getElementById('pImg').style.height = (height - document.getElementById('pTextDetails').clientHeight - 180) + "px"
+
+      }
+
+      function fullScreenPopupImage() {
+
+        elem = document.getElementById('pImg')
+
+        elem2 = document.getElementById('enlarge')
+
+        if (elem.className == "forceFullScreen") {
+
+          elem.className = ""
+
+          elem2.src = "enlarge.svg"
+
+        } else {
+
+          elem.className = "forceFullScreen"
+
+          elem2.src = "close.svg"
+
+        }
+
+      }
+
+      var onresize = function() {
+
+        resizePopup()
+
+      }
+
+      window.addEventListener("resize", onresize);
+
+      </script>
+
+      </div>
+
+      <div style="position: fixed; width: 100vw; height: 100vh; top:0; bottom: 0; background-color: #fff; z-index: 99" id="popup" class="hidden">
+
+        <div onclick="document.getElementById('popup').className = 'hidden'" class="close" style="width: 50px; height: 50px; z-index: 100;"><div class="close1"></div><div class="close2"></div></div>
+
+        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="./enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
+
+        <div id="pTextDetails">
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 20px; color: var(--color1); margin-right: 10%" id="pTitle">Project Title</h2>
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-right: 10%" id="pDesc">Project Description</h2>
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-top: 20px; color: var(--color2); margin-right: 10%;" id="pWin">Project Won First Place in Functionality</h2>
+
+        </div>
+
+      </div>
+
+
+      <div style="margin: 0; background-color: var(--colorDark); -webkit-transform:translate3d(0,0,0); min-height: 0px; height: auto; padding-left: 10vw; overflow-x: hidden;">
+
+        <div style="width: 40vw; display: inline-block; vertical-align: top; margin-top: 40px" class="fixFooterOnSmall">
+
+          <h3 style="margin-bottom: 40px">Quick Links</h3>
+
+          <a class="link" href="gallery.php">Photo Gallery</a>
+
+          <a class="linkAlt" href="https://giving.mit.edu/search/node/2530097" target="_blank">Donate</a>
+
+          <a class="link" href="media.html">In The Media</a>
+
+          <a class="linkAlt" href="apply.html">Register For ATHack 2019</a>
+
+        </div>
+
+
+          <div style="width: 40vw; display: inline-block; vertical-align: top; margin-top: 40px" class="fixFooterOnSmall">
+
+            <h3 style="margin-bottom: 30px">Contact Us</h3>
+
+            <div style="display: block">
+              <img src="email.svg" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Email
+                  <br>
+                  <a href="mailto:at-hack-core@mit.edu" style="text-decoration: none; color: #fff; font-size: 17px; font-family: 'Nunito', Sans-Serif;"> at-hack-core@mit.edu</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+            <div style="display: block">
+            <img src="fb.svg" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Facebook
+                  <br>
+                  <a href="https://www.facebook.com/athackathon" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@athackathon</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+            <div style="display: block">
+              <img src="twitter.png" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px;  margin-top: 0px; color: #fff;">Twitter
+                  <br>
+                  <a href="https://twitter.com/ATHackMIT" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@ATHackMIT</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+          </div>
+
+          <h3 style="width: 80vw; text-align: center; margin-bottom: -1px;">Copyright &copy; 2019 <br class="mobileShow"> Tareq El Dandachi</h3>
+
+        <div class="seperator" style="height: 50px"></div>
+
+      </div>
+
+  </body>
+
+</html>

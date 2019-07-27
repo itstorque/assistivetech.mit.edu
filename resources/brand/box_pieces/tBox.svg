@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>tBox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2-Copy-36" transform="translate(-785.000000, -98.000000)">
+            <g id="tBox" transform="translate(785.000000, 98.000000)">
+                <rect id="Rectangle-Copy-5" fill="#FF6699" x="0" y="0" width="200" height="200"></rect>
+                <path d="M118.333333,155 L81.6666667,155 L81.6666667,76.7777778 L45,76.7777778 L45,45 L155,45 L155,76.7777778 L118.333333,76.7777778 L118.333333,155 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

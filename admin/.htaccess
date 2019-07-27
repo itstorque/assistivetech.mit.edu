@@ -1,0 +1,3 @@
+AuthType SSLCert
+Require user tareq
+ErrorDocument 401 /__scripts/needcerts

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>MIT Assistive Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta charset="utf-8">
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <link href="favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  </head>
+
+  <body>
+
+    <div class="topnav" id="topNav">
+      <a href="./index.html" class="logo"><div id="logoContent"></div></a>
+      <a href="./about.html" style="margin-right: 20px;">About us</a>
+      <!--<a href="./apply.html">Apply</a>-->
+      <a href="./projects.html" class="active">Projects</a>
+      <a href="./events.html">Hackathon</a>
+      <a href="./home.html">Home</a>
+      <a href="javascript:void(0);" class="icon logo" onclick="myFunction()">
+        <div id="menuBarButton" style="width: 50px; height: 50px;"><div class="open1"></div><div class="open3"></div><div class="open2"></div></div>
+      </a>
+    </div>
+
+    <div class='seperator'></div>
+
+    <div style="width: 100vw; height: 300px; background-color: #000; background-image: url(./2018all.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;"> <h2 style="font-family: 'Raleway', Sans-Serif; color: var(--colorW); width: 100%; text-align: center; padding-top: 140px; font-size: 48px; margin-top: 10px; text-shadow: 2px 2px var(--color1), -2px -2px var(--color2);">Projects</h2></div>
+
+    <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 8%; padding-top: 40px; padding-right: 8%" class="banner" id="mainBanner">
+
+      <div class="flight-types year">
+        <input type="radio" name="flight-type" value="2019" id="2019" onclick="location.href='./projects.html'" />
+        <label for="2019">
+            2019
+        </label>
+
+        <input type="radio" name="flight-type" value="2018" id="2018" onclick="location.href='./projects2018.html'" />
+        <label for="2018">
+            2018
+        </label>
+
+        <input type="radio" name="flight-type" value="2017" id="2017" checked onclick="location.href='./projects2017.html'" />
+        <label for="2017">
+            2017
+        </label>
+
+        <input type="radio" name="flight-type" value="2016" id="2016" onclick="location.href='./projects2016.html'"/>
+        <label for="2016">
+            2016
+        </label>
+
+        <input type="radio" name="flight-type" value="2015" id="2015" onclick="location.href='./projects2015.html'"/>
+        <label for="2015">
+            2015
+        </label>
+
+      </div>
+
+      <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)">2017</x></h1>
+
+      <br>
+
+
+      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">ATHack 2017 Winners</h2>
+
+      <center>
+      <div style="width: 90%; vertical-align: top">
+
+        <div class="card">
+          <img src="first.png" style="width: 170px;">
+          <h3 style="color: var(--colorB); font-size: 22px;">First Place</h3>
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder;">Team Alex</h3>
+          <p style="color: var(--colorDark); font-family: 'Raleway', Sans-Serif; font-size: 17px;">Cerebral Palsy friendly DSLR</p>
+          <p class="pressText" onclick="showDetail(this)" data-title="Team Alex" data-wincat="ATHack 2017" data-winleague="1" data-desc="Alex graduated from Emerson College and is an award-winning filmmaker. He has cerebral palsy, which affects his ability to control his video camera and DSLR. He would like to be able to take film and photos independently. He would like a device to help him remotely move his camera around and control the camera settings while viewing the shot." data-img="./teamAlex2017.jpg">More Details</p>
+        </div>
+
+        <div class="card">
+          <img src="second.png" style="width: 170px;">
+          <h3 style="color: var(--colorB); font-size: 22px;">Second Place</h3>
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder;">Team Dan</h3>
+          <p style="color: var(--colorDark); font-family: 'Raleway', Sans-Serif; font-size: 17px;">Independent Device Control</p>
+          <p class="pressText" onclick="showDetail(this)" data-title="Team Dan" data-wincat="ATHack 2017" data-winleague="2" data-desc="Dan was diagnosed with spastic quadriplegic cerebral palsy at birth. He is very social and has a great sense of humor. If you let him, he will “talk” your ear off. Because of his cerebral palsy, he has muscle stiffness in his arms, leg, and torso and he communicates and controls his tablet via head movements. He would like to work on technology that could help him have some more independence/control – like turning on and off the TV, changing the channel, and/or a call light for when he needs to use the bathroom." data-img="./teamDan2017.jpg">More Details</p>
+        </div>
+
+        <div class="card">
+          <img src="third.png" style="width: 170px;">
+          <h3 style="color: var(--colorB); font-size: 22px;">Third Place</h3>
+          <h3 style="color: var(--color1); font-size: 25px; font-family: 'Raleway', Sans-Serif; font-weight: bolder;">Team Evan & Meri</h3>
+          <p style="color: var(--colorDark); font-family: 'Raleway', Sans-Serif; font-size: 17px;">User-Friendly Head Pointer</p>
+          <p class="pressText" onclick="showDetail(this)" data-title="Team Evan & Meri" data-wincat="ATHack 2017" data-winleague="3" data-desc='Evan is an occupational therapist at Toward Independent Living and Learning. One residents that he works with, Meri uses a head pointer to operate her iPad but finds commercially available head pointers clunky and ugly. She would like a sturdy, comfortable, attractive, reproducible head pointer.' data-img="./teamMeri2017.jpg">More Details</p>
+        </div>
+
+      </div>
+      </center>
+
+
+      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Other 2017 Projects</h2>
+
+      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
+
+      <p><b style="color: var(--color2)">Team Alexis:</b> Alexis is a neurobiology researcher with Asperger’s disorder. Alexis experiences sensory overload while on the T and uses noise cancelling headphones to block out sounds while she rides. Unfortunately, the headphones also block the train announcements. Alexis would like a way to selectively allow the audio information from the train to be passed through.</p>
+
+      <p><b style="color: var(--color1)">Team Andrew:</b> Andrew is a student who enjoys watching movies, listening to music, and collecting currency. He has intellectual and developmental disabilities, autism, and anxiety disorder. Andrew finds using clothes hangers very frustrating, which makes it difficult for him to keep his room tidy. He is looking to work with a team to hang clothes in a way that he is comfortable with on a day-to-day basis.</p>
+
+      <p><b style="color: var(--color2)">Team Dennis: </b>Dennis is a part time student at Boston University. He is a C4 quadriplegic and uses chin control to drive his power wheelchair. He leads a very active life and spends a lot of time out of the house working for his job, hanging out with friends, and walking/running with his dog Vinny, a rat terrier. As Dennis’s part-time service dog (and full-time friend), Vinny helps Dennis when he needs assistance. Unless Dennis is traveling, Dennis and Vinny are inseparable. Sadly, Vinny is getting older and is having a harder time keeping up with the long distances Dennis travels each day. Dennis wants a fold-up platform for Vinny on the back of his wheelchair, so that Vinny can ride along when he is tired.</p>
+
+      <p><b style="color: var(--color1)">Team Erich:</b> Erich works at IBM Accessibility & Research. He has retinitis pigmentosa and is legally blind. Erich would like to hack TrackR stickers (which are GPS-based locating devices that transmit to an app) to locate available seats upon boarding a train or bus. “Priority seating” for disabled passengers is only loosely enforced, and non-disabled people don’t always relinquish their seat. Erich would like to create a smartphone app that allows users to listen for the locations of empty seats. Eventually, with machine learning, the user’s profile could be used to help specify the most relevant seating options for the user.</p>
+
+      <p><b style="color: var(--color2)">Team John:</b> John is an autistic 15-year old with limited verbal communications skills. He is a happy teen and great with electronic devices, like his iPad. He loves watching animation, especially The Lion King, The Aristocats, and Toy Story 2. John and his family are open to a variety of potential projects. Some ideas include assistive technology that could help him with his chores, such as software that uses the voice of Simba from the Lion King to encourage John to do something. John is a visual child. A button with a known character (i.e., Woody from Toy Story) performing a task with and without voice may be helpful. Another idea is a device that could gently poke his back to prompt him to sit tall and upright in a chair.</p>
+
+      <p><b style="color: var(--color1)">Team Rich and Max:</b> Max is a six-year-old who was born with symbrachydactyly, a condition which prevented the fingers on his right hand from developing. Max uses a 3D printed prosthetic (called a Raptor Hand) and an adaptor system to anchor the stick to his right hand (<a href="http://bit.ly/1TsiRz8">http://bit.ly/1TsiRz8</a>). Unfortunately, the stick and adaptor system is very bulky and heavy and can only be used for short periods of time. Max and his Dad, Rich want help lightening this system or coming up with a new system that would allow Max to play the drums comfortably for longer periods of time.</p>
+
+      <p><b style="color: var(--color2)">Team Lilly and Allison: </b> Lilly is a smart and tenacious third-grader. She has cerebral palsy, which impacts her muscle control and speech. She often faces challenges while doing fine motor tasks because her arm may suddenly move in the wrong direction. Her mom, Allison, feels that it will be increasingly important for her to be able to use a cell phone for social connections. Lilly and her parents would like help in developing a solution that allows her to use a mobile phone independently. Currently, Lilly has trouble holding the phone and pushing the right buttons. Lilly and her family are also open to discussing other ideas as well, including making Lilly a beach walker that works in the sand or modifying her scooter so it’s easier for someone her age to use.</p>
+
+      <p><b style="color: var(--color1)">Team Teddy and Allison:</b> Teddy is a seven-year old with physical and intellectual disabilities that severely limit his mobility. He has also had epilepsy since birth. It is important that Teddy use a stander every day for helping his bone health, circulation, and vision. Unfortunately, Teddy’s stander is not portable. Teddy and his family love to travel, so they would like a lightweight “travel” stander (or a way to make his current stander portable), so that they can travel without sacrificing Teddy’s progress/health. Teddy and his family are open to discussing other ideas as well, including a backpack or chair that can help Teddy’s parents move him up and down stairs more easily.</p>
+
+      <p><b style="color: var(--color2)">Team Jerry:</b> Jerry has cerebral palsy and uses a motorized wheelchair to get around. He is looking for easy-to-use foul weather gear that he can use independently to keep both himself and his wheelchair dry, like a quick-attach umbrella or specialized weatherproofing device.</p>
+
+      <p><b style="color: var(--color1)">Team Elaine:</b> Elaine is an MIT student who is a congenital left below-elbow amputee. One day, she would like to play the flute, so she would like a device that would allow her to hit all of the right combinations of keys on the instrument single-handedly.</p>
+
+      <p><b style="color: var(--color2)">Team Whitney: </b> Whitney uses a vista collar to support her dropped head condition which resulted from radiation and chemotherapy for Hodgkins Disease. She is a very active individual who plays tennis, does yoga and exercises daily. However, the collar makes activities like driving or eating difficult, as it doesn’t allow for any head motion. Whitney is looking for a head support device with a better design that can make these tasks easier.</p>
+
+      </div>
+
+      <div class="seperator"></div>
+
+      <script>
+
+      function showDetail(identifier){
+
+        title = $(identifier).data('title')
+        cat = $(identifier).data('wincat')
+        league = $(identifier).data('winleague')
+        desc = $(identifier).data('desc')
+        img = $(identifier).data('img')
+
+        document.getElementById('popup').className = ''
+
+        document.getElementById('pTitle').innerHTML = title
+        document.getElementById('pDesc').innerHTML = desc
+
+        document.getElementById('pImg').style.backgroundImage = 'url(' + img + ')'
+
+        if (league == 1) {
+
+          document.getElementById('pWin').innerHTML = "Project won <b>first</b> place in " + cat
+
+        } else if (league == 2) {
+
+          document.getElementById('pWin').innerHTML = "Project won <b>second</b> place in " + cat
+
+        } else if (league == 3) {
+
+          document.getElementById('pWin').innerHTML = "Project won <b>third</b> place in " + cat
+
+        }
+
+        resizePopup()
+
+      }
+
+      function resizePopup() {
+
+        height = window.innerHeight;
+
+        document.getElementById('pImg').style.height = (height - document.getElementById('pTextDetails').clientHeight - 180) + "px"
+
+      }
+
+      function fullScreenPopupImage() {
+
+        elem = document.getElementById('pImg')
+
+        elem2 = document.getElementById('enlarge')
+
+        if (elem.className == "forceFullScreen") {
+
+          elem.className = ""
+
+          elem2.src = "enlarge.svg"
+
+        } else {
+
+          elem.className = "forceFullScreen"
+
+          elem2.src = "close.svg"
+
+        }
+
+      }
+
+      var onresize = function() {
+
+        resizePopup()
+
+      }
+
+      window.addEventListener("resize", onresize);
+
+      </script>
+
+      </div>
+
+      <div style="position: fixed; width: 100vw; height: 100vh; top:0; bottom: 0; background-color: #fff; z-index: 99" id="popup" class="hidden">
+
+        <div onclick="document.getElementById('popup').className = 'hidden'" class="close" style="width: 50px; height: 50px; z-index: 100;"><div class="close1"></div><div class="close2"></div></div>
+
+        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="./enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
+
+        <div id="pTextDetails">
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 20px; color: var(--color1); margin-right: 10%" id="pTitle">Project Title</h2>
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-right: 10%" id="pDesc">Project Description</h2>
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-top: 20px; color: var(--color2); margin-right: 10%;" id="pWin">Project Won First Place in ity</h2>
+
+        </div>
+
+      </div>
+
+
+      <div style="margin: 0; background-color: var(--colorDark); -webkit-transform:translate3d(0,0,0); min-height: 0px; height: auto; padding-left: 10vw; overflow-x: hidden;">
+
+        <div style="width: 40vw; display: inline-block; vertical-align: top; margin-top: 40px" class="fixFooterOnSmall">
+
+          <h3 style="margin-bottom: 40px">Quick Links</h3>
+
+          <a class="link" href="gallery.php">Photo Gallery</a>
+
+          <a class="linkAlt" href="https://giving.mit.edu/search/node/2530097" target="_blank">Donate</a>
+
+          <a class="link" href="media.html">In The Media</a>
+
+          <a class="linkAlt" href="apply.html">Register For ATHack 2019</a>
+
+        </div>
+
+
+          <div style="width: 40vw; display: inline-block; vertical-align: top; margin-top: 40px" class="fixFooterOnSmall">
+
+            <h3 style="margin-bottom: 30px">Contact Us</h3>
+
+            <div style="display: block">
+              <img src="email.svg" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Email
+                  <br>
+                  <a href="mailto:at-hack-core@mit.edu" style="text-decoration: none; color: #fff; font-size: 17px; font-family: 'Nunito', Sans-Serif;"> at-hack-core@mit.edu</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+            <div style="display: block">
+            <img src="fb.svg" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Facebook
+                  <br>
+                  <a href="https://www.facebook.com/athackathon" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@athackathon</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+            <div style="display: block">
+              <img src="twitter.png" style="width: 35px; margin-bottom: -4px;">
+              <div style="display: inline-block">
+                <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px;  margin-top: 0px; color: #fff;">Twitter
+                  <br>
+                  <a href="https://twitter.com/ATHackMIT" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@ATHackMIT</a></h2>
+              </div>
+              <br><br>
+            </div>
+
+          </div>
+
+          <h3 style="width: 80vw; text-align: center; margin-bottom: -1px;">Copyright &copy; 2019 <br class="mobileShow"> Tareq El Dandachi</h3>
+
+        <div class="seperator" style="height: 50px"></div>
+
+      </div>
+
+  </body>
+
+</html>
