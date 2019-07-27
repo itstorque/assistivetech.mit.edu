@@ -761,10 +761,34 @@ background-blend-mode: multiply;
 
 .card {
 
-  width: 28%;
+  /* width: 28%; */
   display: inline-block;
   vertical-align: top;
   margin: 15px;
+
+}
+
+.card h2 {
+
+  color: var(--colorB);
+  font-size: 22px;
+
+}
+
+.card h3 {
+
+  color: var(--color1);
+  font-size: 25px;
+  font-family: 'Raleway', Sans-Serif;
+  font-weight: bolder;
+
+}
+
+.card p {
+
+  color: var(--colorDark);
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 17px;
 
 }
 
@@ -1325,6 +1349,43 @@ background-blend-mode: multiply;
   width: 250px;
   display: inline-block;
   margin: 0px;
+
+}
+
+.projectsTable h3 {
+
+  color: var(--colorB);
+  font-size: 22px;
+  margin-bottom: 0px;
+
+}
+
+.projectsTable thead img {
+
+  width: 170px;
+
+}
+
+.projectsTable tbody img {
+
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+  margin-right: -20px;
+  margin-top: -20px;
+  margin-left: -80px;
+  transform: rotate(10deg)
+
+}
+
+.projectsTable tbody h3 {
+
+  color: var(--color1);
+  font-size: 25px;
+  font-family: 'Raleway', Sans-Serif;
+  font-weight: bolder;
+  display: inline-block;
 
 }
 

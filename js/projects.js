@@ -1,6 +1,184 @@
 function updateWinners(year) {
 
-  alert(year)
+  document.getElementById('projectsArea').innerHTML = ""
+
+  document.getElementById('yearLabel').innerHTML = year
+
+  style = teamData[year+" Style"]
+
+  winners = teamData[year+" Winners"]
+
+  teams = teamData[year+" Teams"]
+
+  teamMap = {}
+
+  for (i = 0, len = teams.length; i < len; i++) {
+
+    teamMap[teams[i]["id"]] = teams[i]
+
+  }
+
+  if (style == 1) {
+
+    winnerData = [0,0,0,0,0,0]
+
+    titles = []
+
+    for (i = 0, len = winners.length; i < len; i++) {
+
+      index = titles.indexOf(winners[i][0])*2;
+
+      if (index < 0) {
+
+        index = titles.length*2;
+
+        titles.push(winners[i][0]);
+
+      }
+
+      if (winners[i][1]==2) { index+=1; }
+
+      if (index < 6) {
+
+        winnerData[index] = teamMap[winners[i][2]]
+
+      } else {
+
+        winnerData.push(teamMap[winners[i][2]])
+
+      }
+
+    }
+
+    threeColumnWinners(year, winnerData)
+
+  } else {
+
+    winnerData = [0,0,0]
+
+    for (i = 0, len = winners.length; i < len; i++) {
+
+      rank = winners[i][0]
+
+      winnerData[rank-1] = teamMap[winners[i][1]]
+
+    }
+
+    originalStyleWinners(year, winnerData)
+
+  }
+
+}
+
+function threeColumnWinners(year, winnerData) {
+
+  const tableHtml = '<table class="projectsTable"><thead><tr><th><img src="/resources/winners/collab.png"><h3>Co-Designer Collaboration</h3></th><th><img src="/resources/winners/tech.png"><h3>Technical Skills</h3></th><th><img src="/resources/winners/func.png"><h3>Functionality</h3></th></tr></thead></table>'
+
+  firstPlaceWinners = ""
+
+  for (var i = 0; i < 3; i++) {
+
+    winner = winnerData[i*2]
+
+    name = winner['Team Name']
+
+    desc_short = winner['Project Description']
+
+    desc = winner['Project Detail']
+
+    if ("image_append" in winner) {
+
+      extendable_src_seq = winner['image_append']
+
+    } else {
+
+      extendable_src_seq = ""
+
+    }
+
+    win_cat = winner['Category']
+
+    image_url = "ATHack " + year + "/_team" + name + extendable_src_seq
+
+    firstPlaceWinners += '<td><div><img src="/resources/winners/first.png"><h3>Team '+name+'</h3></div><p class="desc">'+desc_short+'</p><br><p class="pressText" onclick="showDetail(this)" data-title="Team '+name+'" data-wincat="'+win_cat+'" data-winleague="1" data-desc="'+desc+'" data-img="/resources/images/albums/'+image_url+'.jpg">More Details</p></td>'
+
+  }
+
+  secondPlaceWinners = ""
+
+  for (var i = 0; i < 3; i++) {
+
+    winner = winnerData[i*2+1]
+
+    name = winner['Team Name']
+
+    desc_short = winner['Project Description']
+
+    desc = winner['Project Detail']
+
+    if ("image_append" in winner) {
+
+      extendable_src_seq = winner['image_append']
+
+    } else {
+
+      extendable_src_seq = ""
+
+    }
+
+    win_cat = winner['Category']
+
+    image_url = "ATHack " + year + "/_team" + name + extendable_src_seq
+
+    secondPlaceWinners += '<td><div><img src="/resources/winners/second.png"><h3>Team '+name+'</h3></div><p class="desc">'+desc_short+'</p><br><p class="pressText" onclick="showDetail(this)" data-title="Team '+name+'" data-wincat="'+win_cat+'" data-winleague="2" data-desc="'+desc+'" data-img="/resources/images/albums/'+image_url+'.jpg">More Details</p></td>'
+
+  }
+
+  var temp = document.getElementById('projectsArea');
+  temp.innerHTML = tableHtml;
+  var htmlObject = temp.firstChild;
+
+  htmlObject.innerHTML += "<tbody><tr>"+firstPlaceWinners+"</tr><tr>"+secondPlaceWinners+"</tr></tbody>"
+
+}
+
+function originalStyleWinners(year, winnerData) {
+
+  var temp = document.getElementById('projectsArea');
+  temp.innerHTML = "<center></center>";
+  var htmlObject = temp.firstChild;
+
+  const positions = ['First', 'Second', 'Third']
+
+  for (var i = 0; i < 3; i++) {
+
+    winner = winnerData[i]
+
+    pos = positions[i]
+
+    name = winner['Team Name']
+
+    desc_short = winner['Project Description']
+
+    desc = winner['Project Detail']
+
+    console.log(winner)
+
+    if ("image_append" in winner) {
+
+      extendable_src_seq = winner['image_append']
+
+    } else {
+
+      extendable_src_seq = ""
+
+    }
+
+    image_url = "ATHack " + year + "/_team" + name + extendable_src_seq
+
+    htmlObject.innerHTML += '<div class="card"><img src="/resources/winners/'+pos.toLowerCase()+'.png" style="width: 170px;"><h2>'+pos+' Place</h2><h3>Team '+name+'</h3><p>'+desc_short+'</p><p class="pressText" onclick="showDetail(this)" data-title="Team '+name+'" data-wincat="ATHack '+year+'" data-winleague="1" data-desc="'+desc+'" data-img="/resources/images/albums/'+image_url+'.jpg">More Details</p></div>'
+
+  }
 
 }
 
@@ -17,7 +195,7 @@ function showDetail(identifier) {
   document.getElementById('pTitle').innerHTML = title
   document.getElementById('pDesc').innerHTML = desc
 
-  document.getElementById('pImg').style.backgroundImage = 'url(' + img + ')'
+  document.getElementById('pImg').style.backgroundImage = 'url("' + img + '")'
 
   if (league == 1) {
 
@@ -51,13 +229,13 @@ function fullScreenPopupImage() {
 
     elem.className = ""
 
-    elem2.src = "enlarge.svg"
+    elem2.src = "/resources/icons/enlarge.svg"
 
   } else {
 
     elem.className = "forceFullScreen"
 
-    elem2.src = "close.svg"
+    elem2.src = "/resources/icons/close.svg"
 
   }
 

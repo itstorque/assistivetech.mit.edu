@@ -28,8 +28,6 @@
 
     $fileName = "./js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
 
-    echo $fileName;
-
     if (file_exists($fileName)) {
 
       echo '<script src="'.$fileName.'"></script>';

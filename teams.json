@@ -1,73 +1,110 @@
 {
 
+  "2019 Style": 1,
+
   "2019 Winners": [
+
+    ["Co-Designer Collaboration", 1, 1901],
+    ["Co-Designer Collaboration", 2, 1902],
+    ["Technical Skills", 1, 1903],
+    ["Technical Skills", 2, 1904],
+    ["Usability", 1, 1905],
+    ["Usability", 2, 1906],
+    ["Documentation", 1, 1907]
+
+  ],
+
+  "2019 Teams": [
 
       { "Team Name": "Lora",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Co-Designer Collaboration",
         "Place": 1,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1901 },
 
       { "Team Name": "Alex",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Co-Designer Collaboration",
         "Place": 2,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1902 },
 
       { "Team Name": "Reese",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Technical Skills",
         "Place": 1,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1903 },
 
       { "Team Name": "Ellen",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Technical Skills",
         "Place": 2,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1904 },
 
       { "Team Name": "Sarah",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Usability",
         "Place": 1,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1905 },
 
       { "Team Name": "Charbel",
         "Project Description": "",
         "Project Detail": "",
         "Category": "Usability",
         "Place": 2,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1906 },
 
       { "Team Name": "Phil",
         "Project Description": "",
         "Project Detail": "",
         "Category": "",
         "Place": 2,
-        "Use Table": false }
+        "Use Table": false,
+        "id": 1907 }
 
     ],
 
+  "2018 Style": 1,
+
   "2018 Winners": [
+
+    ["Co-Designer Collaboration", 1, 1801],
+    ["Co-Designer Collaboration", 2, 1802],
+    ["Technical Skills", 1, 1803],
+    ["Technical Skills", 2, 1804],
+    ["Usability", 1, 1805],
+    ["Usability", 2, 1806],
+    ["Documentation", 1, 1807]
+
+  ],
+
+  "2018 Teams": [
 
       { "Team Name": "Adrianna",
         "Project Description": "Travel Shower Aid",
         "Project Detail": "Worked on the design of a portable device to help Adrianna safely and comfortably shower while traveling",
         "Category": "Co-Designer Collaboration",
         "Place": 1,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1801 },
 
       { "Team Name": "Juan",
         "Project Description": "Improved Chair Performance for Power Soccer",
         "Project Detail": "Modified Juan's wheelchair to play power soccer more competitively (within the rules of the league), like improved kicking performance via ultra capacitor energy storage and wireless communication between team members",
         "Category": "Co-Designer Collaboration",
         "Place": 2,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1802 },
 
       { "Team Name": "Ellen",
         "Project Description": "One-handed Zip Mechanism",
@@ -75,29 +112,69 @@
         "Category": "Technical Skills",
         "Place": 1,
         "Use Table": true,
-        "image_append": "_zipper" },
+        "image_append": "_zipper",
+        "id": 1803 },
 
       { "Team Name": "Ellen",
         "Project Description": "BP Monitoring for One Arm",
         "Project Detail": "Prototyped two wearable devices for blood pressure monitoring: <br> <ol><li>modifying existing blood pressure monitoring devices to be easily used by someone with one arm </li><li> a prototype device using novel sensing mechanisms described in published literature</li></ol>",
         "Category": "Technical Skills",
         "Place": 2,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1804 },
 
       { "Team Name": "Kate",
         "Project Description": "Connecting Earbuds to Cochlear Implants",
         "Project Detail": "Designed and fabricated a device that allowed Kate, who uses cochlear implants, to use earbuds.<br>Their work was documented here <a href='https://www.instructables.com/id/CiPod-Wireless/' target='_blank'>Airpod Wireless Earbuds</a>, <a href='https://www.instructables.com/id/CiPods-Earbuds-Attachment-for-Cochlear-Implants/' target='_blank'>Wired Earbuds</a>.",
         "Category": "Usability",
         "Place": 1,
-        "Use Table": true },
+        "Use Table": true,
+        "id": 1805 },
 
       { "Team Name": "Annette",
         "Project Description": "Vibrating Door Alert",
         "Project Detail": "Designed and fabricated a prototype of a wearable arm band that vibrates to alert Annette, who is deaf, when her doorbell rings",
         "Category": "Usability",
         "Place": 2,
-        "Use Table": true }
+        "Use Table": true,
+        "id": 1806 }
+
+    ],
+
+  "2017 Style": 0,
+
+  "2017 Winners": [
+
+    [1, 1701],
+    [2, 1702],
+    [3, 1703]
+
+  ],
+
+  "2017 Teams": [
+
+      { "Team Name": "Alex",
+        "Project Description": "Cerebral Palsy friendly DSLR",
+        "Project Detail": "Alex graduated from Emerson College and is an award-winning filmmaker. He has cerebral palsy, which affects his ability to control his video camera and DSLR. He would like to be able to take film and photos independently. He would like a device to help him remotely move his camera around and control the camera settings while viewing the shot.",
+        "Place": 1,
+        "Use Table": true,
+        "id": 1701 },
+
+      { "Team Name": "Dan",
+        "Project Description": "Independent Device Control",
+        "Project Detail": "Dan was diagnosed with spastic quadriplegic cerebral palsy at birth. He is very social and has a great sense of humor. If you let him, he will “talk” your ear off. Because of his cerebral palsy, he has muscle stiffness in his arms, leg, and torso and he communicates and controls his tablet via head movements. He would like to work on technology that could help him have some more independence/control – like turning on and off the TV, changing the channel, and/or a call light for when he needs to use the bathroom.",
+        "Place": 2,
+        "Use Table": true,
+        "id": 1702 },
+
+      { "Team Name": "Evan & Meri",
+        "Project Description": "User-Friendly Head Pointer",
+        "Project Detail": "Evan is an occupational therapist at Toward Independent Living and Learning. One residents that he works with, Meri uses a head pointer to operate her iPad but finds commercially available head pointers clunky and ugly. She would like a sturdy, comfortable, attractive, reproducible head pointer.",
+        "Category": "Co-Designer Collaboration",
+        "Place": 3,
+        "Use Table": true,
+        "id": 1703 }
 
     ]
-    
+
 }

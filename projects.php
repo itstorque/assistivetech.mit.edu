@@ -10,6 +10,9 @@
 
     <?php
 
+      $year_begin = 2015;
+      $selectedYear = $latest_year = 2019;
+
       ob_start();
       include('teams.json');
       $teamData = ob_get_contents();
@@ -18,8 +21,6 @@
       $teamData = str_replace(array("\n", "\r"), '', $teamData)
 
     ?>
-
-    <script>teamData = JSON.parse(`<?php echo $teamData; ?>`)</script>
 
     <div class="seperator"></div>
 
@@ -34,10 +35,6 @@
         <div class="flight-types year">
 
           <?php
-
-            $year_begin = 2015;
-
-            $selectedYear = $latest_year = 2019;
 
             $function_to_run_here = "updateWinners";
 
@@ -55,13 +52,15 @@
 
         </div>
 
-        <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)">2019</x></h1>
+        <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
 
         <br>
 
-        <table class="projectsTable">
+        <div id="projectsArea">
 
-        </table>
+        </div>
+
+        <script>teamData = JSON.parse(`<?php echo $teamData; ?>`); updateWinners("<?php echo $selectedYear ?>");</script>
 
       <br>
 
@@ -87,7 +86,7 @@
 
         <div onclick="document.getElementById('popup').className = 'hidden'" class="close" style="width: 50px; height: 50px; z-index: 100;"><div class="close1"></div><div class="close2"></div></div>
 
-        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="./enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
+        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
 
         <div id="pTextDetails">
 
