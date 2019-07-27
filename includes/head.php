@@ -24,6 +24,20 @@
 
   <script src="./js/main.js"></script>
 
+  <?php
+
+    $fileName = "./js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
+
+    echo $fileName;
+
+    if (file_exists($fileName)) {
+
+      echo '<script src="'.$fileName.'"></script>';
+
+    }
+
+  ?>
+
   <!-- Modify php if to dynamic form -->
 
   <?php if(strpos($_SERVER['REQUEST_URI'], 'events') !== false):?>

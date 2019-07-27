@@ -8,6 +8,19 @@
 
     <?php include 'includes/nav.php'; ?>
 
+    <?php
+
+      ob_start();
+      include('teams.json');
+      $teamData = ob_get_contents();
+      ob_end_clean();
+
+      $teamData = str_replace(array("\n", "\r"), '', $teamData)
+
+    ?>
+
+    <script>teamData = JSON.parse(`<?php echo $teamData; ?>`)</script>
+
     <div class="seperator"></div>
 
     <div class="banner">
@@ -22,38 +35,23 @@
 
           <?php
 
-            $year = 2015;
+            $year_begin = 2015;
 
-            $function_to_run_here = "NO FUNCTION YET";
+            $selectedYear = $latest_year = 2019;
 
-            echo `<input type="radio" name="flight-type" value="`.$year.`" id="`.$year.`" onclick="`.$function_to_run_here.`" checked/> <label for="`.$year.`"> `.$year.` </label>`;
+            $function_to_run_here = "updateWinners";
+
+            for ($year = $latest_year; $year >= $year_begin; $year--) {
+
+              $checked = "";
+
+              if ($year == $selectedYear) { $checked = " checked "; }
+
+              echo '<input type="radio" name="flight-type" value="'.$year.'" id="'.$year.'" onclick="'.$function_to_run_here.'('.$year.')"'.$checked.'/> <label for="'.$year.'"> '.$year.' </label>';
+
+            }
 
           ?>
-
-          <input type="radio" name="flight-type" value="2019" id="2019" onclick="" checked/>
-          <label for="2019">
-              2019
-          </label>
-
-          <input type="radio" name="flight-type" value="2018" id="2018" onclick="" />
-          <label for="2018">
-              2018
-          </label>
-
-          <input type="radio" name="flight-type" value="2017" id="2017" onclick="" />
-          <label for="2017">
-              2017
-          </label>
-
-          <input type="radio" name="flight-type" value="2016" id="2016" onclick=""/>
-          <label for="2016">
-              2016
-          </label>
-
-          <input type="radio" name="flight-type" value="2015" id="2015" onclick=""/>
-          <label for="2015">
-              2015
-          </label>
 
         </div>
 
@@ -82,8 +80,6 @@
       </div>
 
       <div class="seperator"></div>
-
-      <script src="scripts/projects.js"></script>
 
       </div>
 

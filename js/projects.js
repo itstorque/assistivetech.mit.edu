@@ -1,4 +1,10 @@
-function showDetail(identifier){
+function updateWinners(year) {
+
+  alert(year)
+
+}
+
+function showDetail(identifier) {
 
   title = $(identifier).data('title')
   cat = $(identifier).data('wincat')

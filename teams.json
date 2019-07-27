@@ -1,0 +1,103 @@
+{
+
+  "2019 Winners": [
+
+      { "Team Name": "Lora",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Co-Designer Collaboration",
+        "Place": 1,
+        "Use Table": true },
+
+      { "Team Name": "Alex",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Co-Designer Collaboration",
+        "Place": 2,
+        "Use Table": true },
+
+      { "Team Name": "Reese",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Technical Skills",
+        "Place": 1,
+        "Use Table": true },
+
+      { "Team Name": "Ellen",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Technical Skills",
+        "Place": 2,
+        "Use Table": true },
+
+      { "Team Name": "Sarah",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Usability",
+        "Place": 1,
+        "Use Table": true },
+
+      { "Team Name": "Charbel",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "Usability",
+        "Place": 2,
+        "Use Table": true },
+
+      { "Team Name": "Phil",
+        "Project Description": "",
+        "Project Detail": "",
+        "Category": "",
+        "Place": 2,
+        "Use Table": false }
+
+    ],
+
+  "2018 Winners": [
+
+      { "Team Name": "Adrianna",
+        "Project Description": "Travel Shower Aid",
+        "Project Detail": "Worked on the design of a portable device to help Adrianna safely and comfortably shower while traveling",
+        "Category": "Co-Designer Collaboration",
+        "Place": 1,
+        "Use Table": true },
+
+      { "Team Name": "Juan",
+        "Project Description": "Improved Chair Performance for Power Soccer",
+        "Project Detail": "Modified Juan's wheelchair to play power soccer more competitively (within the rules of the league), like improved kicking performance via ultra capacitor energy storage and wireless communication between team members",
+        "Category": "Co-Designer Collaboration",
+        "Place": 2,
+        "Use Table": true },
+
+      { "Team Name": "Ellen",
+        "Project Description": "One-handed Zip Mechanism",
+        "Project Detail": "Designed a mechanism to make closing zippers with one arm easier",
+        "Category": "Technical Skills",
+        "Place": 1,
+        "Use Table": true,
+        "image_append": "_zipper" },
+
+      { "Team Name": "Ellen",
+        "Project Description": "BP Monitoring for One Arm",
+        "Project Detail": "Prototyped two wearable devices for blood pressure monitoring: <br> <ol><li>modifying existing blood pressure monitoring devices to be easily used by someone with one arm </li><li> a prototype device using novel sensing mechanisms described in published literature</li></ol>",
+        "Category": "Technical Skills",
+        "Place": 2,
+        "Use Table": true },
+
+      { "Team Name": "Kate",
+        "Project Description": "Connecting Earbuds to Cochlear Implants",
+        "Project Detail": "Designed and fabricated a device that allowed Kate, who uses cochlear implants, to use earbuds.<br>Their work was documented here <a href='https://www.instructables.com/id/CiPod-Wireless/' target='_blank'>Airpod Wireless Earbuds</a>, <a href='https://www.instructables.com/id/CiPods-Earbuds-Attachment-for-Cochlear-Implants/' target='_blank'>Wired Earbuds</a>.",
+        "Category": "Usability",
+        "Place": 1,
+        "Use Table": true },
+
+      { "Team Name": "Annette",
+        "Project Description": "Vibrating Door Alert",
+        "Project Detail": "Designed and fabricated a prototype of a wearable arm band that vibrates to alert Annette, who is deaf, when her doorbell rings",
+        "Category": "Usability",
+        "Place": 2,
+        "Use Table": true }
+
+    ]
+    
+}
