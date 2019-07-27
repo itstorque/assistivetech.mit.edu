@@ -761,7 +761,7 @@ background-blend-mode: multiply;
 
 .card {
 
-  /* width: 28%; */
+  width: 28%;
   display: inline-block;
   vertical-align: top;
   margin: 15px;

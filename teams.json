@@ -175,6 +175,86 @@
         "Use Table": true,
         "id": 1703 }
 
+    ],
+
+  "2016 Style": 0,
+
+  "2016 Winners": [
+
+    [1, 1601],
+    [2, 1602],
+    [3, 1603]
+
+  ],
+
+  "2016 Teams": [
+
+      { "Team Name": "Colleen",
+        "Project Description": "Wheelchair Lift",
+        "Project Detail": "Colleen sometimes falls when getting out of her wheelchair and has difficulty getting back up. She needs to be seated in order to transfer to her walker and then back into her chair. The team designed a system that she could move herself to that provides a lift assist to get her up high enough to stand back up with the assistance of a walker. A scale embedded into the seat of the power lift chair also provides weight information which is also difficult to obtain without a special scale meant for a wheelchair. This information is sent to an online interface for easy visualization and tracking.",
+        "Place": 1,
+        "Use Table": true,
+        "id": 1601 },
+
+      { "Team Name": "Jae",
+        "Project Description": "Foldable Cane Wheelchair Attachment",
+        "Project Detail": "The team built a customized, foldable cane attachment for a visually impaired wheelchair user to help navigate without getting in the way of a guide dog. The cane can be folded into multiple configuations for easy storage on publication transporation, or going through a doorway with magnetlic links. There are two grip positions for the cane to maximize comfort.",
+        "Place": 2,
+        "Use Table": true,
+        "id": 1602 },
+
+      { "Team Name": "Megan",
+        "Project Description": "Feeling Music & Storybook",
+        "Project Detail": "The team worked with a teenager who does not communicate verbally. They made a storybook for her that she can show people to introduce herself, and a platform that allows her to touch other people on the platform and feel music bass as a result (she loves music).",
+        "Category": "Co-Designer Collaboration",
+        "Place": 3,
+        "Use Table": true,
+        "id": 1603 }
+
+    ],
+
+  "2015 Style": 0,
+
+  "2015 Winners": [
+
+    [1, 1501],
+    [2, 1502],
+    [3, 1503]
+
+  ],
+
+  "2015 Teams": [
+
+      { "Team Name": "",
+        "Project Description": "Joystick/bluetooth mouse with sip and puff capabilities",
+        "Project Detail": "Colleen sometimes falls when getting out of her wheelchair and has difficulty getting back up. She needs to be seated in order to transfer to her walker and then back into her chair. The team designed a system that she could move herself to that provides a lift assist to get her up high enough to stand back up with the assistance of a walker. A scale embedded into the seat of the power lift chair also provides weight information which is also difficult to obtain without a special scale meant for a wheelchair. This information is sent to an online interface for easy visualization and tracking.",
+        "Place": 1,
+        "Use Table": true,
+        "id": 1501 },
+
+      { "Team Name": "",
+        "Project Description": "Music page turner activated by head motion",
+        "Project Detail": "The team built a customized, foldable cane attachment for a visually impaired wheelchair user to help navigate without getting in the way of a guide dog. The cane can be folded into multiple configuations for easy storage on publication transporation, or going through a doorway with magnetlic links. There are two grip positions for the cane to maximize comfort.",
+        "Place": 2,
+        "Use Table": true,
+        "id": 1502 },
+
+      { "Team Name": "",
+        "Project Description": "Bagel spreader",
+        "Project Detail": "The team worked with a teenager who does not communicate verbally. They made a storybook for her that she can show people to introduce herself, and a platform that allows her to touch other people on the platform and feel music bass as a result (she loves music).",
+        "Category": "Co-Designer Collaboration",
+        "Place": 3,
+        "Use Table": true,
+        "id": 1503 },
+
+      { "Team Name": "",
+        "Project Description": "Diabetes glucose workout app",
+        "Project Detail": "The team worked with a teenager who does not communicate verbally. They made a storybook for her that she can show people to introduce herself, and a platform that allows her to touch other people on the platform and feel music bass as a result (she loves music).",
+        "Category": "Co-Designer Collaboration",
+        "Place": 3,
+        "Use Table": true,
+        "id": 1504 }
+
     ]
 
 }
