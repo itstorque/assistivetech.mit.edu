@@ -8,6 +8,20 @@
 
     <?php include 'includes/nav.php'; ?>
 
+    <?php
+
+      $year_begin = 2016;
+      $selectedYear = $latest_year = 2019;
+
+      ob_start();
+      include('teams.json');
+      $teamData = ob_get_contents();
+      ob_end_clean();
+
+      $teamData = str_replace(array("\n", "\r"), '', $teamData)
+
+    ?>
+
     <div class="seperator"></div>
 
     <div class="banner">
@@ -22,68 +36,39 @@
 
           <?php
 
-            $year = 2015;
+            $function_to_run_here = "updateWinners";
 
-            $function_to_run_here = "NO FUNCTION YET";
+            for ($year = $latest_year; $year >= $year_begin; $year--) {
 
-            echo `<input type="radio" name="flight-type" value="`.$year.`" id="`.$year.`" onclick="`.$function_to_run_here.`" checked/> <label for="`.$year.`"> `.$year.` </label>`;
+              $checked = "";
+
+              if ($year == $selectedYear) { $checked = " checked "; }
+
+              echo '<input type="radio" name="flight-type" value="'.$year.'" id="'.$year.'" onclick="'.$function_to_run_here.'('.$year.')"'.$checked.'/> <label for="'.$year.'"> '.$year.' </label>';
+
+            }
 
           ?>
 
-          <input type="radio" name="flight-type" value="2019" id="2019" onclick="" checked/>
-          <label for="2019">
-              2019
-          </label>
-
-          <input type="radio" name="flight-type" value="2018" id="2018" onclick="" />
-          <label for="2018">
-              2018
-          </label>
-
-          <input type="radio" name="flight-type" value="2017" id="2017" onclick="" />
-          <label for="2017">
-              2017
-          </label>
-
-          <input type="radio" name="flight-type" value="2016" id="2016" onclick=""/>
-          <label for="2016">
-              2016
-          </label>
-
-          <input type="radio" name="flight-type" value="2015" id="2015" onclick=""/>
-          <label for="2015">
-              2015
-          </label>
-
         </div>
 
-        <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)">2019</x></h1>
+        <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
 
         <br>
 
-        <table class="projectsTable">
+        <div id="projectsArea">
 
-        </table>
+        </div>
 
       <br>
 
-      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Documentation Award</h2>
-
-      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
-
-        <p><b style="color: var(--color2)">Team Phil</b> built "PhilGood", which is a standing chair where users can independently leave their wheelchair and secure themselves into it.</p>
+      <div id="moreProjectsArea">
 
       </div>
 
-      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Other 2019 Projects</h2>
-
-      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
-
-      </div>
+      <script>teamData = JSON.parse(`<?php echo $teamData; ?>`); updateWinners("<?php echo $selectedYear ?>");</script>
 
       <div class="seperator"></div>
-
-      <script src="scripts/projects.js"></script>
 
       </div>
 
@@ -91,7 +76,7 @@
 
         <div onclick="document.getElementById('popup').className = 'hidden'" class="close" style="width: 50px; height: 50px; z-index: 100;"><div class="close1"></div><div class="close2"></div></div>
 
-        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="./enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
+        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
 
         <div id="pTextDetails">
 
