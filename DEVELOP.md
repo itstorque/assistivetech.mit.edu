@@ -12,7 +12,7 @@ Install an [Apache | Nginx] WebServer solution that supports PHP, such as [MAMP]
 
 3. Create a Pull Request and Merge with Master.
 
-3. Go to the [Website Admin Portal](assistivetech.mit.edu/admin) to pull changes from GitHub **Master Branch** onto the live server.
+3. Go to the [Website Admin Portal](https://assistivetech.scripts.mit.edu/admin) to pull changes from GitHub **Master Branch** onto the live server.
 
 #### **NOTE: Never Push To Master Directly!*
 
