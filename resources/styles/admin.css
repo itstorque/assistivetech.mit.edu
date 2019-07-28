@@ -24,3 +24,12 @@ body {
 .isUpToDate .ui.noStatus { display: none; }
 .isNotUpToDate .ui.notUpToDate { display: inline-block; }
 .isNotUpToDate .ui.noStatus { display: none; }
+
+img.ui.purple_bg {
+
+  background-color: #3E098D;
+  min-height: 27.5px;
+
+  object-fit: contain;
+
+}
