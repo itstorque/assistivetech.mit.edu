@@ -23,7 +23,7 @@ function pull() {
       }).done(function(data) {
           console.log(data)
           loading(pullButtons, false);
-          $("#updated").removeClass('hidden')
+          $("#updatedMessage").removeClass('hidden')
           checkStatus()
       });
 
