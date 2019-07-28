@@ -8,19 +8,7 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <?php
-
-      $year_begin = 2016;
-      $selectedYear = $latest_year = 2019;
-
-      ob_start();
-      include('teams.json');
-      $teamData = ob_get_contents();
-      ob_end_clean();
-
-      $teamData = str_replace(array("\n", "\r"), '', $teamData)
-
-    ?>
+    <?php include 'helpers/read_projects.php'; ?>
 
     <div class="seperator"></div>
 
@@ -66,7 +54,7 @@
 
       </div>
 
-      <script>teamData = JSON.parse(`<?php echo $teamData; ?>`); updateWinners("<?php echo $selectedYear ?>");</script>
+      <script>updateWinners("<?php echo $selectedYear ?>");</script>
 
       <div class="seperator"></div>
 

@@ -6,7 +6,7 @@
 
 			if (strpos($key, ' Teams') !== false) {
 
-				echo "<br><h2 class='ui header'>".$key."<button onclick='addItem(\"".$key."\")' class= 'ui right floated green button large'><i class='add icon'></i>Add Project</button></h2><br><table class='ui celled padded table'><thead>";
+				echo "<br><h2 class='ui header'>".$key."<button onclick='location.href = \"/admin/new_project?year=".substr($key, 0, 4)."\"' class= 'ui right floated green button large'><i class='add icon'></i>Add Project</button></h2><br><table class='ui celled padded table'><thead>";
 
 				echo "<tr><th>";
 
@@ -36,7 +36,7 @@
 
 				foreach ($value as $key => $value_2) {
 
-					echo "<tr><td><center><a href='/admin/edit_project#".$value_2->{'id'}."'><i class='pencil icon'></i>";
+					echo "<tr><td><center><a href='/admin/edit_project?id=".$value_2->{'id'}."'><i class='pencil icon'></i>";
 
 					echo $value_2->{'id'};
 
