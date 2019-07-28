@@ -1,3 +1,9 @@
+<?php
+
+  include "../helpers/authenticate.php";
+
+ ?>
+
 <head>
 
   <title>AT Admin Page</title>

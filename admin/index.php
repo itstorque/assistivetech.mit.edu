@@ -45,7 +45,7 @@
 			  <div class="header">
 			    Updated Website Successfully
 			  </div>
-			  <p>The website has been successfully updated!</p>
+			  <p>The website has been successfully updated!<br>Open console to see what has been updated.</p>
 			</div>
 
 			<h3 class="ui header" id="statusLabel">Status:
