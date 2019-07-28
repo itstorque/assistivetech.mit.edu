@@ -1,6 +1,6 @@
 <?php
 
-  exec("git pull", $output, $return_var);
+  exec("git pull 2>&1", $output, $return_var);
 
   echo implode("|",$output);
 
