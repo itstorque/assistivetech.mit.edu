@@ -1,7 +1,7 @@
 ![Assistive Technology Logo](https://github.com/tareqdandachi/assistivetech.mit.edu/blob/master/resources/brand/LogoSmallColorAlt.svg  "MIT Assistive Tech")
 
 # The Assistive Technology Group at MIT Website
-The [MIT Assistive Technology](assistivetech.mit.edu) group website
+[MIT Assistive Technology website](assistivetech.mit.edu)
 
 ## Hosting & Development
 
