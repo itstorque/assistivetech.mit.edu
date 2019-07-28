@@ -86,6 +86,8 @@ function threeColumnWinners(year, winnerData) {
 
     desc = winner['Project Detail']
 
+    desc += addDocumentationTag(winner)
+
     if ("image_append" in winner) {
 
       extendable_src_seq = winner['image_append']
@@ -115,6 +117,8 @@ function threeColumnWinners(year, winnerData) {
     desc_short = winner['Project Description']
 
     desc = winner['Project Detail']
+
+    desc += addDocumentationTag(winner)
 
     if ("image_append" in winner) {
 
@@ -162,7 +166,7 @@ function originalStyleWinners(year, winnerData) {
 
     desc = winner['Project Detail']
 
-    console.log(winner)
+    desc += addDocumentationTag(winner)
 
     if ("image_append" in winner) {
 
@@ -177,6 +181,56 @@ function originalStyleWinners(year, winnerData) {
     image_url = "ATHack " + year + "/_team" + name + extendable_src_seq
 
     htmlObject.innerHTML += '<div class="card"><img src="/resources/winners/'+pos.toLowerCase()+'.png" style="width: 170px;"><h2>'+pos+' Place</h2><h3>Team '+name+'</h3><p>'+desc_short+'</p><p class="pressText" onclick="showDetail(this)" data-title="Team '+name+'" data-wincat="ATHack '+year+'" data-winleague="1" data-desc="'+desc+'" data-img="/resources/images/albums/'+image_url+'.jpg">More Details</p></div>'
+
+  }
+
+}
+
+function addDocumentationTag(url) {
+
+  if ("Documentation" in winner) {
+
+    link = winner["Documentation"]
+
+    linkData = getTitleOfPage(link)
+
+    intro = linkData[0]
+
+    linkName = linkData[1]
+
+    return "<br><br>"+intro+" <a target='_blank' href='"+link+"'>"+linkName+"</a>"
+
+  }
+
+  return ""
+
+}
+
+function getTitleOfPage(externalUrl) {
+
+  if (externalUrl.indexOf('github') > -1) {
+
+    return ["Visit Their", "GitHub Page"]
+
+  } else if (externalUrl.indexOf('instructables') > -1) {
+
+    return ["Visit Their", "Instructables Page"]
+
+  } else if (externalUrl.indexOf('docs.google.com') > -1) {
+
+    return ["View Their", "Google Docs File"]
+
+  } else if (externalUrl.indexOf('drive.google.com/file/') > -1) {
+
+    return ["View Their", "Google Drive File"]
+
+  } else if (externalUrl.indexOf('drive.google') > -1) {
+
+    return ["View Their", "Google Drive"]
+
+  } else {
+
+    return ["Visit Their", "Web Page"]
 
   }
 
