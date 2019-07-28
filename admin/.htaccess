@@ -1,3 +1,22 @@
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
+
 AuthType SSLCert
-Require user tareq
+Require afsgroup system:assistivetech
+Allow from 127.0.0.1
+Satisfy Any
 ErrorDocument 401 /__scripts/needcerts
+
+#Update Later with custom error message
+#ErrorDocument 401 /__scripts/needcerts/~username/customerror.cgi
+
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ErrorDocument 404 /404.html
+ErrorDocument 401 /401.html
