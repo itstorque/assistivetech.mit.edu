@@ -60,23 +60,13 @@
 
         </div>
 
-        <script>teamData = JSON.parse(`<?php echo $teamData; ?>`); updateWinners("<?php echo $selectedYear ?>");</script>
-
       <br>
 
-      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Documentation Award</h2>
-
-      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
-
-        <p><b style="color: var(--color2)">Team Phil</b> built "PhilGood", which is a standing chair where users can independently leave their wheelchair and secure themselves into it.</p>
+      <div id="moreProjectsArea">
 
       </div>
 
-      <h2 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; margin-top: 50px;" class="centerOnSmall">Other 2019 Projects</h2>
-
-      <div style="margin-left: 80px; margin-right: 80px;" class="removeMarginOnSmall">
-
-      </div>
+      <script>teamData = JSON.parse(`<?php echo $teamData; ?>`); updateWinners("<?php echo $selectedYear ?>");</script>
 
       <div class="seperator"></div>
 

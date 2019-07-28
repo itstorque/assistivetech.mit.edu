@@ -2,6 +2,8 @@ function updateWinners(year) {
 
   document.getElementById('projectsArea').innerHTML = ""
 
+  document.getElementById('moreProjectsArea').innerHTML = ""
+
   document.getElementById('yearLabel').innerHTML = year
 
   style = teamData[year+" Style"]
@@ -23,6 +25,8 @@ function updateWinners(year) {
     winnerData = [0,0,0,0,0,0]
 
     titles = []
+
+    allTeamData = teamMap
 
     for (i = 0, len = winners.length; i < len; i++) {
 
@@ -48,9 +52,11 @@ function updateWinners(year) {
 
       }
 
+      delete allTeamData[winners[i][2]];
+
     }
 
-    threeColumnWinners(year, winnerData)
+    threeColumnWinners(year, winnerData, allTeamData)
 
   } else {
 
@@ -70,7 +76,7 @@ function updateWinners(year) {
 
 }
 
-function threeColumnWinners(year, winnerData) {
+function threeColumnWinners(year, winnerData, allTeamData) {
 
   const tableHtml = '<table class="projectsTable"><thead><tr><th><img src="/resources/winners/collab.png"><h3>Co-Designer Collaboration</h3></th><th><img src="/resources/winners/tech.png"><h3>Technical Skills</h3></th><th><img src="/resources/winners/func.png"><h3>Functionality</h3></th></tr></thead></table>'
 
@@ -130,6 +136,8 @@ function threeColumnWinners(year, winnerData) {
 
     }
 
+    // HANDLE EXTRA WIN_CAT INPUT
+
     win_cat = winner['Category']
 
     image_url = "ATHack " + year + "/_team" + name + extendable_src_seq
@@ -143,6 +151,114 @@ function threeColumnWinners(year, winnerData) {
   var htmlObject = temp.firstChild;
 
   htmlObject.innerHTML += "<tbody><tr>"+firstPlaceWinners+"</tr><tr>"+secondPlaceWinners+"</tr></tbody>"
+
+  if (winnerData.length > 6) {
+
+    pastSection = ""
+
+    for (i = 6, len = winnerData.length; i < len; i++) {
+
+      data = winnerData[i]
+
+      console.log(data)
+
+      current_section = data["Category"]
+
+      name = "Team " + data["Team Name"]
+
+      desc = data["Project Detail"]
+
+      if (desc.indexOf(name) == 0) {
+
+        desc = desc.replace(name, "")
+
+      }
+
+      if (!desc.endsWith('.')) {
+
+        desc += "."
+
+      }
+
+      extendable = data["image_append"]
+
+      if (extendable == undefined) {
+
+        extendable = ""
+
+      }
+
+      documentation_slip = ""
+
+      if ('Documentation' in data) {
+
+        documentation_slip = addDocumentationTag(data["Documentation"])
+
+      }
+
+      image_url = '/resources/images/albums/ATHack ' + year + '/_team' + data["Team Name"] + '.jpg'
+
+      image_tag = "<img src='"+image_url+"' onerror=\"this.className='broken_link'\">"
+
+      if (pastSection != current_section) {
+
+        pastSection = current_section
+
+        generateSectionTitle(current_section + " Award", 'moreProjectsArea')
+
+      }
+
+      addToSection(image_tag+'<p><b>'+name+'</b> '+desc+documentation_slip+'</p>', 'moreProjectsArea')
+
+    }
+
+  }
+
+  generateSectionTitle("Other "+year+" Projects", 'moreProjectsArea')
+
+  for (var key in allTeamData) {
+
+    data = allTeamData[key]
+
+    name = "Team " + data["Team Name"]
+
+    desc = data["Project Detail"]
+
+    if (desc.indexOf(name) == 0) {
+
+      desc = desc.replace(name, "")
+
+    }
+
+    if (!desc.endsWith('.')) {
+
+      desc += "."
+
+    }
+
+    extendable = data["image_append"]
+
+    if (extendable == undefined) {
+
+      extendable = ""
+
+    }
+
+    documentation_slip = ""
+
+    if ('Documentation' in data) {
+
+      documentation_slip = addDocumentationTag(data["Documentation"])
+
+    }
+
+    image_url = '/resources/images/albums/ATHack ' + year + '/_team' + data["Team Name"] + '.jpg'
+
+    image_tag = "<img src='"+image_url+"' onerror=\"this.className='broken_link'\">"
+
+    addToSection(image_tag+'<p><b>'+name+'</b> '+desc+documentation_slip+'</p>', 'moreProjectsArea')
+
+  }
 
 }
 
@@ -183,6 +299,18 @@ function originalStyleWinners(year, winnerData) {
     htmlObject.innerHTML += '<div class="card"><img src="/resources/winners/'+pos.toLowerCase()+'.png" style="width: 170px;"><h2>'+pos+' Place</h2><h3>Team '+name+'</h3><p>'+desc_short+'</p><p class="pressText" onclick="showDetail(this)" data-title="Team '+name+'" data-wincat="ATHack '+year+'" data-winleague="1" data-desc="'+desc+'" data-img="/resources/images/albums/'+image_url+'.jpg">More Details</p></div>'
 
   }
+
+}
+
+function generateSectionTitle(title, section_id) {
+
+  addToSection('<h2 class="centerOnSmall projectSection">'+title+'</h2>', section_id)
+
+}
+
+function addToSection(html, section_id) {
+
+  document.getElementById(section_id).innerHTML += html
 
 }
 

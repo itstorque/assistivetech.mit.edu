@@ -1309,6 +1309,16 @@ background-blend-mode: multiply;
 
 /* Projects */
 
+h2.projectSection {
+
+  font-family: 'Raleway', Sans-Serif;
+
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
 .projectsTable {
 
   width: 90vw; text-align: center; border-collapse: separate; border-spacing: 0px; table-layout: fixed; margin-left: -3vw;
@@ -1386,6 +1396,48 @@ background-blend-mode: multiply;
   font-family: 'Raleway', Sans-Serif;
   font-weight: bolder;
   display: inline-block;
+
+}
+
+#moreProjectsArea p {
+
+  line-height: 2rem;
+  text-align: justify;
+
+  margin-bottom: 30px;
+  width: 87%;
+  padding-left: 5%;
+
+}
+
+#moreProjectsArea p:nth-of-type(odd) b {
+
+  color: var(--color2);
+
+}
+
+#moreProjectsArea p:nth-of-type(even) b {
+
+  color: var(--color1);
+
+}
+
+#moreProjectsArea img {
+
+  width: 90%;
+  height: 54vw;
+  max-height: 70vh;
+  margin-left: 5%;
+
+  margin-top: 40px;
+
+  object-fit: cover;
+
+}
+
+#moreProjectsArea img.broken_link {
+
+  display: none;
 
 }
 
