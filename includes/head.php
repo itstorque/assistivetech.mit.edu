@@ -90,8 +90,8 @@
 
   <meta charset="utf-8">
 
-  <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="/resources/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-  <link href="favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="/resources/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
 </head>
