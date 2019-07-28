@@ -8,14 +8,16 @@
     <div class="ui simple dropdown item">
       Manage <i class="dropdown icon"></i>
       <div class="menu">
-        <div class="header">Webpage Content</div>
-        <a class="item" href="#">Item 1</a>
+        <div class="ui header grey">Content</div>
+        <a class="item" href="/admin/content">Update Content</a>
+        <a class="item" href="/admin/projects">Update Projects</a>
         <div class="divider"></div>
-        <div class="header">Projects</div>
-        <a class="item" href="#">Item 2</a>
-        <div class="header">Photos</div>
-        <a class="item" href="#">Upload New</a>
-        <a class="item" href="#">Manage</a>
+        <div class="ui header grey">Photos</div>
+        <a class="item" href="/admin/upload_photos">Upload New</a>
+        <a class="item" href="/admin/manage_photos">Manage Photos</a>
+        <div class="divider"></div>
+        <div class="ui header grey">Other</div>
+        <a class="item" href="/admin/brand">Brand Resources</a>
       </div>
     </div>
   </div>
