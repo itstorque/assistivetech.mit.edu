@@ -111,7 +111,7 @@
           <tr>
             <td>
               <h4 class="ui image header">
-                <img src="/resources/brand/LogoSmallColor.svg" class="ui mini rounded image">
+                <img src="/resources/brand/LogoSmallColor.svg" class="ui mini rounded image purple_bg">
                 <div class="content">
                   Logo Colored Alternate
                   <div class="sub header">Use on dark & purple backgrounds

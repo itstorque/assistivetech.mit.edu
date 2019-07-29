@@ -12,3 +12,7 @@ The server runs on [scripts](https://scripts.mit.edu/), a service provided by [M
 See [DEVELOP.md](DEVELOP.md) for more details.
 
 #### *NOTE: Never Push To Master Directly!*
+
+## Live Administrator Access
+
+To edit the actual content on the webpage, go to the [admin](assistivetech.mit.edu/admin) page, where you will be prompted to use your certificates to log in.
