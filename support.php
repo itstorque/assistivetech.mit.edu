@@ -49,7 +49,7 @@
 
         <br>
 
-        <div class="seperator"></div>
+        <div class="separator"></div>
 
       </div>
 

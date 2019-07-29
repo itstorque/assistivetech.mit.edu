@@ -53,6 +53,6 @@
 
     <h3 style="width: 80vw; text-align: center; margin-bottom: -1px;">Copyright &copy; 2019 <br class="mobileShow"> Tareq El Dandachi</h3>
 
-  <div class="seperator" style="height: 50px"></div>
+  <div class="separator" style="height: 50px"></div>
 
 </div>
