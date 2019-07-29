@@ -2,7 +2,15 @@ function saveChanges(object) {
 
   var json = JSON.stringify(object);
 
-
+  $.post("/helpers/writeJSON.php", {"json_data": json}, function() {
+    $('#form').addClass('success')
+  })
+    .done(function() {
+      $('#form').removeClass('loading')
+    })
+    .fail(function() {
+      $('#form').addClass('error')
+    })
 
 }
 
@@ -28,7 +36,7 @@ function loadJSON(year) {
 
 }
 
-function appendProjectToYear(name, desc, detail, category, place, useTable, photo, year) {
+function appendProjectToYear(name, desc, detail, category, place, useTable, documentation, photo, year) {
 
   [item, map] = loadJSON(year)
 
@@ -71,6 +79,7 @@ function appendProjectToYear(name, desc, detail, category, place, useTable, phot
     "Project Description": desc,
     "Project Detail": detail,
     "Category": category,
+    "Documentation": documentation,
     "Place": place,
     "Use Table": useTable,
     "image_append": appendable,
@@ -78,11 +87,55 @@ function appendProjectToYear(name, desc, detail, category, place, useTable, phot
 
   item = appendObjectToKey(object, year+" Teams", item)
 
-  console.log(item)
+  saveChanges(item)
 
 }
 
-appendProjectToYear("Zary", "desc", "detail", "car", "pl", true, "", 2019)
+function getProjectData() {
+
+  form = $('#form')
+
+  form.removeClass('error');
+  form.removeClass('success');
+  form.removeClass('loading');
+  form.removeClass('warning');
+
+  name = document.getElementById("name").value
+
+  desc = document.getElementById("desc").value
+
+  detail = document.getElementById("detail").value
+
+  category = document.getElementById("category").value
+
+  documentation = document.getElementById("docLink").value
+
+  place = $('#place').dropdown('get value');
+
+  checkTable = $('#checkboxTable:checked').val() == "on";
+
+  photo = ""
+
+  year = document.getElementById("yearID").innerHTML
+
+  data = [name, desc, detail, category, place, checkTable, year]
+
+  empty = jQuery.inArray("", data) == 0
+
+  console.log(empty)
+
+  if (empty) {
+
+    form.addClass('warning');
+    return
+
+  }
+
+  form.addClass('loading');
+
+  appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year)
+
+}
 
 function appendObjectToKey(object, key, json) {
 
@@ -91,3 +144,11 @@ function appendObjectToKey(object, key, json) {
   return json
 
 }
+
+$('.ui.checkbox')
+  .checkbox()
+;
+
+$('.dropdown')
+  .dropdown()
+;
