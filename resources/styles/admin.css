@@ -39,3 +39,10 @@ img.ui.purple_bg {
   cursor: pointer;
 
 }
+
+.ui.divider.accordion {
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}

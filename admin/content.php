@@ -15,14 +15,57 @@
 			</h1>
 			<br>
 
-			<h2 class="ui header">Home Page</h2>
+			<h2 class="ui header">Content Update</h2>
+      <h2 class="ui sub header">Select the page, edit the text content and press update.</h2>
+
+      <br><br>
+
+      <div class="ui accordion fluid">
 
 
+
+        <div class="ui horizontal divider accordion title">
+          <i class="dropdown icon"></i>Home Page
+        </div>
+
+        <div class="content">
+
+          <?php include 'content_pages/home.php'; ?>
+
+        </div>
+
+
+
+        <div class="ui horizontal divider accordion title">
+          <i class="dropdown icon"></i>Events Page
+        </div>
+
+        <div class="content">
+
+          <?php include 'content_pages/events.php'; ?>
+
+        </div>
+
+
+
+        <div class="ui horizontal divider accordion title">
+          <i class="dropdown icon"></i>About Page
+        </div>
+
+        <div class="content">
+
+          <?php include 'content_pages/about.php'; ?>
+
+        </div>
+
+
+
+      </div>
 
 			<br>
 			<br>
 
-	  <script src="/js/admin.js"></script>
+	  <script src="/js/admin_content.js"></script>
 
 	</body>
 
