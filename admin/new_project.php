@@ -26,7 +26,7 @@
         }
        ?>
 
-     <h1 class="ui header">Creating Entry for <span id="yearID"><?php echo $year; ?></span> Project</h1>
+     <h1 class="ui header">Creating Entry for <span id="yearID"><?php echo $year; ?></span> Project<button class="ui right floated button" onclick="location.href = '/admin/projects'">Cancel</button></h1>
      <br><br>
 
      <div class="ui equal width form" id="form">

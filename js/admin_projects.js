@@ -117,11 +117,11 @@ function appendProjectToYear(name, desc, detail, category, place, useTable, docu
 
   item = appendObjectToKey(object, year+" Teams", item)
 
-  saveChanges(item, true)
+  saveChanges(item)
 
 }
 
-function getProjectData() {
+function getProjectData(predefinedID) {
 
   form = $('#form')
 
@@ -163,7 +163,41 @@ function getProjectData() {
 
   form.addClass('loading');
 
-  appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year)
+  appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year, predefinedID)
+
+}
+
+function loadData() {
+
+  [item, map] = loadJSON(project_year)
+
+  document.getElementById("name").value = map[project_id]["Team Name"]
+
+  document.getElementById("desc").value = map[project_id]["Project Description"]
+
+  document.getElementById("detail").value = map[project_id]["Project Detail"]
+
+  document.getElementById("category").value = map[project_id]["Category"]
+
+  if (map[project_id]["Documentation"] == undefined) {
+
+    map[project_id]["Documentation"] = ""
+
+  }
+
+  document.getElementById("docLink").value = map[project_id]["Documentation"]
+
+  $('#place').dropdown('set selected', map[project_id]["Place"]);
+
+  if (map[project_id]["Use Table"] == true) {
+
+    $('#checkboxTable').checkbox('set checked');
+
+  } else {
+
+    $('#checkboxTable').checkbox('set unchecked');
+
+  }
 
 }
 
@@ -171,9 +205,13 @@ function performEditsOnProject() {
 
   $('#form').addClass('loading')
 
+  deleteProject(true)
+
+  getProjectData(project_id)
+
 }
 
-function deleteProject() {
+function deleteProject(calledFromCode) {
 
   $('#form').addClass('loading')
 
@@ -199,7 +237,7 @@ function deleteProject() {
 
   item[project_year+" Teams"] = new_arr
 
-  saveChanges(item)
+  saveChanges(item, !(calledFromCode))
 
 }
 

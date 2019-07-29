@@ -26,12 +26,14 @@
             echo "<script>alert('PHP ERROR - Check Server For Details')</script>";
         }
        ?>
+
        <script>
         project_year = <?php echo $year; ?>;
         project_id = <?php echo $id; ?>;
+        $( document ).ready(function() { loadData() });
        </script>
 
-     <h1 class="ui header">Editing Entry for <span id="yearID"><?php echo $year; ?></span> Project with ID: <span id="teamID"><?php echo $id; ?></span></h1>
+     <h1 class="ui header">Editing Entry for <span id="yearID"><?php echo $year; ?></span> Project with ID: <span id="teamID"><?php echo $id; ?></span><button class="ui right floated button" onclick="location.href = '/admin/projects'">Cancel</button></h1>
      <br><br>
 
      <div class="ui equal width form" id="form">
