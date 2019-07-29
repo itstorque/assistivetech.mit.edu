@@ -234,6 +234,20 @@ a:active {
 
 }
 
+.errorPage {
+
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorDark);
+  background-image: url('/resources/tiles/brokenRepeat.svg');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  margin-top: 0px;
+  padding: 0;
+  text-align: center;
+
+}
+
 .banner {
 
   height: calc(100vh - 80px);
