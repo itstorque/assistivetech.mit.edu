@@ -12,13 +12,13 @@
 
     <div class="separator"></div>
 
-    <div class="banner">
+    <div class="banner main">
 
       <h2 class="title">Projects</h2>
 
     </div>
 
-      <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 8%; padding-top: 40px; padding-right: 8%">
+      <div class="banner thin">
 
         <div class="flight-types year">
 
@@ -40,7 +40,7 @@
 
         </div>
 
-        <h1 style="font-family: 'Raleway', Sans-Serif; display: inline-block; vertical-align: middle; font-size: 40px; color: var(--color1);">ATHack <x style="color: var(--color2)" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
+        <h1 class="c1">ATHack <x class="c2" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
 
         <br>
 
@@ -60,19 +60,19 @@
 
       </div>
 
-      <div style="position: fixed; width: 100vw; height: 100vh; top:0; bottom: 0; background-color: #fff; z-index: 99" id="popup" class="hidden">
+      <div id="popup" class="hidden">
 
-        <div onclick="document.getElementById('popup').className = 'hidden'" class="close" style="width: 50px; height: 50px; z-index: 100;"><div class="close1"></div><div class="close2"></div></div>
+        <div onclick="document.getElementById('popup').className = 'hidden'" class="close"><div class="close1"></div><div class="close2"></div></div>
 
-        <div style="width: 80%; margin-top: 30px; height: 100px; margin-left: 10%; background-size: cover; background-repeat: no-repeat; background-position: center; text-align: right" id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" style="width: 50px; background-color: #fff; border-radius: 5px; margin: 10px; transition: all 0.4s;" id="enlarge"></div>
+        <div id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" id="enlarge"></div>
 
         <div id="pTextDetails">
 
-          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 20px; color: var(--color1); margin-right: 10%" id="pTitle">Project Title</h2>
+          <h2 id="pTitle">Project Title</h2>
 
-          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-right: 10%" id="pDesc">Project Description</h2>
+          <h2 id="pDesc">Project Description</h2>
 
-          <h2 style="font-family: 'Raleway', Sans-Serif; margin-left: 10%; padding-left: 32px; font-size: 20px; margin-top: 20px; color: var(--color2); margin-right: 10%;" id="pWin">Project Won First Place in Functionality</h2>
+          <h2 id="pWin">Project Won First Place in Functionality</h2>
 
         </div>
 
