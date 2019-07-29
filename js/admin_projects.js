@@ -1,10 +1,17 @@
-function saveChanges(object, didDelete) {
+function saveChanges(object, didDelete, didCreateFromCode) {
 
   var json = JSON.stringify(object);
 
   $.post("/helpers/writeJSON.php", {"json_data": json}, function() {
     $('#form').addClass('success')
-    if (didDelete) {
+
+    if (didDelete == false && didCreateFromCode == false) {
+
+      return
+
+    }
+
+    if (didDelete || didCreateFromCode) {
 
       location.href = "/admin/projects";
 
@@ -66,9 +73,11 @@ function loadJSON(year) {
 
 }
 
-function appendProjectToYear(name, desc, detail, category, place, useTable, documentation, photo, year, id) {
+function appendProjectToYear(name, desc, detail, category, place, useTable, documentation, photo, year, id, calledFromCode) {
 
-  [item, map] = loadJSON(year)
+  console.log("HIIII"+place)
+
+  if (!calledFromCode) { [item, map] = loadJSON(year) }
 
   if (id == undefined) {id = 1+Number(Object.keys(map).reduce(function(a, b){ return map[a] > map[b] ? a : b }));}
 
@@ -117,11 +126,11 @@ function appendProjectToYear(name, desc, detail, category, place, useTable, docu
 
   item = appendObjectToKey(object, year+" Teams", item)
 
-  saveChanges(item)
+  saveChanges(item, false, calledFromCode)
 
 }
 
-function getProjectData(predefinedID) {
+function getProjectData(predefinedID, calledFromCode) {
 
   form = $('#form')
 
@@ -141,6 +150,8 @@ function getProjectData(predefinedID) {
   documentation = document.getElementById("docLink").value
 
   place = $('#place').dropdown('get value');
+
+  if (place == "") { place = 0 }
 
   checkTable = $('#checkboxTable:checked').val() == "on";
 
@@ -163,7 +174,7 @@ function getProjectData(predefinedID) {
 
   form.addClass('loading');
 
-  appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year, predefinedID)
+  appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year, predefinedID, true)
 
 }
 
@@ -207,7 +218,7 @@ function performEditsOnProject() {
 
   deleteProject(true)
 
-  getProjectData(project_id)
+  getProjectData(project_id, true)
 
 }
 
@@ -237,7 +248,7 @@ function deleteProject(calledFromCode) {
 
   item[project_year+" Teams"] = new_arr
 
-  saveChanges(item, !(calledFromCode))
+  saveChanges(item, !(calledFromCode), false)
 
 }
 
