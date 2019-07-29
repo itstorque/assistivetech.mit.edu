@@ -256,7 +256,7 @@
 
           </center>
 
-          <div class="seperator">
+          <div class="separator">
           </div>
 
           </div>

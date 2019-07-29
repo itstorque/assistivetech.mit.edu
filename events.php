@@ -8,7 +8,7 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div class="seperator"></div>
+    <div class="separator"></div>
 
     <div style="margin: 0; background-color: var(--colorMain); -webkit-transform:translate3d(0,0,0); height: auto; padding-top: 20px; padding-right: 8%; padding-bottom: 60px;">
 

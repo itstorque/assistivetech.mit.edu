@@ -10,7 +10,7 @@
 
     <?php include 'helpers/read_projects.php'; ?>
 
-    <div class="seperator"></div>
+    <div class="separator"></div>
 
     <div class="banner">
 
@@ -56,7 +56,7 @@
 
       <script>updateWinners("<?php echo $selectedYear ?>");</script>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       </div>
 
