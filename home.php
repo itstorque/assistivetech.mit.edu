@@ -129,24 +129,24 @@
         <h1 class="b black titleSize2">Our <x class="b c1">Sponsors</x></h1>
 
         <div id="sponsorContainer">
-          <img src="resources/sponsors/microsoft.png" class="sponsor">
-          <img src="resources/sponsors/google.png" class="sponsor">
-          <img src="resources/sponsors/beaverworks.png" class="sponsor">
-          <img src="resources/sponsors/ODL.png" class="sponsor">
-          <img src="resources/sponsors/edg.png" class="sponsor">
-          <img src="resources/sponsors/MITEECS.png" class="sponsor">
-          <!--<img src="resources/sponsors/yahoo.png" class="sponsor">-->
-          <!--<img src="resources/sponsors/oculus.png" class="sponsor">-->
+          <img src="resources/sponsors/microsoft.jpg" class="sponsor">
+          <img src="resources/sponsors/google.jpg" class="sponsor">
+          <img src="resources/sponsors/beaverworks.jpg" class="sponsor">
+          <img src="resources/sponsors/ODL.jpg" class="sponsor">
+          <img src="resources/sponsors/edg.jpg" class="sponsor">
+          <img src="resources/sponsors/MITEECS.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/yahoo.jpg" class="sponsor">-->
+          <!--<img src="resources/sponsors/oculus.jpg" class="sponsor">-->
           <img src="resources/sponsors/mitmeche2.jpg" class="sponsor">
-          <img src="resources/sponsors/akamai.png" class="sponsor">
-          <!--<img src="resources/sponsors/eone.png" class="sponsor">-->
-          <img src="resources/sponsors/MITSAO2.png" class="sponsor">
-          <img src="resources/sponsors/schoolOfEng.png" class="sponsor">
-          <img src="resources/sponsors/mitsds.gif" class="sponsor">
-          <img src="resources/sponsors/perkins.png" class="sponsor">
-          <img src="resources/sponsors/mediaLab.png" class="sponsor">
-          <!--<img src="resources/sponsors/spaulding2.png" class="sponsor">-->
-          <!--<img src="resources/sponsors/TBP.gif" class="sponsor">-->
+          <img src="resources/sponsors/akamai.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/eone.jpg" class="sponsor">-->
+          <img src="resources/sponsors/MITSAO2.jpg" class="sponsor">
+          <img src="resources/sponsors/schoolOfEng.jpg" class="sponsor">
+          <img src="resources/sponsors/mitsds.jpg" class="sponsor">
+          <img src="resources/sponsors/perkins.jpg" class="sponsor">
+          <img src="resources/sponsors/mediaLab.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/spaulding2.jpg" class="sponsor">-->
+          <!--<img src="resources/sponsors/TBP.jpg" class="sponsor">-->
         </div>
 
         <div class="separator small"></div>
