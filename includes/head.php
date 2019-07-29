@@ -18,15 +18,15 @@
 
   <?php endif; ?>
 
-  <link rel="stylesheet" href="./resources/styles/style.css">
+  <link rel="stylesheet" href="/resources/styles/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="/js/main.js"></script>
 
   <?php
 
-    $fileName = "./js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
+    $fileName = "/js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
 
     if (file_exists($fileName)) {
 
@@ -40,15 +40,15 @@
 
   <?php if(strpos($_SERVER['REQUEST_URI'], 'events') !== false):?>
 
-    <script src="./js/scrollTo.js"></script>
+    <script src="/js/scrollTo.js"></script>
 
   <?php elseif(strpos($_SERVER['REQUEST_URI'], 'gallery') !== false):?>
 
-    <link rel="stylesheet" type="text/css" href="./resources/styles/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/styles/gallery.css" />
 
-    <link rel="stylesheet" type="text/css" href="./colorbox/colorbox.css" />
+    <link rel="stylesheet" type="text/css" href="/colorbox/colorbox.css" />
 
-    <script type="text/javascript" src="./colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/colorbox/jquery.colorbox-min.js"></script>
 
     <script type="text/javascript">
 
@@ -78,7 +78,7 @@
 
     if ($t == true) {
 
-      echo '<meta http-equiv="refresh" content="0; url=./home.html" />';
+      echo '<meta http-equiv="refresh" content="0; url=/home.html" />';
 
     }
 
