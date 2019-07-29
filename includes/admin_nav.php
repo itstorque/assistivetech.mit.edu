@@ -18,6 +18,7 @@
         <div class="divider"></div>
         <div class="ui header grey">Other</div>
         <a class="item" href="/admin/brand">Brand Resources</a>
+        <a class="item" href="/admin/site">Site Status</a>
       </div>
     </div>
   </div>
