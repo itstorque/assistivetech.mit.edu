@@ -33,3 +33,9 @@ img.ui.purple_bg {
   object-fit: contain;
 
 }
+
+.clickable:hover {
+
+  cursor: pointer;
+
+}
