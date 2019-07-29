@@ -26,6 +26,10 @@
             echo "<script>alert('PHP ERROR - Check Server For Details')</script>";
         }
        ?>
+       <script>
+        project_year = <?php echo $year; ?>;
+        project_id = <?php echo $id; ?>;
+       </script>
 
      <h1 class="ui header">Editing Entry for <span id="yearID"><?php echo $year; ?></span> Project with ID: <span id="teamID"><?php echo $id; ?></span></h1>
      <br><br>
@@ -109,8 +113,8 @@
 
         <br>
 
-        <button class="ui right floated button" onclick="getProjectData()">Confirm Changes</button>
-        <button class="ui right floated button negative" onclick="getProjectData()">Delete Project</button>
+        <button class="ui right floated button" onclick="performEditsOnProject()">Confirm Changes</button>
+        <button class="ui right floated button negative" onclick="deleteProject()">Delete Project</button>
         <br><br><br>
 
       </div>

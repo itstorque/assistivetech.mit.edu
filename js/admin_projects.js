@@ -1,9 +1,15 @@
-function saveChanges(object) {
+function saveChanges(object, didDelete) {
 
   var json = JSON.stringify(object);
 
   $.post("/helpers/writeJSON.php", {"json_data": json}, function() {
     $('#form').addClass('success')
+    if (didDelete) {
+
+      location.href = "/admin/projects";
+
+    } else {clearForm()}
+
   })
     .done(function() {
       $('#form').removeClass('loading')
@@ -11,6 +17,30 @@ function saveChanges(object) {
     .fail(function() {
       $('#form').addClass('error')
     })
+
+}
+
+function clearForm() {
+
+  var elements = document.getElementsByTagName("input");
+  for (var ii=0; ii < elements.length; ii++) {
+    if (elements[ii].type == "text") {
+      elements[ii].value = "";
+    }
+  }
+
+  var elements = document.getElementsByTagName("textarea");
+  for (var ii=0; ii < elements.length; ii++) {
+      elements[ii].value = "";
+  }
+
+  $('.dropdown')
+    .dropdown('restore defaults')
+  ;
+
+  $('.checkbox')
+    .dropdown('uncheck')
+  ;
 
 }
 
@@ -36,11 +66,11 @@ function loadJSON(year) {
 
 }
 
-function appendProjectToYear(name, desc, detail, category, place, useTable, documentation, photo, year) {
+function appendProjectToYear(name, desc, detail, category, place, useTable, documentation, photo, year, id) {
 
   [item, map] = loadJSON(year)
 
-  id = Number(Object.keys(map).reduce(function(a, b){ return map[a] > map[b] ? a : b }));
+  if (id == undefined) {id = 1+Number(Object.keys(map).reduce(function(a, b){ return map[a] > map[b] ? a : b }));}
 
   appendable = ""
 
@@ -83,11 +113,11 @@ function appendProjectToYear(name, desc, detail, category, place, useTable, docu
     "Place": place,
     "Use Table": useTable,
     "image_append": appendable,
-    "id": id+1 }
+    "id": id }
 
   item = appendObjectToKey(object, year+" Teams", item)
 
-  saveChanges(item)
+  saveChanges(item, true)
 
 }
 
@@ -134,6 +164,42 @@ function getProjectData() {
   form.addClass('loading');
 
   appendProjectToYear(name, desc, detail, category, place, checkTable, documentation, "FIX ME LATER", year)
+
+}
+
+function performEditsOnProject() {
+
+  $('#form').addClass('loading')
+
+}
+
+function deleteProject() {
+
+  $('#form').addClass('loading')
+
+  [item, map] = loadJSON(project_year)
+
+  if (map[project_id]["place"] != 0) {
+
+    var new_winners = item[project_year+" Winners"].filter(function(arr) {
+
+      console.log(arr[arr.length-1])
+      return arr[arr.length-1]!=project_id;
+    });
+
+    console.log(new_winners)
+
+    item[project_year+" Winners"] = new_winners
+
+  }
+
+  var new_arr = item[project_year+" Teams"].filter(function(dict) {
+    return dict["id"]!=project_id;
+  });
+
+  item[project_year+" Teams"] = new_arr
+
+  saveChanges(item)
 
 }
 
