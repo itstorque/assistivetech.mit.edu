@@ -26,7 +26,7 @@
 
   <?php
 
-    $fileName = "/js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
+    $fileName = "./js/".basename($_SERVER["SCRIPT_FILENAME"], '.php').".js";
 
     if (file_exists($fileName)) {
 
