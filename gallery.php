@@ -8,9 +8,9 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div style="margin: 0; background-color: #fff; -webkit-transform:translate3d(0,0,0); height: auto; margin-top: 0px; min-height: 100vh">
+    <div class="banner" style="height: auto">
 
-        <div style="width:100%;height:120px"><!--MARGIN--></div>
+        <div class="separator thin"></div>
 
         <script>
 
@@ -79,8 +79,6 @@
               <?php include "helpers/gallery_processing.php"; ?>
           </div>
         </center>
-
-        <div style="width:100%;height:10px"><!--MARGIN--></div>
 
         </div>
 

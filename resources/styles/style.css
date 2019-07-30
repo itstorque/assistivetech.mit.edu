@@ -254,7 +254,7 @@ a:active {
   min-height: 450px;
   position:sticky;
   padding-top: 87px;
-  overflow-x: hidden;
+  overflow: hidden;
 
 }
 
