@@ -10,19 +10,19 @@
 
     <div class="separator"></div>
 
-    <div style="margin: 0; background-color: var(--colorMain); -webkit-transform:translate3d(0,0,0); height: auto; padding-top: 20px; padding-right: 8%; padding-bottom: 60px;">
+    <div class="banner header thin">
 
-      <img src="/resources/brand/ATHack.svg" style="width: 80vw; max-width: 300px; padding-left:8%" class="sideTextBox">
+      <img src="/resources/brand/ATHack.svg" class="sideTextBox sideLogo">
 
       <div class="sideText">
-        <h2 style="font-family: 'Raleway'; font-size: 24px; color: #fff">ATHack is our largest yearly event, students and co-designers from the community work on prototyping a solution to problems co-designers face daily.</h2>
+        <h2>ATHack is our largest yearly event, students and co-designers from the community work on prototyping a solution to problems co-designers face daily.</h2>
         <br>
-        <div class="button loseAnimation" style="margin-bottom: -10px;" onclick="location.href='./apply'"><center>Apply Now</center></div>
+        <div class="button loseAnimation" onclick="location.href='./apply'"><center>Apply Now</center></div>
       </div>
 
     </div>
 
-    <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 8%; padding-top: 40px; padding-right: 8%">
+    <div class="banner default">
 
       <center>
 
@@ -63,7 +63,7 @@
 
     </div>
 
-    <div style="margin: 0; background-color: #fff; -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 10vw; padding-top: 40px; padding-right: 10vw; overflow-x: hidden" id="FAQSection">
+    <div class="banner blend thin overflowHidden" id="FAQSection">
 
       <img src="/resources/titles/FAQ.svg" style="height: 100px">
 
