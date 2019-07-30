@@ -35,12 +35,6 @@
     <label>How Do I Sign Up</label>
     <textarea rows="4" id="home-athack-signup"></textarea>
   </div>
-  <div class="ui form">
-    <div class="field">
-      <label>Sign Up URL</label>
-      <input type="text" id="home-athack-signupbutton">
-    </div>
-  </div>
 </div>
 
 <?php  ?>

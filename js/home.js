@@ -1,4 +1,4 @@
-text_items = ["home-mission", "home-video", "home-athack-what", "home-athack-when", "home-athack-signup", "home-athack-signupbutton", "home-sponsors"];
+text_items = ["home-mission", "home-video", "home-athack-what", "home-athack-when", "home-athack-signup", "home-sponsors"];
 
 let scrollOffset = 10
 
@@ -148,7 +148,7 @@ $(document).ready(function() {
 
     /*setInterval(function() {
 
-      let x = document.getElementById('sponsorContainer');
+      let x = document.getElementById('home-sponsors');
 
       var a = x.innerHTML.split("\n");
 
@@ -251,14 +251,51 @@ function loadContent() {
 
     }
 
-    if ($("#"+item_id).prop("tagName") == "DIV") {
+    console.log(item_id)
 
-      // $("#"+item_id).dropdown("set exactly", web_content["home-sponsors"]);
-      $("#"+item_id).text(content);
+    if (item_id == "home-sponsors") {
+
+      content = content.split(",")
+
+      sponsor_logos = ""
+
+      for (var i=0; i < content.length; i++) {
+
+        image_url = "resources/sponsors/"+content[i]+".jpg"
+
+        image_tag = "<img src="+image_url+" class='sponsor'>"
+
+        sponsor_logos += image_tag
+
+      }
+
+      $("#"+item_id).html(sponsor_logos);
 
     } else {
 
-      $("#"+item_id).text(content);
+      content = "<p>" + content + "</p>"
+
+      alter = "c1"
+
+      while (content.includes("*")) {
+
+        if (alter == "c1") { alter = "c2" } else { alter = "c1" }
+
+        var start_pos = content.indexOf('*') + 1;
+        var end_pos = content.indexOf('*',start_pos);
+        var text = content.substring(start_pos,end_pos)
+
+        content = content.replace("*"+text+"*", "<span class='ub "+alter+"'>"+text+"</span>")
+
+      }
+
+      while ((content.match(/|/g) || []).length == 2) {
+
+        content = content.replace("|", "</p><p>")
+
+      }
+
+      $("#"+item_id).html(content);
 
     }
 

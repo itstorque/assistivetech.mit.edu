@@ -101,17 +101,29 @@
 
       <h2>What is <span class="c2 ub"><span class="c1 ub">AT</span>Hack</span></h2>
 
-      <p>ATHack matches groups of students with clients from the Cambridge/Boston community who are looking to work with students to prototype an assistive technology solution that addresses a problem they are having in their day-to-day life.  ATHack has two primary events: a “Meet The Co-Designers” dinner, followed two weeks later by a day-long hackathon.  Teams are welcome to do as much as they would like in between the two events!</p>
+      <div id="home-athack-what">
 
-      <p>After the dinner, hackers have the opportunity to request specialized materials for their project.  On the day of the hackathon, hackers have access to a workspace that includes hand tools, 3D printers, a laser cutter, a full machine shop, and basic stock materials (e.g. adhesives, fasteners).</p>
+        <p>ATHack matches groups of students with clients from the Cambridge/Boston community who are looking to work with students to prototype an assistive technology solution that addresses a problem they are having in their day-to-day life.  ATHack has two primary events: a “Meet The Co-Designers” dinner, followed two weeks later by a day-long hackathon.  Teams are welcome to do as much as they would like in between the two events!</p>
+
+        <p>After the dinner, hackers have the opportunity to request specialized materials for their project.  On the day of the hackathon, hackers have access to a workspace that includes hand tools, 3D printers, a laser cutter, a full machine shop, and basic stock materials (e.g. adhesives, fasteners).</p>
+
+      </div>
 
       <h2>When is <span class="c2 ub"><span class="c1 ub">AT</span>Hack</span></h2>
 
-      <p>Every year, ATHack is hosted around early March. This year's hackathon will be happening on March 2nd, while the “Meet The Co-Designers” dinner will be on Monday, February 11, 2019.</p>
+      <div id="home-athack-when">
+
+        <p>Every year, ATHack is hosted around early March. This year's hackathon will be happening on March 2nd, while the “Meet The Co-Designers” dinner will be on Monday, February 11, 2019.</p>
+
+      </div>
 
       <h2>How Do I <span class="c2 ub"><span class="c1 ub">Sign </span>Up</span></h2>
 
-      <p>You can sign up to be a co-designer or to work with one.</p>
+      <div id="home-athack-signup">
+
+        <p>You can sign up to be a co-designer or to work with one.</p>
+
+      </div>
 
       <center>
         <div class="buttonAltDark widthRelaxed" onclick="location.href='./events'">ATHack Details</div>
@@ -128,25 +140,10 @@
 
         <h1 class="b black titleSize2">Our <x class="b c1">Sponsors</x></h1>
 
-        <div id="sponsorContainer">
-          <img src="resources/sponsors/microsoft.jpg" class="sponsor">
-          <img src="resources/sponsors/google.jpg" class="sponsor">
-          <img src="resources/sponsors/beaverworks.jpg" class="sponsor">
-          <img src="resources/sponsors/ODL.jpg" class="sponsor">
-          <img src="resources/sponsors/edg.jpg" class="sponsor">
-          <img src="resources/sponsors/MITEECS.jpg" class="sponsor">
-          <!--<img src="resources/sponsors/yahoo.jpg" class="sponsor">-->
-          <!--<img src="resources/sponsors/oculus.jpg" class="sponsor">-->
-          <img src="resources/sponsors/mitmeche2.jpg" class="sponsor">
-          <img src="resources/sponsors/akamai.jpg" class="sponsor">
-          <!--<img src="resources/sponsors/eone.jpg" class="sponsor">-->
-          <img src="resources/sponsors/MITSAO2.jpg" class="sponsor">
-          <img src="resources/sponsors/schoolOfEng.jpg" class="sponsor">
-          <img src="resources/sponsors/mitsds.jpg" class="sponsor">
-          <img src="resources/sponsors/perkins.jpg" class="sponsor">
-          <img src="resources/sponsors/mediaLab.jpg" class="sponsor">
-          <!--<img src="resources/sponsors/spaulding2.jpg" class="sponsor">-->
-          <!--<img src="resources/sponsors/TBP.jpg" class="sponsor">-->
+        <div id="home-sponsors">
+
+          <!-- This will be loaded dynamically without fallback content -->
+
         </div>
 
         <div class="separator small"></div>

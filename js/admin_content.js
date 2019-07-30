@@ -1,4 +1,4 @@
-home_text_items = ["home-mission", "home-video", "home-athack-what", "home-athack-when", "home-athack-signup", "home-athack-signupbutton", "home-sponsors"];
+home_text_items = ["home-mission", "home-video", "home-athack-what", "home-athack-when", "home-athack-signup", "home-sponsors"];
 
 $('.ui.accordion')
   .accordion()
