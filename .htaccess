@@ -1,8 +1,8 @@
+DirectoryIndex home.php
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-ErrorDocument 404 /404.html
-ErrorDocument 401 /401.html
-
-DirectoryIndex home.php
+ErrorDocument 404 /404.php
+ErrorDocument 401 /401.php
