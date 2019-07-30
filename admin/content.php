@@ -8,6 +8,8 @@
 
 		<?php include '../includes/admin_nav.php'; ?>
 
+		<?php include '../helpers/getContent.php'; ?>
+
 		<div class="ui main text container">
 	    <h1 class="ui header">
 				<img class="ui image" src="/resources/brand/LogoSmallColorAlt.svg">
@@ -20,8 +22,24 @@
 
       <br><br>
 
-      <div class="ui accordion fluid">
+      <div class="ui accordion fluid form" id="form">
 
+
+        <div class="ui success message">
+          <i class="close icon"></i>
+          <div class="header">Content Edited Successfully</div>
+          <p>Your changes have been added.</p>
+        </div>
+        <div class="ui error message">
+          <i class="close icon"></i>
+          <div class="header">Error Modifying Page(s)</div>
+          <p>An error occurred while processing your request</p>
+        </div>
+        <div class="ui warning message">
+          <i class="close icon"></i>
+          <div class="header">Cleared Changes</div>
+          <p>All your modifications have been cleared.</p>
+        </div>
 
 
         <div class="ui horizontal divider accordion title">

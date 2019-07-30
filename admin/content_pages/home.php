@@ -3,7 +3,7 @@
 <div class="ui form">
   <div class="field">
     <label>Mission Statement</label>
-    <textarea></textarea>
+    <textarea id="home-mission"></textarea>
   </div>
 </div>
 
@@ -14,7 +14,7 @@
 <div class="ui form">
   <div class="field">
     <label>Video URL</label>
-    <input type="text">
+    <input type="text" id="home-video">
   </div>
 </div>
 
@@ -25,15 +25,21 @@
 <div class="ui form">
   <div class="field">
     <label>What is ATHack</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-what"></textarea>
   </div>
   <div class="field">
     <label>When is ATHack</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-when"></textarea>
   </div>
   <div class="field">
     <label>How Do I Sign Up</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-signup"></textarea>
+  </div>
+  <div class="ui form">
+    <div class="field">
+      <label>Sign Up URL</label>
+      <input type="text" id="home-athack-signupbutton">
+    </div>
   </div>
 </div>
 
@@ -45,7 +51,7 @@
 
 <br>
 
-<div class="ui fluid multiple selection dropdown">
+<div class="ui fluid multiple selection dropdown" id="home-sponsors">
   <!-- This will receive comma separated value like OH,TX,WY !-->
   <input name="states" type="hidden">
   <i class="dropdown icon"></i>
@@ -74,11 +80,11 @@
 
 <br><br>
 
-<button class="ui fluid button positive large">
+<button class="ui fluid button positive large" id="updateHome">
   Update Page
 </button>
 <br>
-<button class="ui fluid button large">
+<button class="ui fluid button large" id="clearHome">
   Clear Changes
 </button>
 <br>
