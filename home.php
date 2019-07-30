@@ -56,7 +56,7 @@
 
       <h1 style="margin-top: 0px; text-align: right; color: var(--color1); font-weight: bold; width: 20vw; min-width: 220px; display: inline-block; vertical-align: middle;" class="centerOnSmall titleSize1"><x style="color: var(--colorB)">Our</x><br>Mission</h1>
 
-        <p class="sectionSmallP">
+        <p class="sectionSmallP" id="home-mission">
 
           Our mission is to make the world more <x style="color: var(--color1); font-weight: 900">accessible to everyone</x> by building connections within our community and fostering <x style="color: var(--color2); font-weight: 900">collaborative efforts</x> to create <x style="color: var(--color1); font-weight: 900">inclusive technology.</x> Through ATHack, we introduce students to the fun (and challenging) design space of assistive technology while <x style="color: var(--color2); font-weight: 900">building connections</x> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
 
