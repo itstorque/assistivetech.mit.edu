@@ -10,7 +10,7 @@ window.onscroll = function (e) {
 
     let box2 = document.getElementById("box2");
 
-    let seperator = document.getElementById("slash");
+    let separator = document.getElementById("slash");
 
     let mainTitle = document.getElementById("mainTitle");
 
@@ -22,9 +22,9 @@ window.onscroll = function (e) {
 
       box2.classList.add("boxCompressed");
 
-      seperator.style.width = "0px";
+      separator.style.width = "0px";
 
-      seperator.style.margin = "-4px";
+      separator.style.margin = "-4px";
 
       mainTitle.classList.add("showTitle");
 
@@ -38,9 +38,9 @@ window.onscroll = function (e) {
 
       box2.classList.remove("boxCompressed");
 
-      seperator.style.width = "auto";
+      separator.style.width = "auto";
 
-      seperator.style.margin = "10px";
+      separator.style.margin = "10px";
 
     }
 

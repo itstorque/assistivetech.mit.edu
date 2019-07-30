@@ -8,9 +8,9 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div style="margin: 0; background-color: var(--colorMain); -webkit-transform:translate3d(0,0,0); min-height: calc(100vh - 86px); height: auto;" class="banner" id="mainBanner">
+    <div class="banner" id="mainBanner">
 
-      <div class="seperator" style="height: 40px;"></div>
+      <div class="separator small"></div>
 
       <center>
 
@@ -28,7 +28,7 @@
 
         </div>
 
-        <img src="/resources/brand/LogoAlt.svg" style="display: block; width: 60vw; min-width: 300px; margin-top: 40px" class="mainTitle" id="mainTitle">
+        <img src="/resources/brand/LogoAlt.svg" class="mainTitle" id="mainTitle">
 
         <!--<h2 class="ml4">
           <span class="letters letters-1">Change With Technology</span>
@@ -36,131 +36,138 @@
           <span class="letters letters-3">Change With Teamwork</span>
         </h2>-->
 
-        <div class="seperator" style="height: 40px;"></div>
+        <div class="separator small"></div>
 
-        <div style="width: 300px; text-align: right; display: inline-block"><div class="buttonAlt scrollTo" style="width: 150px" id="ATHack"><center>ATHack</center></div></div>
+        <div class="button_container right"><div class="buttonAlt widthCompact scrollTo" id="ATHack"><center>ATHack</center></div></div>
 
-        <div style="width: 300px; text-align: left; display: inline-block"><div class="button" style="width: 150px"  onclick="location.href='./apply'"><center>Register Now</center></div></div>
+        <div class="button_container left"><div class="button widthCompact"  onclick="location.href='./apply'"><center>Register Now</center></div></div>
 
         <br>
 
-        <div style="width: 300px; text-align: right; display: inline-block;"><div class="buttonAlt" style="width: 150px" onclick="location.href='./projects'"><center>Our Projects</center></div></div>
+        <div class="button_container right"><div class="buttonAlt widthCompact" onclick="location.href='./projects'"><center>Our Projects</center></div></div>
 
-        <div style="width: 300px; text-align: left; display: inline-block; margin-bottom: 20px"><div class="button" style="width: 150px;" id="ourSponsors"><center>Our Sponsors</center></div></div>
+        <div class="button_container left"><div class="button widthCompact" id="ourSponsors"><center>Our Sponsors</center></div></div>
 
       </center>
 
     </div>
 
-    <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0);height: auto; min-height: 100% !important; padding-left: 10vw; padding-right: 10vw;" class="banner centerOnSmall" id="ourMissionSection">
+    <div class="banner default centerOnSmall" id="ourMissionSection">
 
-      <h1 style="margin-top: 0px; text-align: right; color: var(--color1); font-weight: bold; width: 20vw; min-width: 220px; display: inline-block; vertical-align: middle;" class="centerOnSmall titleSize1"><x style="color: var(--colorB)">Our</x><br>Mission</h1>
+      <h1 class="centerOnSmall sideTitle"><x class="black">Our</x><br>Mission</h1>
 
         <p class="sectionSmallP" id="home-mission">
 
-          Our mission is to make the world more <x style="color: var(--color1); font-weight: 900">accessible to everyone</x> by building connections within our community and fostering <x style="color: var(--color2); font-weight: 900">collaborative efforts</x> to create <x style="color: var(--color1); font-weight: 900">inclusive technology.</x> Through ATHack, we introduce students to the fun (and challenging) design space of assistive technology while <x style="color: var(--color2); font-weight: 900">building connections</x> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
+          Our mission is to make the world more <x class="c1 ub">accessible to everyone</x> by building connections within our community and fostering <x class="c2 ub">collaborative efforts</x> to create <x  class="c1 ub">inclusive technology.</x> Through ATHack, we introduce students to the fun (and challenging) design space of assistive technology while <x  class="c2 ub">building connections</x> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
 
         </p>
 
-        <div class='seperator'></div>
+        <div class='separator'></div>
 
     </div>
 
-    <div style="margin: 0; background-color: var(--color1); -webkit-transform:translate3d(0,0,0); min-height: 200px; padding-left: 10vw; padding-right: 10vw; height: 100%; padding-bottom: 85px" class="banner centerOnSmall">
+    <div class="banner default blueBG centerOnSmall">
 
       <center>
 
         <div class="mobileHide">
 
-          <img src="/resources/images/1.jpeg" style="width: 23vw; transform: translateY(15px); margin-right: 10px; height: 30vw; object-fit: cover;">
-          <img src="/resources/images/2.jpeg" style="width: 23vw; transform: translateY(-15px); height: 30vw; object-fit: cover;">
-          <img src="/resources/images/3.jpeg" style="width: 23vw; transform: translateY(15px); margin-left: 10px; height: 30vw; object-fit: cover;">
+          <img src="/resources/images/1.jpeg" class="vertImg down">
+          <img src="/resources/images/2.jpeg" class="vertImg up">
+          <img src="/resources/images/3.jpeg" class="vertImg down">
 
         </div>
 
         <div class="mobileShow">
 
-          <img src="/resources/images/1s.jpeg" style="width: 70vw; height: 40vw; transform: translateX(-15px); object-fit: cover; max-height: 200px">
-          <img src="/resources/images/2s.jpeg" style="width: 70vw; height: 40vw; transform: translateX(15px); object-fit: cover; max-height: 200px">
-          <img src="/resources/images/3.jpeg" style="width: 70vw; height: 40vw; transform: translateX(-15px); object-fit: cover; max-height: 200px">
+          <img src="/resources/images/1s.jpeg" class="vertImg down">
+          <img src="/resources/images/2s.jpeg" class="vertImg up">
+          <img src="/resources/images/3.jpeg" class="vertImg down">
 
         </div>
 
-        <div class="button ignore" style="animation: none; margin-top: 60px; margin-bottom: -40px; width: 185px;" onclick="location.href='/gallery'"><center>See Our Photos</center></div>
-        <div class="button ignore" style="animation: none; margin-top: 60px; margin-bottom: -40px; width: 185px;" id="openVideo"><center>Watch Our Video</center></div>
+        <div class="separator small"></div>
+
+        <div class="button ignore widthWide noAnim" onclick="location.href='/gallery'"><center>See Our Photos</center></div>
+        <div class="button ignore widthWide noAnim" id="openVideo"><center>Watch Our Video</center></div>
 
       </center>
 
     </div>
 
-    <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); min-height: calc(100vh - 86px); height: auto; padding-left: 10vw; padding-right: 10vw" class="banner"  id="ATHackSection">
+    <div class="banner default indented"  id="ATHackSection">
 
-      <img src="/resources/brand/ATHack.svg" style="width: 80vw; max-width: 300px;">
+      <img src="/resources/brand/ATHack.svg" class="sideLogo">
 
-      <h2 style="margin-left: 5vw; margin-right: 5vw">What is <x style="font-weight: 900; color: var(--color2)"><x style="color: var(--color1)">AT</x>Hack</x></h2>
+      <h2>What is <span class="c2 ub"><span class="c1 ub">AT</span>Hack</span></h2>
 
-      <p style="margin-left: 8vw; margin-right: 5vw; text-align: left;">ATHack matches groups of students with clients from the Cambridge/Boston community who are looking to work with students to prototype an assistive technology solution that addresses a problem they are having in their day-to-day life.  ATHack has two primary events: a “Meet The Co-Designers” dinner, followed two weeks later by a day-long hackathon.  Teams are welcome to do as much as they would like in between the two events!</p>
+      <p>ATHack matches groups of students with clients from the Cambridge/Boston community who are looking to work with students to prototype an assistive technology solution that addresses a problem they are having in their day-to-day life.  ATHack has two primary events: a “Meet The Co-Designers” dinner, followed two weeks later by a day-long hackathon.  Teams are welcome to do as much as they would like in between the two events!</p>
 
-      <p style="margin-left: 8vw; margin-right: 5vw; text-align: left;">After the dinner, hackers have the opportunity to request specialized materials for their project.  On the day of the hackathon, hackers have access to a workspace that includes hand tools, 3D printers, a laser cutter, a full machine shop, and basic stock materials (e.g. adhesives, fasteners).</p>
+      <p>After the dinner, hackers have the opportunity to request specialized materials for their project.  On the day of the hackathon, hackers have access to a workspace that includes hand tools, 3D printers, a laser cutter, a full machine shop, and basic stock materials (e.g. adhesives, fasteners).</p>
 
-      <h2 style="margin-left: 5vw; margin-right: 5vw">When is <x style="font-weight: 900; color: var(--color2)"><x style="color: var(--color1)">AT</x>Hack</x></h2>
+      <h2>When is <span class="c2 ub"><span class="c1 ub">AT</span>Hack</span></h2>
 
-      <p style="margin-left: 8vw; margin-right: 5vw; text-align: left;">Every year, ATHack is hosted around early March. This year's hackathon will be happening on March 2nd, while the “Meet The Co-Designers” dinner will be on Monday, February 11, 2019.</p>
+      <p>Every year, ATHack is hosted around early March. This year's hackathon will be happening on March 2nd, while the “Meet The Co-Designers” dinner will be on Monday, February 11, 2019.</p>
 
-      <h2 style="margin-left: 5vw; margin-right: 5vw">How Do I <x style="font-weight: 900; color: var(--color2)"><x style="color: var(--color1)">Sign </x>Up</x></h2>
+      <h2>How Do I <span class="c2 ub"><span class="c1 ub">Sign </span>Up</span></h2>
 
-      <p style="margin-left: 8vw; margin-right: 5vw; text-align: left;">You can sign up to be a co-designer or to work with one. </p>
+      <p>You can sign up to be a co-designer or to work with one.</p>
 
-      <center><div class="buttonAltDark" style="margin-bottom: -10px; width: 160px;" onclick="location.href='./events'"><center>ATHack Details</center></div><div class="buttonDark" style="margin-bottom: -10px; width: 160px;" onclick="location.href='./apply'"><center>Apply Now</center></div></center>
+      <center>
+        <div class="buttonAltDark widthRelaxed" onclick="location.href='./events'">ATHack Details</div>
+        <div class="buttonDark widthRelaxed" onclick="location.href='./apply'">Apply Now</div>
+      </center>
 
-      <div class="seperator" style="height: 80px;"></div>
+      <div class="separator small"></div>
 
     </div>
 
-    <div style="margin: 0; background-color: #fff; -webkit-transform:translate3d(0,0,0); height: auto; padding-left: 4vw; padding-right: 4vw; width: 92vw !important; padding-top:20px" class="banner centerOnSmall" id="ourSponsorsSection">
+    <div class="banner blend centerOnSmall" id="ourSponsorsSection">
 
       <center>
 
-        <h1 style="color: var(--color1W); font-weight: bold;" class="titleSize2">Our <x style="color: var(--color1)">Sponsors</x></h1>
+        <h1 class="b black titleSize2">Our <x class="b c1">Sponsors</x></h1>
 
         <div id="sponsorContainer">
-            <img src="resources/sponsors/microsoft.png" class="sponsor">
-            <img src="resources/sponsors/google.png" class="sponsor">
-            <img src="resources/sponsors/beaverworks.png" class="sponsor">
-            <img src="resources/sponsors/ODL.png" class="sponsor">
-          <img src="resources/sponsors/edg.png" class="sponsor">
-            <img src="resources/sponsors/MITEECS.png" class="sponsor">
-          <!--<img src="resources/sponsors/yahoo.png" class="sponsor">-->
-          <!--<img src="resources/sponsors/oculus.png" class="sponsor">-->
+          <img src="resources/sponsors/microsoft.jpg" class="sponsor">
+          <img src="resources/sponsors/google.jpg" class="sponsor">
+          <img src="resources/sponsors/beaverworks.jpg" class="sponsor">
+          <img src="resources/sponsors/ODL.jpg" class="sponsor">
+          <img src="resources/sponsors/edg.jpg" class="sponsor">
+          <img src="resources/sponsors/MITEECS.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/yahoo.jpg" class="sponsor">-->
+          <!--<img src="resources/sponsors/oculus.jpg" class="sponsor">-->
           <img src="resources/sponsors/mitmeche2.jpg" class="sponsor">
-          <img src="resources/sponsors/akamai.png" class="sponsor">
-          <!--<img src="resources/sponsors/eone.png" class="sponsor">-->
-          <img src="resources/sponsors/MITSAO2.png" class="sponsor">
-          <img src="resources/sponsors/schoolOfEng.png" class="sponsor">
-          <img src="resources/sponsors/mitsds.gif" class="sponsor">
-          <img src="resources/sponsors/perkins.png" class="sponsor">
-          <img src="resources/sponsors/mediaLab.png" class="sponsor">
-          <!--<img src="resources/sponsors/spaulding2.png" class="sponsor">-->
-          <!--<img src="resources/sponsors/TBP.gif" class="sponsor">-->
+          <img src="resources/sponsors/akamai.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/eone.jpg" class="sponsor">-->
+          <img src="resources/sponsors/MITSAO2.jpg" class="sponsor">
+          <img src="resources/sponsors/schoolOfEng.jpg" class="sponsor">
+          <img src="resources/sponsors/mitsds.jpg" class="sponsor">
+          <img src="resources/sponsors/perkins.jpg" class="sponsor">
+          <img src="resources/sponsors/mediaLab.jpg" class="sponsor">
+          <!--<img src="resources/sponsors/spaulding2.jpg" class="sponsor">-->
+          <!--<img src="resources/sponsors/TBP.jpg" class="sponsor">-->
         </div>
 
-        <div class="seperator" style="height: 30px"></div>
+        <div class="separator small"></div>
 
         <div class="buttonDark" onclick="window.open('https://giving.mit.edu/search/node/2530097')">Donate Now</div>
 
       </center>
 
-      <div class="seperator" style="height: 50px"></div>
+      <div class="separator"></div>
 
     </div>
 
     <?php include 'includes/footer.php' ?>
 
-    <div style="position: fixed; width: 100vw; height: 100vh; top:0; bottom: 0; background-color: #fff; z-index: 99" id="hiddenVideo">
+    <div id="hiddenVideo">
 
-      <div id="closeVideo" class="close" style="width: 50px; height: 50px; z-index: 100"><div class="close1"></div><div class="close2"></div></div>
+      <div id="closeVideo" class="close">
+        <div class="close1"></div><div class="close2"></div>
+      </div>
 
-      <iframe style="width: 80vw; height: 80vh; bottom: 10vh; position: fixed; left: 10vw; z-index: 0" src="https://www.youtube.com/embed/PEW-eqRvARg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="videoFrame" src="https://www.youtube.com/embed/PEW-eqRvARg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
 
