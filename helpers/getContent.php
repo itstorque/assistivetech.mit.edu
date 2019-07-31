@@ -1,18 +1,19 @@
 <?php
 
-  ob_start();
-  include('content.json');
-  $content = ob_get_contents();
-  ob_end_clean();
+  if (is_file('content.json')) {
 
-  if ($content=="") {
+    $file = 'content.json';
 
-    ob_start();
-    include('../content.json');
-    $content = ob_get_contents();
-    ob_end_clean();
+  } else {
+
+    $file = '../content.json';
 
   }
+
+  ob_start();
+  include($file);
+  $content = ob_get_contents();
+  ob_end_clean();
 
   $content = str_replace(array("\n", "\r"), '', $content);
 
