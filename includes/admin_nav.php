@@ -14,7 +14,7 @@
         <div class="divider"></div>
         <div class="ui header grey">Photos</div>
         <a class="item" href="/admin/upload_photos">Upload New</a>
-        <a class="item" href="/admin/manage_photos">Manage Photos</a>
+        <a class="item" href="/admin/photos">Manage Photos</a>
         <div class="divider"></div>
         <div class="ui header grey">Other</div>
         <a class="item" href="/admin/brand">Brand Resources</a>
