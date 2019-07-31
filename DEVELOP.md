@@ -30,6 +30,8 @@ During development, you can access the page as you normally would (without certi
 
 In the case that the 444 port isn't accessed, a 401 Authentication Error will be raised.
 
+The `<RequireAny>` and `Require` directives were added in Apache 2.4 and are in the mod_authz_core module (they are not available in Apache 2.2). During development, try to use modules available in Apache 2.2 rather than 2.4, for wider test environment support.
+
 ## Requirements
 
 ### PHP Extensions
