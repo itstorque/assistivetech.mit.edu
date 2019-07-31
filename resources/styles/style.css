@@ -258,6 +258,18 @@ a:active {
 
 }
 
+.banner.white_bg, #mainBanner.banner.white_bg {
+
+  background-color: white;
+
+}
+
+.banner.darkColor, #mainBanner.banner.darkColor {
+
+  background-color: var(--colorDarker);
+
+}
+
 .banner.blueBG, .banner.default.blueBG {
 
   background-color: var(--color1);
@@ -297,6 +309,59 @@ a:active {
   margin: 0;
   height: auto;
   width: auto;
+
+}
+
+.banner.thin h2 {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 30px;
+  margin-top: 0px;
+  width: 80%;
+  margin-bottom: 0px;
+
+}
+
+.banner.thin.darkColor h2 {
+
+  color: #fff;
+
+}
+
+.banner h2.title {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 48px;
+  margin-left: 10%
+
+}
+
+.banner h4.subtitle {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 22px;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  color: #fff;
+
+}
+
+.banner.thin h3 {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 23px;
+  margin-top: 0px;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 0px;
+
+}
+
+.banner.thin.darkColor h3 {
+
+  color: #fff;
 
 }
 
@@ -806,6 +871,13 @@ background-blend-mode: multiply;
 
 }
 
+div.personContainer {
+
+  vertical-align: top;
+  width: 100vw;
+
+}
+
 .personCard {
 
   display: inline-block;
@@ -820,6 +892,15 @@ background-blend-mode: multiply;
 
   font-size: 26px;
   vertical-align: top
+
+}
+
+.personCard img {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
 
 }
 
@@ -994,6 +1075,33 @@ background-blend-mode: multiply;
   text-align: left;
   padding-left: 30px;
   white-space: nowrap;
+
+}
+
+.articleDetail {
+
+  display: inline-block;
+
+}
+
+.article img {
+
+  height: 50px;
+  width: 50px;
+  padding-left: 30px;
+
+}
+
+.articleDetail h3 {
+
+  font-size: 16px;
+  color: black;
+  margin: 0px;
+  text-align: left;
+  padding-left: 30px;
+  overflow-x: hidden;
+  height: 22px;
+  margin-right: -50vw;
 
 }
 
@@ -1775,8 +1883,11 @@ h2.projectSection {
 /* Text Color & Styles */
 
 .black { color: var(--colorB); }
+.white { color: white; }
 .c1 { color: var(--color1); }
 .c2 { color: var(--color2); }
+.cP { color: var(--colorMain); }
+.cD { color: var(--colorDark); }
 
 .b { font-weight: bold; }
 .ub { font-weight: 900; }
