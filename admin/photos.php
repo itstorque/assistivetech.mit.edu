@@ -56,7 +56,7 @@
               <p>An error occured while updating <?php echo $album; ?>.</p>
             </div>
 
-          <button class="ui positive button right floated" onclick="updateDesc('<?php echo $desc_url; ?>')"><i class="upload icon"></i>Update Description</button>
+          <button class="ui button right floated" onclick="updateDesc('<?php echo $desc_url; ?>')"><i class="pencil icon"></i>Update Description</button>
           <br>
 
         <?php else: ?>
