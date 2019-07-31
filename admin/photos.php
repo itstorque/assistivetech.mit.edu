@@ -152,8 +152,21 @@
     		</div>
       </div>
 
-			<br>
-			<br>
+			<br><br>
+
+      <div class="ui modal tiny" id="album_title">
+        <div class="header">Album Name
+        <br><br>
+        <center>
+          <div class="ui form" style="width: 80%; border: 0px;">
+            <input class="ui field" id="dir_name"></input>
+          </div>
+        </center></div>
+        <div class="actions">
+          <div class="ui deny button">Cancel</div>
+          <div class="ui green approve button">Create</div>
+        </div>
+      </div>
 
 	  <script src="/js/admin_photos.js"></script>
 

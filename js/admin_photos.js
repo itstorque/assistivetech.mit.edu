@@ -59,6 +59,41 @@ function updateDesc(writeURL) {
 
 }
 
+$('#newAlbum').click(function() {
+
+  $('#album_title.modal')
+    .modal({
+      closable  : false,
+      onDeny    : function(){
+      },
+      onApprove : function() {
+
+        $('#form').addClass('loading');
+
+        dir_name = $("#dir_name").val();
+
+        console.log(dir_name)
+
+        $.post("/helpers/createDir.php", {"dir_name": dir_name, "location": 'resources/images/albums'}, function() {
+
+          $('#form').removeClass('loading');
+
+          location.reload();
+
+        })
+          .fail(function() {
+
+            alert("An error occured");
+            $('#form').removeClass('loading');
+
+          })
+
+      }
+    })
+    .modal('show');
+
+});
+
 $('.message .close')
   .on('click', function() {
     $(this)
