@@ -1,20 +1,23 @@
-#<Files .htaccess>
-#       Order allow,deny
-#       Deny from all
-#</Files>
+# permit by CERT || IP
+
+Satisfy any
+
+# Certificates
 
 AuthType SSLCert
-<RequireAny>
-        Require afsgroup system:assistivetech system:at-hack-core
-        #Require user tareq
-        Require ip 127.0.0.1
-</RequireAny>
-#Allow from 127.0.0.1
-#Satisfy Any
+Require afsgroup system:assistivetech system:at-hack-core
 ErrorDocument 401 /__scripts/needcerts
 
 #Update Later with custom error message
 #ErrorDocument 401 /__scripts/needcerts/~username/customerror.cgi
+
+# IP
+
+order deny,allow
+deny from all
+allow from localhost
+
+#Other Stuff
 
 DirectoryIndex index.php
 
@@ -24,5 +27,6 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 ErrorDocument 404 /404.php
 ErrorDocument 401 /401.php
+
 
 
