@@ -1,3 +1,11 @@
+<?php
+
+  $pageName = basename($_SERVER["SCRIPT_FILENAME"], '.php');
+
+  $scrollNav = ["home", "events"];
+
+ ?>
+
 <head>
 
   <?php if(strpos($_SERVER['REQUEST_URI'], 'gallery') !== false):?>
@@ -83,6 +91,12 @@
     }
 
     ?>
+
+  <?php endif; ?>
+
+  <?php if (in_array($pageName, $scrollNav)): ?>
+
+    <script type="text/javascript" src="/js/scrollNav.js"></script>
 
   <?php endif; ?>
 
