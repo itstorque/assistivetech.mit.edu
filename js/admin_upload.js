@@ -44,3 +44,7 @@ $('.btn-file :file').on('fileselect', function(event, numFiles, label, size) {
         $('#'+id).removeAttr('name'); // cancel upload file.
     }
 });
+
+$('.ui.dropdown')
+  .dropdown()
+;

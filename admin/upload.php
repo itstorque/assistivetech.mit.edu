@@ -26,6 +26,26 @@
 
       <div class="ui accordion fluid form" id="form">
 
+        <?php $albums = glob('../resources/images/albums/*' , GLOB_ONLYDIR); ?>
+
+        <label for="albumSelect">Album to add photos to:</label>
+        <div class="ui selection fluid dropdown" id="albumSelect">
+          <input type="hidden" name="album">
+          <i class="dropdown icon"></i>
+          <div class="default text">
+            <i class="book icon"></i>Album
+          </div>
+          <div class="menu">
+            <?php foreach($albums as $album): ?>
+            <div class="item" data-value="<?php echo $album; ?>">
+              <i class="book icon"></i>
+              <?php echo substr($album, strrpos($album, '/') + 1);; ?>
+            </div>
+          <?php endforeach; ?>
+          </div>
+        </div>
+
+        <br><br>
 
         <div class="ui success message">
           <i class="close icon"></i>
@@ -48,25 +68,29 @@
         </h4>
         <br>
 
-        <div class="field">
-          <div class="ui action input">
-              <input type="text" id="_attachmentName" readonly="">
-              <label for="attachmentName" class="ui icon button btn-file">
-                   <i class="file image icon"></i>
-                   <input type="file" id="attachmentName" name="attachmentName" style="display: none">
-              </label>
+        <form method='post' action='/helpers/uploadFiles.php'>
+
+          <div class="field">
+            <div class="ui action input">
+                <input type="text" id="_attachmentName" readonly="">
+                <label for="attachmentName" class="ui icon button btn-file">
+                     <i class="file image icon"></i>
+                     <input type="file" id="attachmentName" name="upload[]" style="display: none">
+                </label>
+            </div>
           </div>
-        </div>
 
-        <br>
+          <br>
 
-        <div class="field">
-          <label><i class="file icon"></i>Image Name (w/o extension)</label>
-          <input id="fileName"></input>
-        </div>
+          <div class="field">
+            <label><i class="file icon"></i>Image Name (w/o extension)</label>
+            <input id="fileName"></input>
+          </div>
 
-        <br>
-        <button class="ui right floated button positive large"> Upload Photo</button>
+          <br>
+          <input class="ui right floated button positive large" type="submit" value="Upload Photo"></input>
+
+        </form>
 
         <br><br><br><br>
         <h4 class="ui horizontal divider">
@@ -79,7 +103,7 @@
               <input type="text" id="_attachmentsName" readonly="">
               <label for="attachmentsName" class="ui icon button btn-file">
                    <i class="folder open icon"></i>
-                   <input type="file" id="attachmentsName" name="attachmentsName" style="display: none" multiple>
+                   <input type="file" id="attachmentsName" name="upload[]" style="display: none" multiple>
               </label>
           </div>
         </div>
