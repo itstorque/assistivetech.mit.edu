@@ -38,7 +38,7 @@
 
         <?php if ($album): ?>
           <button class="ui button large" id="backButton" onclick="location.href='/admin/photos'"><i class="angle left icon"></i>Go Back</button>
-          <button class="ui positive button large" id="newAlbum" onclick="location.href='/admin/upload?album=<?php echo $album; ?>'"><i class="upload icon"></i>Upload Photos</button>
+          <button class="ui positive button large" onclick="location.href='/admin/upload?album=<?php echo $album; ?>'"><i class="upload icon"></i>Upload Photos</button>
 
           <br><br>
           <h3 class="ui header">Album Description</h3>

@@ -50,7 +50,7 @@
 
         <div class="field">
           <div class="ui action input">
-              <input type="text" id="_attachmentName">
+              <input type="text" id="_attachmentName" readonly="">
               <label for="attachmentName" class="ui icon button btn-file">
                    <i class="file image icon"></i>
                    <input type="file" id="attachmentName" name="attachmentName" style="display: none">
@@ -76,10 +76,10 @@
 
         <div class="field">
           <div class="ui action input">
-              <input type="text" id="_attachmentName">
-              <label for="attachmentName" class="ui icon button btn-file">
+              <input type="text" id="_attachmentsName" readonly="">
+              <label for="attachmentsName" class="ui icon button btn-file">
                    <i class="folder open icon"></i>
-                   <input type="file" id="attachmentName" name="attachmentName" style="display: none" multiple>
+                   <input type="file" id="attachmentsName" name="attachmentsName" style="display: none" multiple>
               </label>
           </div>
         </div>
