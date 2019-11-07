@@ -13,9 +13,9 @@
 
       <center>
 
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSepRdZ7Byqqc9h-ZxR8guAdxVCMHbJC-eufmKmukTmFM3E7Rg/viewform'"><center>Co-Designer Application</center></div>
+      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfYTAeoPAIKOhEMhkcQ4qO5xg0INRs0kh3AiOECHnrgkMPwMg/viewform?usp=sf_link​'"><center>Co-Designer Application</center></div>
       <br>
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSd1exgH7fnhXyailPlDD-oqUiBsOnrRIjk7JeNWWg4OHCpzrQ/viewform'"><center>Hacker Application</center></div>
+      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfnJSfwL3vQqrR0PhMS9xcYG0_dGE-sR_QIc7FH_ZsuKdbGhg/viewform?usp=sf_link'"><center>Hacker Application</center></div>
 
     </center>
 
