@@ -27,20 +27,20 @@
       <center>
 
         <div class="dateEvent">
-          <h2 class="month">February&nbsp;</h2><h2 class="number">11</h2>
-          <h2 class="eventTime">7:00 pm</h2>
+          <h2 class="month">February&nbsp;</h2><h2 class="number">13</h2>
+          <h2 class="eventTime">7:30 pm</h2>
           <h2 class="eventName">Meet the Co-Designers Dinner</h2>
           <h2 class="eventLocationIcon"></h2>
-          <h2 class="eventLocation">Microsoft Nerd Center<br>1 Memorial Dr, Cambridge, MA 02142, USA</h2>
+          <h2 class="eventLocation">MIT Media Lab, 6th floor<br>75 Amherst St, Cambridge, MA 02139</h2>
           <br>
           <br>
           <!--<h2 class="moreInfo" id="MeetCod">More Info</h2>-->
         </div>
 
           <div class="dateEvent">
-            <h2 class="month">March&nbsp;</h2><h2 class="number">2&nbsp;</h2>
+            <h2 class="month">February&nbsp;</h2><h2 class="number">28&nbsp;</h2>
             <h2 class="eventTime">8:00 am</h2>
-            <h2 class="eventName">ATHack 2019</h2>
+            <h2 class="eventName">ATHack 2020</h2>
             <h2 class="eventLocationIcon"></h2>
             <h2 class="eventLocation">Beaverworks, 2F of 300 Technology Square,<br>Cambridge MA</h2>
             <br>
@@ -51,9 +51,9 @@
             <div class="dateEvent">
               <h2 class="month">March&nbsp;</h2><h2 class="number">2&nbsp;</h2>
               <h2 class="eventTime">7:30 pm</h2>
-              <h2 class="eventName">ATHack 2019 Closing Ceremony</h2>
+              <h2 class="eventName">Closing Ceremony of ATHack 2020</h2>
               <h2 class="eventLocationIcon"></h2>
-              <h2 class="eventLocation">Forbes Café, 32 Vassar St,<br>Cambridge MA</h2>
+              <h2 class="eventLocation">Forbes Café @ MIT Stata Center, 32 Vassar St,<br>Cambridge MA</h2>
               <br>
               <br>
               <!--<h2 class="moreInfo" id="ceremony">More Info</h2>-->
