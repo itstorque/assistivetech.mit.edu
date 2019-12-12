@@ -38,7 +38,7 @@
         </div>
 
           <div class="dateEvent">
-            <h2 class="month">February&nbsp;</h2><h2 class="number">28&nbsp;</h2>
+            <h2 class="month">February&nbsp;</h2><h2 class="number">29&nbsp;</h2>
             <h2 class="eventTime">8:00 am</h2>
             <h2 class="eventName">ATHack 2020</h2>
             <h2 class="eventLocationIcon"></h2>
@@ -49,7 +49,7 @@
           </div>
 
             <div class="dateEvent">
-              <h2 class="month">March&nbsp;</h2><h2 class="number">2&nbsp;</h2>
+              <h2 class="month">February&nbsp;</h2><h2 class="number">29&nbsp;</h2>
               <h2 class="eventTime">7:30 pm</h2>
               <h2 class="eventName">Closing Ceremony of ATHack 2020</h2>
               <h2 class="eventLocationIcon"></h2>
