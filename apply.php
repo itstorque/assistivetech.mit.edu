@@ -1,4 +1,3 @@
-<?php include "dirList.php"; ?>
 <!DOCTYPE html>
 
 <html>
