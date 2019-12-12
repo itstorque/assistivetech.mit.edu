@@ -1,0 +1,4 @@
+* text=auto
+
+resources/styles/semantics.css linguist-vendored
+resources/styles/themes/* linguist-vendored
