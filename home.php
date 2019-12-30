@@ -14,27 +14,7 @@
 
       <center>
 
-        <div id="perspective">
-
-          <div id="inner">
-
-            <img src="/resources/brand/box_pieces/deltaBox.svg" class="box" id="box1">
-
-            <img src="/resources/brand/box_pieces/slash.svg" id="slash">
-
-            <img src="/resources/brand/box_pieces/tBox.svg" class="box" id="box2">
-
-          </div>
-
-        </div>
-
-        <img src="/resources/brand/LogoAlt.svg" class="mainTitle" id="mainTitle">
-
-        <!--<h2 class="ml4">
-          <span class="letters letters-1">Change With Technology</span>
-          <span class="letters letters-2">Change With Time</span>
-          <span class="letters letters-3">Change With Teamwork</span>
-        </h2>-->
+        <img src="/resources/brand/group_logo.png" class="mainTitle" id="mainTitle">
 
         <div class="separator small"></div>
 

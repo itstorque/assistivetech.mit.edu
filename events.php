@@ -10,9 +10,9 @@
 
     <div class="separator"></div>
 
-    <div class="banner header thin">
+    <div class="banner header thin centerOnSmall" style="background-color: var(--colorDarker)">
 
-      <img src="/resources/brand/ATHack.svg" class="sideTextBox sideLogo">
+      <img src="/resources/brand/athack_logo.svg" class="sideTextBox sideLogo">
 
       <div class="sideText">
         <h2>ATHack is our largest yearly event, students and co-designers from the community work on prototyping a solution to problems co-designers face daily.</h2>

@@ -1,6 +1,6 @@
 /* Imports */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Nunito:700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin');
 
 /* Main */
 
@@ -13,7 +13,7 @@ body {
 
 h1 {
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 5.5em;
   line-height: 1.2em;
 
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2em;
   line-height: 1.2em;
   font-weight: 700;
@@ -30,7 +30,7 @@ h2 {
 
 h3 {
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #fff;
 
@@ -38,10 +38,10 @@ h3 {
 
 p {
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 500;
 
 }
 
@@ -67,7 +67,7 @@ a:active {
 
 .topnav {
 
-    background-color: var(--colorW);
+    background-color: var(--colorDarker);
     height: 86px;
     padding-right: 20px;
     position: fixed;
@@ -75,6 +75,7 @@ a:active {
     width: 100%;
     z-index: 9;
     transition: background-color 0.4s;
+    margin-bottom: -86px;
 
 }
 
@@ -82,17 +83,17 @@ a:active {
 
     float: right;
     display: block;
-    color: #aaa;
+    color: #ddd;
     text-align: center;
     padding: 34px 6px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-right: 9px;
     margin-left: 9px;
     padding-bottom: 14px;
     margin-bottom: 0px;
-    font-weight: bold;
+    font-weight: 600;
 
 }
 
@@ -107,8 +108,8 @@ a:active {
 .topnav a:not(.logo):hover {
 
     border-bottom-style: solid;
-    border-bottom-color: var(--colorDarker);
-    color: var(--colorDarker) !important;
+    border-bottom-color: white;
+    color: white !important;
     border-bottom-width: 3px;
     padding-bottom: 10px;
     margin-bottom: 4px;
@@ -117,19 +118,11 @@ a:active {
 
 }
 
-.scrolled .active {
-
-  border-bottom-style: solid;
-  border-bottom-color: #4E199D;
-  font-weight: bold;
-
-}
-
 .active {
 
   border-bottom-style: solid;
-  border-bottom-color: #aaa;
-  font-weight: bold;
+  border-bottom-color: white;
+  color: white;
 
 }
 
@@ -151,53 +144,7 @@ a:active {
 
 }
 
-.scrolled {
-
-  background-color: var(--colorMain);
-
-}
-
-.scrolled a {
-
-  color: var(--colorDark);
-  border-color: var(--colorDark);
-
-}
-
-.scrolled a:not(.logo):hover {
-
-  color: var(--colorW) !important;
-  border-color: var(--colorW);
-
-}
-
-.darkBlock {
-
-  background-color: var(--colorDark);
-
-}
-
-.darkBlock a {
-
-  color: var(--colorW);
-  border-color: var(--colorW);
-
-}
-
-.darkBlock a:not(.logo):hover {
-
-  color: var(--color2) !important;
-  border-color: var(--color2);
-
-}
-
-.scrolled #logoContent {
-
-  background-image: url('/resources/brand/LogoSmallColor.svg');
-
-}
-
-.darkBlock #logoContent {
+#logoContent {
 
   background-image: url('/resources/brand/LogoSmallColor.svg');
 
@@ -205,11 +152,11 @@ a:active {
 
 #mainBanner {
 
-  min-height: calc(100vh - 86px);
-  height: auto;
+  height: 100vh;
   margin: 0;
-  background-color: var(--colorMain);
+  background-color: var(--colorDarker);
   -webkit-transform:translate3d(0,0,0);
+  padding-top: 0;
 
 }
 
@@ -250,11 +197,11 @@ a:active {
 
 .banner {
 
-  height: calc(100vh - 80px);
+  height: 100vh;
   min-height: 450px;
   position:sticky;
-  padding-top: 87px;
   overflow-x: hidden;
+  padding-top: 10vh;
 
 }
 
@@ -270,7 +217,6 @@ a:active {
   min-height: 100%;
   padding-left: 10vw;
   padding-right: 10vw;
-  margin: 0;
   background-color: var(--colorW);
   -webkit-transform:translate3d(0,0,0);
 
@@ -306,7 +252,6 @@ a:active {
   background-color: var(--colorMain);
   height: auto;
   padding-top: 20px;
-  padding-right: 8%;
   padding-bottom: 60px;
   min-height: auto;
 
@@ -336,7 +281,7 @@ a:active {
 
 .sectionTitle {
 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 3.3em;
   line-height: 1.2em;
 
@@ -591,7 +536,7 @@ a:active {
 
 .dateEvent h2 {
 
-  font-family: 'Raleway';
+  font-family: 'Lato';
 
   margin-bottom: 0px;
 
@@ -893,11 +838,12 @@ background-blend-mode: multiply;
 .mainTitle {
 
   display: block;
-  width: 60vw;
+  width: 80vw;
+  height: 50vh;
   min-width: 300px;
-  margin-top: 40px;
-  opacity: 0;
-  transition: opacity 0s;
+  margin-top: 0px;
+  object-fit: contain;
+  margin-top: 10vh;
 
 }
 
@@ -929,7 +875,7 @@ background-blend-mode: multiply;
 
   color: var(--color1);
   font-size: 25px;
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-weight: bolder;
 
 }
@@ -937,7 +883,7 @@ background-blend-mode: multiply;
 .card p {
 
   color: var(--colorDark);
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-size: 17px;
 
 }
@@ -989,7 +935,7 @@ background-blend-mode: multiply;
 
 .article h2 {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-size: 20px;
   text-align: left;
   padding-left: 30px;
@@ -1034,7 +980,7 @@ background-blend-mode: multiply;
   display: inline-block;
 
   font-size: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   -webkit-transition: all 0.3s ease;
@@ -1076,7 +1022,7 @@ background-blend-mode: multiply;
   display: inline-block;
 
   font-size: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   -webkit-transition: all 0.3s ease;
@@ -1118,7 +1064,7 @@ background-blend-mode: multiply;
   display: inline-block;
 
   font-size: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   -webkit-transition: all 0.3s ease;
@@ -1158,7 +1104,7 @@ background-blend-mode: multiply;
   display: inline-block;
 
   font-size: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   -webkit-transition: all 0.3s ease;
@@ -1198,7 +1144,7 @@ background-blend-mode: multiply;
   display: inline-block;
 
   font-size: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   -webkit-transition: all 0.3s ease;
@@ -1226,7 +1172,7 @@ background-blend-mode: multiply;
   padding-bottom: 11px;
 
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 
   color: #fff;
@@ -1336,7 +1282,7 @@ background-blend-mode: multiply;
 
   display: block;
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
 
@@ -1400,7 +1346,7 @@ background-blend-mode: multiply;
 
   display: block;
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
 
@@ -1460,7 +1406,7 @@ background-blend-mode: multiply;
 
 .sideTextBox {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   display: inline-block;
   font-size: 25px;
   vertical-align: middle;
@@ -1468,7 +1414,6 @@ background-blend-mode: multiply;
   padding: 40px;
   padding-left: 100px;
   max-width: 550px;
-  background-color: #fff;
 
 }
 
@@ -1479,12 +1424,13 @@ background-blend-mode: multiply;
   width: 40%;
   padding-top: 30px;
   vertical-align: top;
+  margin-top: 40px;
 
 }
 
 .sideText h2 {
 
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-size: 24px;
   color: #fff;
 
@@ -1501,7 +1447,7 @@ background-blend-mode: multiply;
 
 h2.projectSection {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
 
   margin-top: 50px;
   display: inline-block;
@@ -1543,7 +1489,7 @@ h2.projectSection {
 .projectsTable .desc {
 
   color: var(--colorDark);
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-size: 17px;
   height: 40px;
   width: 250px;
@@ -1583,7 +1529,7 @@ h2.projectSection {
 
   color: var(--color1);
   font-size: 25px;
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-weight: bolder;
   display: inline-block;
 
@@ -1651,7 +1597,7 @@ h2.projectSection {
 
 	.projectsTable, .projectsTable thead, .projectsTable tbody, .projectsTable th, .projectsTable td, .projectsTable tr {
 		display: block !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
 	}
 
@@ -1693,7 +1639,7 @@ h2.projectSection {
 /* FAQ */
 
 .accordion a {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1726,7 +1672,7 @@ h2.projectSection {
 }
 
 .accordion a::after {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   content: '+';
   position: absolute;
   float: right;
@@ -1741,7 +1687,7 @@ h2.projectSection {
 }
 
 .accordion a.active::after {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   content: '-';
   color: var(--color1);
 }
@@ -1848,6 +1794,12 @@ h2.projectSection {
 
   }
 
+  .sideLogo {
+
+    padding: 0px;
+
+  }
+
   .centerOnSmall {
 
     text-align: center !important;
@@ -1904,8 +1856,15 @@ h2.projectSection {
 
   .sideText {
 
-    margin-left: 10vw;
-    width: 80vw;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .sideText h1, .sideText h2, .sideText h3, .sideLogo h4, .sideLogo p {
+
+    text-align: left;
 
   }
 
@@ -1925,18 +1884,18 @@ h2.projectSection {
 
 @media screen and (max-width: 700px) {
 
-.topnav a:not(:first-child) {
+  .topnav a:not(:first-child) {
 
-  display: none;
+    display: none;
 
-}
+  }
 
-.topnav a.icon {
+  .topnav a.icon {
 
-  float: right;
-  display: block;
+    float: right;
+    display: block;
 
-}
+  }
 
   .topnav.responsive {
 
@@ -2095,7 +2054,7 @@ textarea {
   margin-left: 10px;
   font-weight: bolder;
   color: var(--colorDark);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   display: inline-block;
 
 }
@@ -2237,7 +2196,7 @@ textarea {
     width: 24px;
     height: 24px;
     font-size: 22px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 26px;
     cursor: default;
     display: inline-block;
@@ -2313,7 +2272,7 @@ textarea {
 
 #projects .banner h2.title {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   font-size: 48px;
   text-align: center;
 
@@ -2328,7 +2287,7 @@ textarea {
 
 #projects .banner h1 {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   display: inline-block;
   vertical-align: middle;
   font-size: 40px;
@@ -2372,7 +2331,7 @@ textarea {
 
 #projects #popup #pTitle {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   margin-left: 10%;
   padding-left: 20px;
   color: var(--color1);
@@ -2382,7 +2341,7 @@ textarea {
 
 #projects #popup #pDesc {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   margin-left: 10%;
   padding-left: 32px;
   font-size: 20px;
@@ -2392,7 +2351,7 @@ textarea {
 
 #projects #popup #pWin {
 
-  font-family: 'Raleway', Sans-Serif;
+  font-family: 'Lato', Sans-Serif;
   margin-left: 10%;
   padding-left: 32px;
   font-size: 20px;
@@ -2555,14 +2514,14 @@ textarea {
 
   0% {
     transform: translateY(100px);
-    color: var(--colorMain);
-    border-color: var(--colorMain);
+    color: #aaa);
+    border-color: #aaa;
   }
 
   40% {
     transform: translateY(100px);
-    color: var(--colorMain);
-    border-color: var(--colorMain);
+    color: #aaa;
+    border-color: #aaa;
   }
 
   80% {

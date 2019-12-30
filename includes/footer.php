@@ -1,4 +1,4 @@
-<div style="margin: 0; background-color: var(--colorDark); -webkit-transform:translate3d(0,0,0); min-height: 0px; height: auto; padding-left: 10vw; overflow-x: hidden;">
+<div style="margin: 0; background-color: var(--colorDarker); -webkit-transform:translate3d(0,0,0); min-height: 0px; height: auto; padding-left: 10vw; overflow-x: hidden;">
 
   <div style="width: 40vw; display: inline-block; vertical-align: top; margin-top: 40px" class="fixFooterOnSmall">
 
@@ -24,7 +24,7 @@
         <div style="display: inline-block">
           <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Email
             <br>
-            <a href="mailto:at-hack-core@mit.edu" style="text-decoration: none; color: #fff; font-size: 17px; font-family: 'Nunito', Sans-Serif;"> at-hack-core@mit.edu</a></h2>
+            <a href="mailto:at-hack-core@mit.edu" style="text-decoration: none; color: #fff; font-size: 17px;"> at-hack-core@mit.edu</a></h2>
         </div>
         <br><br>
       </div>
@@ -34,7 +34,7 @@
         <div style="display: inline-block">
           <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px; margin-top: 0px; color: #fff;">Facebook
             <br>
-            <a href="https://www.facebook.com/athackathon" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@athackathon</a></h2>
+            <a href="https://www.facebook.com/athackathon" target="_blank" style="text-decoration: none; color: var(--colorW); font-size: 17px;">@athackathon</a></h2>
         </div>
         <br><br>
       </div>
@@ -44,14 +44,14 @@
         <div style="display: inline-block">
           <h2 style="font-family: 'Raleway', Sans-Serif; text-align: left; font-size: 19px; margin-left: 14px;  margin-top: 0px; color: #fff;">Twitter
             <br>
-            <a href="https://twitter.com/ATHackMIT" target="_blank" style="text-decoration: none; color: var(--colorW); font-family: 'Nunito', Sans-Serif; font-size: 17px;">@ATHackMIT</a></h2>
+            <a href="https://twitter.com/ATHackMIT" target="_blank" style="text-decoration: none; color: var(--colorW); font-size: 17px;">@ATHackMIT</a></h2>
         </div>
         <br><br>
       </div>
 
     </div>
 
-    <h3 style="width: 80vw; text-align: center; margin-bottom: -1px;">Copyright &copy; 2019 <br class="mobileShow"> Tareq El Dandachi</h3>
+    <h3 style="width: 80vw; text-align: center; margin-bottom: -1px;">Copyright &copy; 2020 <br class="mobileShow"> Tareq El Dandachi</h3>
 
   <div class="separator" style="height: 50px"></div>
 
