@@ -10,7 +10,7 @@
 
     <div style="margin: 0; background-color: var(--colorW); -webkit-transform:translate3d(0,0,0); height: auto;" class="banner" id="mainBanner">
 
-      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white">
+      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 10vh;">
 
         <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
 
