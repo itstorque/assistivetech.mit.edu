@@ -120,7 +120,7 @@ a:active {
 .scrolled .active {
 
   border-bottom-style: solid;
-  border-bottom-color: #4E199D;
+  border-bottom-color: white;
 
 }
 
@@ -151,14 +151,14 @@ a:active {
 
 .scrolled {
 
-  background-color: var(--colorMain);
+  background-color: var(--colorDarker);
 
 }
 
 .scrolled a {
 
-  color: var(--colorDark);
-  border-color: var(--colorDark);
+  color: white;
+  border-color: white;
 
 }
 
@@ -206,7 +206,7 @@ a:active {
   min-height: calc(100vh - 86px);
   height: auto;
   margin: 0;
-  background-color: var(--colorMain);
+  background-color: var(--colorDarker);
   -webkit-transform:translate3d(0,0,0);
 
 }
@@ -890,11 +890,11 @@ background-blend-mode: multiply;
 .mainTitle {
 
   display: block;
-  width: 60vw;
+  width: 80vw;
+  height: 50vh;
   min-width: 300px;
-  margin-top: 40px;
-  opacity: 0;
-  transition: opacity 0s;
+  margin-top: 0px;
+  object-fit: contain;
 
 }
 

@@ -12,7 +12,7 @@ window.onscroll = function (e) {
 
     let separator = document.getElementById("slash");
 
-    let mainTitle = document.getElementById("mainTitle");
+    // let mainTitle = document.getElementById("mainTitle");
 
     if (window.scrollY > scrollOffset && x.classList.contains("scrolled")) {
 
@@ -26,13 +26,13 @@ window.onscroll = function (e) {
 
       separator.style.margin = "-4px";
 
-      mainTitle.classList.add("showTitle");
+      // mainTitle.classList.add("showTitle");
 
     } else if (window.scrollY < scrollOffset && !(x.classList.contains("scrolled"))) {
 
       x.classList.add("scrolled");
 
-      mainTitle.classList.remove("showTitle");
+      // mainTitle.classList.remove("showTitle");
 
       box1.classList.remove("boxCompressed");
 
