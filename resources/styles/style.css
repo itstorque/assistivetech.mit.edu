@@ -304,7 +304,6 @@ a:active {
   background-color: var(--colorMain);
   height: auto;
   padding-top: 20px;
-  padding-right: 8%;
   padding-bottom: 60px;
   min-height: auto;
 
@@ -1476,6 +1475,7 @@ background-blend-mode: multiply;
   width: 40%;
   padding-top: 30px;
   vertical-align: top;
+  margin-top: 40px;
 
 }
 
@@ -1845,6 +1845,12 @@ h2.projectSection {
 
   }
 
+  .sideLogo {
+
+    padding: 0px;
+
+  }
+
   .centerOnSmall {
 
     text-align: center !important;
@@ -1901,8 +1907,15 @@ h2.projectSection {
 
   .sideText {
 
-    margin-left: 10vw;
-    width: 80vw;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .sideText h1, .sideText h2, .sideText h3, .sideLogo h4, .sideLogo p {
+
+    text-align: left;
 
   }
 
