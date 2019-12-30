@@ -103,8 +103,6 @@
 
           for (i = 0; i < details.length; i++) {
 
-            console.log(cells[i].offsetWidth)
-
             details[i].style.width = (cells[i].offsetWidth - 100) + "px"
 
           }
