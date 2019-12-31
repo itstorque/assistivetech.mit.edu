@@ -2507,13 +2507,13 @@ textarea {
 @keyframes slideUp {
 
   0% {
-    transform: translateY(100px);
-    color: #aaa);
+    transform: translateY(40px);
+    color: #aaa;
     border-color: #aaa;
   }
 
   40% {
-    transform: translateY(100px);
+    transform: translateY(40px);
     color: #aaa;
     border-color: #aaa;
   }

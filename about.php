@@ -22,15 +22,6 @@
 
         <h3 style="font-family: 'Raleway', Sans-Serif; font-size: 23px; margin-top: 0px; width: 80%; max-width: 800px; margin-bottom: 0px;">ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
 
-          <p style="width: 70vw; text-align: left;">
-            <br><br>
-            Our mission is to make the world more
-            <x style="color: var(--color1); font-weight: 900">accessible to everyone</x> by building connections within our community and fostering
-            <x style="color: var(--color2); font-weight: 900">collaborative efforts</x> to create
-            <x style="color: var(--color1); font-weight: 900">inclusive technology.</x> Through ATHack, we introduce students to the fun (and challenging) design space of assistive technology while
-            <x style="color: var(--color2); font-weight: 900">building connections</x> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
-          </p>
-
         </center>
 
         <br><br><br>

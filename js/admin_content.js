@@ -89,7 +89,7 @@ function updateEventsContent() {
 
     // FIXME: Remove Multiple newlines and |
 
-    content = content.replace("\n\n", "|");
+    content = content.replace("\n\n", "<br>");
 
     web_content[item_id] = content;
 

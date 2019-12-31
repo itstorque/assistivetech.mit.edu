@@ -77,7 +77,7 @@
 
     <div class="banner default indented"  id="ATHackSection">
 
-      <img src="/resources/brand/ATHack.svg" class="sideLogo">
+      <img src="/resources/brand/athack_new.png" class="sideLogo" style="background-color: var(--colorDarker); width: 100%; max-width: none; max-height: 30vh; object-fit: contain">
 
       <h2>What is <span class="c2 ub"><span class="c1 ub">AT</span>Hack</span></h2>
 
