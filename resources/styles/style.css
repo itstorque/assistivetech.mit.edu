@@ -152,7 +152,9 @@ a:active {
 
 #mainBanner {
 
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
   margin: 0;
   background-color: var(--colorDarker);
   -webkit-transform:translate3d(0,0,0);
@@ -983,7 +985,7 @@ background-blend-mode: multiply;
 
   animation: 0.7s 0s 1 slide;
 
-  animation: slideUp 2s;
+  animation: slideUp 0.8s;
 
 }
 
@@ -1025,7 +1027,7 @@ background-blend-mode: multiply;
 
   animation: 0.7s 0s 1 slide;
 
-  animation: slideUp 2s;
+  animation: slideUp 0.8s;
 
 }
 
@@ -1405,7 +1407,8 @@ background-blend-mode: multiply;
   vertical-align: middle;
   margin-top: 50px;
   padding: 40px;
-  padding-left: 100px;
+  padding-left: 10vw;
+  margin-left: -5vw;
   max-width: 550px;
 
 }
@@ -1788,12 +1791,6 @@ h2.projectSection {
 
   }
 
-  .sideLogo {
-
-    padding: 0px;
-
-  }
-
   .centerOnSmall {
 
     text-align: center !important;
@@ -1848,6 +1845,10 @@ h2.projectSection {
 
   }
 
+  .banner.header.centerOnSmall { text-align: center; padding-top: 2em; }
+
+  .sideTextBox { text-align: center; }
+
   .sideText {
 
     margin-left: 0px;
@@ -1859,6 +1860,12 @@ h2.projectSection {
   .sideText h1, .sideText h2, .sideText h3, .sideLogo h4, .sideLogo p {
 
     text-align: left;
+
+  }
+
+  .sideLogo {
+
+    padding: 0px;
 
   }
 
@@ -2507,13 +2514,13 @@ textarea {
 @keyframes slideUp {
 
   0% {
-    transform: translateY(40px);
+    transform: translateY(20px);
     color: #aaa;
     border-color: #aaa;
   }
 
   40% {
-    transform: translateY(40px);
+    transform: translateY(20px);
     color: #aaa;
     border-color: #aaa;
   }
