@@ -33,6 +33,7 @@ h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #fff;
+  line-height: 1.8em;
 
 }
 
@@ -40,7 +41,7 @@ p {
 
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
-  line-height: 1.2em;
+  line-height: 1.5em;
   font-weight: 500;
 
 }
@@ -264,6 +265,7 @@ a:active {
   margin-left: 8vw;
   margin-right: 5vw;
   text-align: left;
+  line-height: 1.7em;
 
 }
 
@@ -888,8 +890,8 @@ background-blend-mode: multiply;
   width: 70%;
   height: 90px;
 
-  background-color: #fafafa;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4), -2px -2px 5px rgba(255,255,255,0.15);
+  color: #fff;
 
   padding-top: 0px;
   padding-bottom: 0px;
@@ -911,20 +913,7 @@ background-blend-mode: multiply;
 
 .article:hover {
 
-  width: 71%;
-
-  background-color: #f5f5f5;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-
-  padding-top: 1px;
-  padding-bottom: 1px;
-
-  margin-bottom: 19px;
-  margin-top: -1px;
-
-  border-radius: 20px;
-
-  text-align: left;
+  box-shadow: 0.5px 1px 3px rgba(0,0,0,0.4), -0.5px -1px 3px rgba(255,255,255,0.15);
 
 }
 
@@ -936,6 +925,11 @@ background-blend-mode: multiply;
   padding-left: 30px;
   white-space: nowrap;
 
+
+}
+
+.article h2 + h2 {
+  color: #aaa;
 }
 
 .button_container {
@@ -1436,6 +1430,7 @@ background-blend-mode: multiply;
 
   width: 80vw;
   max-width: 300px;
+  margin-bottom: 2em;
 
 }
 
