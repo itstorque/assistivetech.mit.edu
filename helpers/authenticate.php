@@ -14,7 +14,7 @@
     }
     $result = '/'.implode('/', $result);
 
-    header("Location: https://assistivetech.scripts.mit.edu".$result);
+    header("Location: https://assistivetech.scripts.mit.edu:444".$result);
 
   }
 
