@@ -8,7 +8,7 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div style="margin: 0; background-color: var(--colorMain); -webkit-transform:translate3d(0,0,0); height: 80vh; margin-top: 0px; padding-top: 20vh;">
+    <div style="margin: 0; background-color: var(--colorDarker); -webkit-transform:translate3d(0,0,0); height: 80vh; margin-top: 0px; padding-top: 20vh;">
 
       <center>
 
