@@ -1,3 +1,4 @@
+<?php include "../helpers/authenticate.php"; ?>
 <!DOCTYPE html>
 
 <html>
