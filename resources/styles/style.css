@@ -125,7 +125,7 @@ a:active {
 .errorPage {
   width: 100vw;
   height: 100vh;
-  background-color: var(--colorDark);
+  background-color: var(--colorDarker);
   background-image: url('/resources/tiles/brokenRepeat.svg');
   background-position: bottom;
   background-repeat: repeat-x;
