@@ -72,17 +72,32 @@ function loadContent() {
 
     if (item_id == "home-sponsors") {
 
-      content = content.split(",")
+      content = content.split(",");
 
-      sponsor_logos = ""
+      sponsor_logos = "";
 
       for (var i=0; i < content.length; i++) {
 
-        image_url = "resources/sponsors/"+content[i]+".jpg"
+        image_data = content[i];
 
-        image_tag = "<img src="+image_url+" class='sponsor'>"
+        class_name = "sponsor";
 
-        sponsor_logos += image_tag
+        is_golden = image_data.substring(0, 7)=="golden_";
+
+        if (is_golden) {
+          image_data = image_data.substring(7);
+          class_name += " golden";
+        }
+
+        image_url = "resources/sponsors/"+image_data+".jpg";
+
+        image_tag = "<img src="+image_url+" class='" + class_name + "'>";
+
+        if (is_golden) {
+          sponsor_logos = image_tag + sponsor_logos;
+        } else {
+          sponsor_logos += image_tag;
+        }
 
       }
 

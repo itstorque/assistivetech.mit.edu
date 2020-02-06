@@ -763,6 +763,13 @@ a:active {
   object-fit: contain;
   margin: 20px;
 }
+.sponsor.golden {
+  width: 400px;
+  height: 200px;
+  display: block;
+  object-fit: contain;
+  margin: 20px;
+}
 .sideTitle {
   font-size: 4em;
   margin-top: 0px;

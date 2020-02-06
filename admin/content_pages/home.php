@@ -69,6 +69,24 @@
     <div class="item" data-value="oculus">Oculus</div>
     <div class="item" data-value="yahoo">Yahoo</div>
     <div class="item" data-value="eone">Eone</div>
+    <div class="item" data-value="golden_microsoft">Golden Microsoft</div>
+    <div class="item" data-value="golden_google">Golden Google</div>
+    <div class="item" data-value="golden_beaverworks">Golden Beaverworks</div>
+    <div class="item" data-value="golden_ODL">Golden ODL</div>
+    <div class="item" data-value="golden_edg">Golden Edgerton</div>
+    <div class="item" data-value="golden_MITEECS">Golden MIT EECS</div>
+    <div class="item" data-value="golden_mitmeche2">Golden MIT MECHE</div>
+    <div class="item" data-value="golden_akamai">Golden Akamai</div>
+    <div class="item" data-value="golden_MITSAO2">Golden MIT SAO</div>
+    <div class="item" data-value="golden_schoolOfEng">Golden MIT School of Engineering</div>
+    <div class="item" data-value="golden_mitsds">Golden MIT SDS</div>
+    <div class="item" data-value="golden_perkins">Golden Perkins</div>
+    <div class="item" data-value="golden_mediaLab">Golden Media Lab</div>
+    <div class="item" data-value="golden_spaulding2">Golden Spaulding</div>
+    <div class="item" data-value="golden_TBP">Golden Tau Beta Pi</div>
+    <div class="item" data-value="golden_oculus">Golden Oculus</div>
+    <div class="item" data-value="golden_yahoo">Golden Yahoo</div>
+    <div class="item" data-value="golden_eone">Golden Eone</div>
   </div>
 </div>
 
