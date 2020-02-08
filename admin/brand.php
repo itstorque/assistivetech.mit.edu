@@ -104,7 +104,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/LogoSmallColorAlt.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -120,7 +120,7 @@
               </div>
             </h4></td>
             <td>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/LogoSmallColor.png'">
                 <i class="download icon"></i> SVG
               </div>
               <div class="ui floated small green labeled icon button">
@@ -142,7 +142,45 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/logoTwitter.png'">
+                <i class="download icon"></i> PNG
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4 class="ui image header">
+                <img src="/resources/brand/tshirts/Shirt 2020 Front.png" class="ui mini rounded image purple_bg">
+                <div class="content">
+                  T-Shirt Front - 2020
+                  <div class="sub header">Use for social media
+                </div>
+              </div>
+            </h4></td>
+            <td>
               <div class="ui floated small green labeled icon button">
+                <i class="download icon"></i> SVG
+              </div>
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/Shirt 2020 Front.png'">
+                <i class="download icon"></i> PNG
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4 class="ui image header">
+                <img src="/resources/brand/tshirts/Shirt 2020 Back.png" class="ui mini rounded image purple_bg">
+                <div class="content">
+                  T-Shirt Back - 2020
+                  <div class="sub header">Use for social media
+                </div>
+              </div>
+            </h4></td>
+            <td>
+              <div class="ui floated small green labeled icon button">
+                <i class="download icon"></i> SVG
+              </div>
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/Shirt 2020 Back.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -161,7 +199,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/ShirtFrontColor.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -180,7 +218,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/ShirtFrontWhite.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -199,7 +237,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/ShirtFrontAlternate.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -218,7 +256,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/brand/tshirts/ShirtSponsors.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
@@ -237,7 +275,7 @@
               <div class="ui floated small green labeled icon button">
                 <i class="download icon"></i> SVG
               </div>
-              <div class="ui floated small green labeled icon button">
+              <div class="ui floated small green labeled icon button" onclick="location.href = '/resources/titles/events.png'">
                 <i class="download icon"></i> PNG
               </div>
             </td>
