@@ -38,43 +38,7 @@
 
           <div style="vertical-align: top; width: 100vw">
 
-          <div class="personCard">
-            <img src="/resources/images/people/jaya.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-            <h2>Jaya Narain</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/ishwarya.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-            <h2>Ishwarya Ananthabhotla</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/mandy.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-
-            <h2>Mandy Fike</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/hosea.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-            <h2>Hosea Siu</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/sally.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-            <h2>Sally Beiruti</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/tareq.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-
-            <h2>Tareq El Dandachi</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/imane.jpg" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover">
-
-            <h2>Imane Bouzit</h2>
-          </div>
+          <?php include 'helpers/person_cards.php'; ?>
 
           </div>
 

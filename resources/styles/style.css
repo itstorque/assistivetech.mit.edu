@@ -451,6 +451,12 @@ a:active {
   font-size: 26px;
   vertical-align: top
 }
+.personCard img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}
 .social {
   display: inline-block;
   border-right-style: solid;

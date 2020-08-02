@@ -46,3 +46,34 @@ img.ui.purple_bg {
   margin-bottom: 50px;
 
 }
+
+
+
+
+.personCard {
+  display: inline-block;
+  width: max-content;
+  text-align: left;
+  margin: 15px;
+  vertical-align: top;
+}
+.personCard div {
+  display: inline-block;
+  font-size: 1.2em;
+  vertical-align: top;
+  margin-top: 0px;
+}
+.personCard .editor div {
+  margin-bottom: 5px;
+}
+.personCard h2 {
+  font-size: 1em;
+}
+.personCard img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-right: 40px;
+}
