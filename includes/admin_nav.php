@@ -11,9 +11,6 @@
         <div class="ui header grey">Content</div>
         <a class="item" href="/admin/content">Update Content</a>
         <a class="item" href="/admin/projects">Manage Projects</a>
-        <div class="divider"></div>
-        <div class="ui header grey">Photos</div>
-        <a class="item" href="/admin/upload_photos">Upload New</a>
         <a class="item" href="/admin/photos">Manage Photos</a>
         <div class="divider"></div>
         <div class="ui header grey">Other</div>
