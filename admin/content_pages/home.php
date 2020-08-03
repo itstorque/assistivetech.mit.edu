@@ -3,7 +3,7 @@
 <div class="ui form">
   <div class="field">
     <label>Mission Statement</label>
-    <textarea></textarea>
+    <textarea id="home-mission"></textarea>
   </div>
 </div>
 
@@ -14,7 +14,7 @@
 <div class="ui form">
   <div class="field">
     <label>Video URL</label>
-    <input type="text">
+    <input type="text" id="home-video">
   </div>
 </div>
 
@@ -25,15 +25,15 @@
 <div class="ui form">
   <div class="field">
     <label>What is ATHack</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-what"></textarea>
   </div>
   <div class="field">
     <label>When is ATHack</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-when"></textarea>
   </div>
   <div class="field">
     <label>How Do I Sign Up</label>
-    <textarea rows="2"></textarea>
+    <textarea rows="4" id="home-athack-signup"></textarea>
   </div>
 </div>
 
@@ -45,7 +45,7 @@
 
 <br>
 
-<div class="ui fluid multiple selection dropdown">
+<div class="ui fluid multiple selection dropdown" id="home-sponsors">
   <!-- This will receive comma separated value like OH,TX,WY !-->
   <input name="states" type="hidden">
   <i class="dropdown icon"></i>
@@ -69,16 +69,34 @@
     <div class="item" data-value="oculus">Oculus</div>
     <div class="item" data-value="yahoo">Yahoo</div>
     <div class="item" data-value="eone">Eone</div>
+    <div class="item" data-value="golden_microsoft">Golden Microsoft</div>
+    <div class="item" data-value="golden_google">Golden Google</div>
+    <div class="item" data-value="golden_beaverworks">Golden Beaverworks</div>
+    <div class="item" data-value="golden_ODL">Golden ODL</div>
+    <div class="item" data-value="golden_edg">Golden Edgerton</div>
+    <div class="item" data-value="golden_MITEECS">Golden MIT EECS</div>
+    <div class="item" data-value="golden_mitmeche2">Golden MIT MECHE</div>
+    <div class="item" data-value="golden_akamai">Golden Akamai</div>
+    <div class="item" data-value="golden_MITSAO2">Golden MIT SAO</div>
+    <div class="item" data-value="golden_schoolOfEng">Golden MIT School of Engineering</div>
+    <div class="item" data-value="golden_mitsds">Golden MIT SDS</div>
+    <div class="item" data-value="golden_perkins">Golden Perkins</div>
+    <div class="item" data-value="golden_mediaLab">Golden Media Lab</div>
+    <div class="item" data-value="golden_spaulding2">Golden Spaulding</div>
+    <div class="item" data-value="golden_TBP">Golden Tau Beta Pi</div>
+    <div class="item" data-value="golden_oculus">Golden Oculus</div>
+    <div class="item" data-value="golden_yahoo">Golden Yahoo</div>
+    <div class="item" data-value="golden_eone">Golden Eone</div>
   </div>
 </div>
 
 <br><br>
 
-<button class="ui fluid button positive large">
+<button class="ui fluid button positive large" id="updateHome">
   Update Page
 </button>
 <br>
-<button class="ui fluid button large">
+<button class="ui fluid button large" id="clearHome">
   Clear Changes
 </button>
 <br>

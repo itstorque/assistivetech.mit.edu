@@ -2,7 +2,7 @@ function saveChanges(object, didDelete, didCreateFromCode) {
 
   var json = JSON.stringify(object);
 
-  $.post("/helpers/writeJSON.php", {"json_data": json}, function() {
+  $.post("/helpers/writeJSON.php", {"file": 'teams.json',"json_data": json}, function() {
     $('#form').addClass('success')
 
     if (didDelete == false && didCreateFromCode == false) {

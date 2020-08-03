@@ -3,19 +3,18 @@
   $year_begin = 2016;
   $selectedYear = $latest_year = 2019;
 
-  ob_start();
-  include('teams.json');
-  $teamData = ob_get_contents();
-  ob_end_clean();
+  $file = 'teams.json';
 
-  if ($teamData=="") {
+  if (! is_file($file)) {
 
-    ob_start();
-    include('../teams.json');
-    $teamData = ob_get_contents();
-    ob_end_clean();
+    $file = '../'.$file;
 
   }
+
+  ob_start();
+  include($file);
+  $teamData = ob_get_contents();
+  ob_end_clean();
 
   $teamData = str_replace(array("\n", "\r"), '', $teamData);
 

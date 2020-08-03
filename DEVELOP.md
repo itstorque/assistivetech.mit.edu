@@ -24,9 +24,13 @@ The server runs on [scripts](https://scripts.mit.edu/), a service provided by [M
 
 The admin portal uses Kerberos Authentication, only the owners of the Athena Locker can access this webpage. The portal requires certificates to be installed and the use of https. Since the server has no SSL certificates for the main page, you can access the portal at [https://assistivetech.scripts.mit.edu/admin](https://assistivetech.scripts.mit.edu/admin) instead of the regular link.
 
-By default, admins are redirected to an HTTPS connection on port 444, which is configured to accept certificates. If the user has no certificates, they will be presented with an error page. 
+By default, admins are redirected to an HTTPS connection on port **444**, which is configured to accept certificates. If the user has no certificates, they will be presented with an error page.
 
 During development, you can access the page as you normally would (without certificates) if it's hosted on [127.0.0.1](127.0.0.1).
+
+In the case that the 444 port isn't accessed, a 401 Authentication Error will be raised.
+
+The `<RequireAny>` and `Require` directives were added in Apache 2.4 and are in the mod_authz_core module (they are not available in Apache 2.2). During development, try to use modules available in Apache 2.2 rather than 2.4, for wider test environment support.
 
 ## Requirements
 

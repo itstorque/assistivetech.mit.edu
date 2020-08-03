@@ -10,61 +10,35 @@
 
     <div class="banner white_bg" id="mainBanner">
 
-      <div class="bg1">
+      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 10vh;">
 
-        <h2 class="sideTextBox"><x style="font-size: 30px;" class="cD">Our Mission</x>
-          <br><br>
-          <span class="cP ub">Our mission</span> is to make the world more <span class="c1 ub">accessible to everyone</span> by building connections within our community and fostering <span class="c2 ub">collaborative efforts</span> to create <span class="c1 ub">inclusive technology.</span> Through ATHack, we introduce students to the fun (and challenging) design space of assistive technology while <span class="c2 ub">building connections</span> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
-        </h2>
+        <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
+
+        <br><br><br><br>
+
+        <h2 style="font-family: 'Raleway', Sans-Serif; font-size: 30px; margin-top: 0px; width: 80%; margin-bottom: 0px;"><x style="color: var(--color1)">Change</x> With <x style="color: var(--color2)">Technology</x></h2>
+
+        <br><br>
+
+        <h3 style="font-family: 'Raleway', Sans-Serif; font-size: 23px; margin-top: 0px; width: 80%; max-width: 800px; margin-bottom: 0px;">ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
+
+        </center>
+
+        <br><br><br>
 
       </div>
-        <br><br>
-        <div>
 
-          <h2 class="title">Our Team</h2>
+        <br><br>
+        <div style="width: 90%;">
+
+          <h2 style="font-family: 'Raleway', Sans-Serif; font-size: 48px; margin-left: 10%">Our Team</h2>
           <br>
 
           <center>
+            
+          <div style="vertical-align: top; width: 100vw">
 
-          <div class="personContainer">
-
-          <div class="personCard">
-            <img src="/resources/images/people/jaya.jpg">
-            <h2>Jaya Narain</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/ishwarya.jpg" >
-            <h2>Ishwarya Ananthabhotla</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/mandy.jpg">
-
-            <h2>Mandy Fike</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/hosea.jpg">
-            <h2>Hosea Siu</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/sally.jpg">
-            <h2>Sally Beiruti</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/tareq.jpg">
-
-            <h2>Tareq El Dandachi</h2>
-          </div>
-
-          <div class="personCard">
-            <img src="/resources/images/people/imane.jpg">
-
-            <h2>Imane Bouzit</h2>
-          </div>
+          <?php include 'helpers/person_cards.php'; ?>
 
           </div>
 
@@ -83,8 +57,6 @@
           cells = document.getElementsByClassName('article')
 
           for (i = 0; i < details.length; i++) {
-
-            console.log(cells[i].offsetWidth)
 
             details[i].style.width = (cells[i].offsetWidth - 100) + "px"
 
@@ -221,25 +193,7 @@
           </div>
 
           </div>
-
-          <div class="banner thin darkColor">
-
-            <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
-
-            <br><br><br><br>
-
-            <h2><x class="c1">Change</x> With <x class="c2">Technology</x></h2>
-
-            <br><br>
-
-            <h3>ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
-
-            </center>
-
-            <br><br><br>
-
-          </div>
-
+      
         </div>
 
     </div>
