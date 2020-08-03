@@ -137,12 +137,20 @@ a:active {
   height: 100vh;
   min-height: 450px;
   position:sticky;
-  overflow-x: hidden;
-  padding-top: 10vh;
+  padding-top: 87px;
+  overflow: hidden;
+}
+
+.banner.white_bg, #mainBanner.banner.white_bg {
+  background-color: white;
+}
+.banner.darkColor, #mainBanner.banner.darkColor {
+  background-color: var(--colorDarker);
 }
 .banner.blueBG, .banner.default.blueBG {
   background-color: var(--color1);
 }
+
 .banner.default {
   height: auto;
   min-height: 100%;
@@ -169,6 +177,59 @@ a:active {
   height: auto;
   width: auto;
 }
+.banner.thin h2 {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 30px;
+  margin-top: 0px;
+  width: 80%;
+  margin-bottom: 0px;
+
+}
+
+.banner.thin.darkColor h2 {
+
+  color: #fff;
+
+}
+
+.banner h2.title {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 48px;
+  margin-left: 10%
+
+}
+
+.banner h4.subtitle {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 22px;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  color: #fff;
+
+}
+
+.banner.thin h3 {
+
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 23px;
+  margin-top: 0px;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 0px;
+
+}
+
+.banner.thin.darkColor h3 {
+
+  color: #fff;
+
+}
+
 .banner.header.thin {
   margin: 0;
   background-color: var(--colorMain);
@@ -440,6 +501,12 @@ a:active {
   left: 10vw;
   z-index: 0;
 }
+div.personContainer {
+
+  vertical-align: top;
+  width: 100vw;
+
+}
 .personCard {
   display: inline-block;
   width: 250px;
@@ -452,11 +519,13 @@ a:active {
   vertical-align: top
 }
 .personCard img {
+
   width: 200px;
   height: 200px;
   border-radius: 100px;
   object-fit: cover;
 }
+
 .social {
   display: inline-block;
   border-right-style: solid;
@@ -1090,8 +1159,11 @@ h2.projectSection {
 
 /* Text Color & Styles */
 .black { color: var(--colorB); }
+.white { color: white; }
 .c1 { color: var(--color1); }
 .c2 { color: var(--color2); }
+.cP { color: var(--colorMain); }
+.cD { color: var(--colorDark); }
 .b { font-weight: bold; }
 .ub { font-weight: 900; }
 .titleSize2 { font-size: 3.6em; }

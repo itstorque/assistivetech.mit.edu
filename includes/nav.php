@@ -12,7 +12,7 @@
 
   $darkBlockClassmap = ["401", "404", "pageDown"];
 
-  $scrolledClassmap = ["home", "apply"];
+  $scrolledClassmap = ["home", "apply", "events"];
 
   $classmap = "topnav";
 
