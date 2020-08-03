@@ -152,7 +152,13 @@ function fillAllFields(text_items) {
 
     if ($("#"+item_id).prop("tagName") == "DIV") {
 
-      $("#"+item_id).dropdown("set exactly", web_content["home-sponsors"].split(","));
+      if (typeof web_content["home-sponsors"] == "string") {
+
+        web_content["home-sponsors"] = web_content["home-sponsors"].split(",")
+
+      }
+
+      $("#"+item_id).dropdown("set exactly", web_content["home-sponsors"]);
 
     } else {
 
