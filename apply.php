@@ -1,4 +1,3 @@
-<?php include "dirList.php"; ?>
 <!DOCTYPE html>
 
 <html>
@@ -9,13 +8,13 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div style="margin: 0; background-color: var(--colorMain); -webkit-transform:translate3d(0,0,0); height: 80vh; margin-top: 0px; padding-top: 20vh;">
+    <div style="margin: 0; background-color: var(--colorDarker); -webkit-transform:translate3d(0,0,0); height: 80vh; margin-top: 0px; padding-top: 20vh;">
 
       <center>
 
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSepRdZ7Byqqc9h-ZxR8guAdxVCMHbJC-eufmKmukTmFM3E7Rg/viewform'"><center>Co-Designer Application</center></div>
+      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfYTAeoPAIKOhEMhkcQ4qO5xg0INRs0kh3AiOECHnrgkMPwMg/viewform?usp=sf_link​'"><center>Co-Designer Application</center></div>
       <br>
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSd1exgH7fnhXyailPlDD-oqUiBsOnrRIjk7JeNWWg4OHCpzrQ/viewform'"><center>Hacker Application</center></div>
+      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSd7uE-9im0NqPEa_o1qmCkFn8nqgVOz-c-yYGEVNKHZIwgoDQ/viewform?usp=sf_link'"><center>Hacker Application</center></div>
 
     </center>
 

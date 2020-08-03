@@ -1,4 +1,8 @@
 home_text_items = ["home-mission", "home-video", "home-athack-what", "home-athack-when", "home-athack-signup", "home-sponsors"];
+event_text_items = ["events-desc",
+                    "event-1-date", "event-1-time", "event-1-title", "event-1-location",
+                    "event-2-date", "event-2-time", "event-2-title", "event-2-location",
+                    "event-3-date", "event-3-time", "event-3-title", "event-3-location"];
 
 $('.ui.accordion')
   .accordion()
@@ -28,9 +32,21 @@ $(document).ready(function(){
   });
 
   $('#clearHome').click(function () {
-      fillAllFields(home_text_items)
-      $('#form').addClass('warning')
-      closeAllAccordions()
+      fillAllFields(home_text_items);
+      $('#form').addClass('warning');
+      closeAllAccordions();
+  });
+
+  $('#updateEvents').click(function () {
+      $('#form').addClass('loading');
+      updateEventsContent();
+      write();
+  });
+
+  $('#clearEvents').click(function () {
+      fillAllFields(event_text_items);
+      $('#form').addClass('warning');
+      closeAllAccordions();
   });
 
 });
@@ -54,6 +70,26 @@ function updateHomeContent() {
     // FIXME: Remove Multiple newlines and |
 
     content = content.replace("\n\n", "|");
+
+    web_content[item_id] = content;
+
+  }
+
+}
+
+function updateEventsContent() {
+
+  for (var i = 0; i < event_text_items.length; i++) {
+
+    item_id = event_text_items[i];
+
+    console.log(item_id)
+
+    content = $("#"+item_id).val();
+
+    // FIXME: Remove Multiple newlines and |
+
+    content = content.replace("\n\n", "<br>");
 
     web_content[item_id] = content;
 
@@ -98,7 +134,7 @@ function fillAllFields(text_items) {
 
   if (text_items==undefined){
 
-    text_items = home_text_items;
+    text_items = home_text_items.concat(event_text_items);
 
   }
 

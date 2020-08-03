@@ -6,10 +6,6 @@ Satisfy any
 
 AuthType SSLCert
 Require afsgroup system:assistivetech system:at-hack-core
-ErrorDocument 401 /__scripts/needcerts
-
-#Update Later with custom error message
-#ErrorDocument 401 /__scripts/needcerts/~username/customerror.cgi
 
 # IP
 
@@ -26,7 +22,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 ErrorDocument 404 /404.php
-ErrorDocument 401 /401.php
-
-
-
+ErrorDocument 401 /__scripts/needcerts
