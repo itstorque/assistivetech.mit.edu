@@ -10,7 +10,7 @@
 
     <div class="banner white_bg" id="mainBanner">
 
-      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 10vh;">
+      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 86px;">
 
         <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
 
@@ -29,14 +29,14 @@
       </div>
 
         <br><br>
-        <div style="width: 90%;">
+        <div>
 
           <h2 style="font-family: 'Raleway', Sans-Serif; font-size: 48px; margin-left: 10%">Our Team</h2>
           <br>
 
           <center>
-            
-          <div style="vertical-align: top; width: 100vw">
+
+          <div class="personContainer">
 
           <?php include 'helpers/person_cards.php'; ?>
 
@@ -48,27 +48,7 @@
 
         </div>
 
-        <script>
-
-        var onresize = function() {
-
-          details = document.getElementsByClassName('articleDetail')
-
-          cells = document.getElementsByClassName('article')
-
-          for (i = 0; i < details.length; i++) {
-
-            details[i].style.width = (cells[i].offsetWidth - 100) + "px"
-
-          }
-
-        }
-
-        window.addEventListener("resize", onresize);
-
-        </script>
-
-        <div class="banner blend bg2" id="mediaSection">
+        <div class="banner blend" id="mediaSection">
 
           <!--media anchor in ::before div update it-->
 
@@ -193,7 +173,7 @@
           </div>
 
           </div>
-      
+
         </div>
 
     </div>
