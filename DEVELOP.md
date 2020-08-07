@@ -40,4 +40,16 @@ Even though scripts supports the JSON PHP package, it isn't enabled by default. 
 
 Visit [enabling php extensions in scripts](https://scripts.mit.edu/faq/64/how-do-i-enable-additional-php-extensions) for more details.
 
+## Tools
 
+The folder `dev_tools` contains scripts that can help during development. Remember to run `chmod +x [filename]` to be able to execute any shell scripts.
+
+#### grab_content.sh
+
+This is a script that updates content files from the live website.
+It is meant for getting a preview locally of the data that is uploaded onto the live site.
+
+It currently grabs the contents of the following files from the live version of the site at [http://assistivetech.mit.edu/[filename]](http://assistivetech.mit.edu):
+
+ - `content.json`
+ - `teams.json`

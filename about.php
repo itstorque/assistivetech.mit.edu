@@ -10,7 +10,7 @@
 
     <div class="banner white_bg" id="mainBanner">
 
-      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 10vh;">
+      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 86px;">
 
         <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
 
@@ -35,7 +35,7 @@
           <br>
 
           <center>
-            
+
           <div style="vertical-align: top; width: 100vw">
 
           <?php include 'helpers/person_cards.php'; ?>
@@ -193,7 +193,7 @@
           </div>
 
           </div>
-      
+
         </div>
 
     </div>

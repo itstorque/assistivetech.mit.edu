@@ -1336,6 +1336,7 @@ h2.projectSection {
   width: 100%;
   padding-top: 100px;
   margin-top: 10px;
+  margin-left: 0;
 }
 #projects .banner h1 {
   font-family: 'Lato', Sans-Serif;
