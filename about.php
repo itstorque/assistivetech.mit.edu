@@ -10,17 +10,17 @@
 
     <div class="banner white_bg" id="mainBanner">
 
-      <div style="width: 100vw; margin: 0; background-color: var(--colorDarker); color: white; margin-top: 86px;">
+      <div class="aboutATHack">
 
-        <center><img src="/resources/brand/LogoSmallColor.svg" style="padding-top: 50px;">
+        <center><img src="/resources/brand/LogoSmallColor.svg">
 
         <br><br><br><br>
 
-        <h2 style="font-family: 'Raleway', Sans-Serif; font-size: 30px; margin-top: 0px; width: 80%; margin-bottom: 0px;"><x style="color: var(--color1)">Change</x> With <x style="color: var(--color2)">Technology</x></h2>
+        <h2><x class="c1">Change</x> With <x class="c2">Technology</x></h2>
 
         <br><br>
 
-        <h3 style="font-family: 'Raleway', Sans-Serif; font-size: 23px; margin-top: 0px; width: 80%; max-width: 800px; margin-bottom: 0px;">ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
+        <h3>ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
 
         </center>
 
@@ -29,9 +29,9 @@
       </div>
 
         <br><br>
-        <div>
+        <div class="ourTeam">
 
-          <h2 style="font-family: 'Raleway', Sans-Serif; font-size: 48px; margin-left: 10%">Our Team</h2>
+          <h2>Our Team</h2>
           <br>
 
           <center>
