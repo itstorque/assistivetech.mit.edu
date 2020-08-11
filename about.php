@@ -55,6 +55,8 @@
           <h2 class="title white">Media Articles</h2>
           <h4 class="subtitle">Some of the articles our club has been featured in</h4>
 
+          <?php include 'helpers/article_cards.php'; ?>
+
           <center>
 
             <div class="article" onclick="window.open('http://news.mit.edu/2019/sixth-mit-athack-develops-assistive-technology-0322')">
