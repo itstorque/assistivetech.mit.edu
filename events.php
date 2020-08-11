@@ -10,7 +10,7 @@
 
     <div class="separator"></div>
 
-    <div class="banner header thin centerOnSmall" style="background-color: var(--colorDarker)">
+    <div class="banner header thin centerOnSmall darkColor">
 
       <img src="/resources/brand/athack_logo.svg" class="sideTextBox sideLogo">
 
@@ -65,7 +65,7 @@
 
     <div class="banner blend thin overflowHidden" id="FAQSection">
 
-      <img src="/resources/titles/FAQ.svg" style="height: 100px">
+      <img src="/resources/titles/FAQ.svg">
 
       <br><br>
 

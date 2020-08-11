@@ -9,7 +9,7 @@
     <?php include 'includes/nav.php'; ?>
 
     <div class="errorPage">
-      <img src="/resources/titles/Error404.svg" style="width: 370px; max-width: 80%; height: 100%;">
+      <img src="/resources/titles/Error404.svg">
     </div>
 
     <?php include 'includes/footer.php' ?>
