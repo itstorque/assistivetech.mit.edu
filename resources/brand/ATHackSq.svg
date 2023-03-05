@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="225px" viewBox="0 0 220 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>ATHackSq</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ATHackSq" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M60,15 L105,105 L15,105 L60,15 Z M60,54 L44,86 L76,86 L60,54 Z" id="Combined-Shape" fill="#33CCFF"></path>
+        <path d="M160,120 L205,210 L115,210 L160,120 Z M160,159 L144,191 L176,191 L160,159 Z" id="Combined-Shape-Copy" fill="#33CCFF"></path>
+        <path d="M175,105 L115,105 L115,73 L115,41 L145,41 L145,105 L115,105 L115,73 L115,15 L205,15 L205,41 L175,41 L175,105 Z" id="Combined-Shape" fill="#FF6699"></path>
+        <rect id="Combined-Shape" fill="#FF6699" x="15" y="120" width="90" height="90"></rect>
+        <polygon id="Rectangle-20" fill="#000000" points="106 15 130 15 105 105 81 105"></polygon>
+        <polygon id="H" fill="#FFFFFF" points="89 195 70.8643068 195 70.8643068 171.798337 49.1356932 171.798337 49.1356932 195 31 195 31 135 49.1356932 135 49.1356932 157.785863 70.8643068 157.785863 70.8643068 135 89 135"></polygon>
+    </g>
+</svg>
