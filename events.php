@@ -18,7 +18,7 @@
 
       <div class="sideText">
         <br>
-        <h2 id="events-desc">ATHack was held from 2014-2020, and inspired the current format of AT@MIT. The program brought together students and codesigners to develop technology that addressed a challenge in the codesigner's life.</h2>
+        <h2>ATHack was held from 2014-2020, and inspired the current format of AT@MIT. The program brought together students and codesigners to develop technology that addressed a challenge in the codesigner's life.</h2>
         <br>
       </div>
 
