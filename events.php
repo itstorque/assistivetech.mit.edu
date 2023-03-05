@@ -8,6 +8,8 @@
 
     <?php include 'includes/nav.php'; ?>
 
+    <?php include 'helpers/read_projects.php'; ?>
+
     <div class="separator"></div>
 
     <div class="banner header thin centerOnSmall darkColor">
@@ -15,55 +17,77 @@
       <img src="/resources/brand/athack_logo.svg" class="sideTextBox sideLogo">
 
       <div class="sideText">
-        <h2 id="events-desc">ATHack is our largest yearly event, students and co-designers from the community work on prototyping a solution to problems co-designers face daily.</h2>
         <br>
-        <div class="button loseAnimation" onclick="location.href='./apply'"><center>Apply Now</center></div>
+        <h2 id="events-desc">ATHack was held from 2014-2020, and inspired the current format of AT@MIT. The program brought together students and codesigners to develop technology that addressed a challenge in the codesigner's life.</h2>
+        <br>
       </div>
 
     </div>
 
-    <div class="banner default">
+    <style>
+    h2 {text-align: center;}
+    </style>
+    <h2 class="title">Past Projects</h1>
+  
+    <div class="banner thin">
+    
+    <div class="flight-types year">
 
-      <center>
+          <?php
 
-        <div class="dateEvent">
-          <h2 class="month" id="event-1-date">February 13</h2>
-          <h2 class="eventTime" id="event-1-time">7:30 pm</h2>
-          <h2 class="eventName" id="event-1-title">Meet the Co-Designers Dinner</h2>
-          <h2 class="eventLocationIcon"></h2>
-          <h2 class="eventLocation" id="event-1-location">MIT Media Lab, 6th floor<br>75 Amherst St, Cambridge, MA 02139</h2>
-          <br>
-          <br>
-          <!--<h2 class="moreInfo" id="MeetCod">More Info</h2>-->
-        </div>
+            $function_to_run_here = "updateWinners";
 
-          <div class="dateEvent">
-            <h2 class="month" id="event-2-date">February 29</h2>
-            <h2 class="eventTime" id="event-2-time">8:00 am</h2>
-            <h2 class="eventName" id="event-2-title">ATHack 2020</h2>
-            <h2 class="eventLocationIcon"></h2>
-            <h2 class="eventLocation" id="event-2-location">Beaverworks, 2F of 300 Technology Square,<br>Cambridge MA</h2>
-            <br>
-            <br>
-            <!--<h2 class="moreInfo" id="theHack">More Info</h2>-->
-          </div>
+            for ($year = $latest_year; $year >= $year_begin; $year--) {
 
-            <div class="dateEvent">
-              <h2 class="month" id="event-3-date">February 29</h2>
-              <h2 class="eventTime" id="event-3-time">7:30 pm</h2>
-              <h2 class="eventName" id="event-3-title">Closing Ceremony of ATHack 2020</h2>
-              <h2 class="eventLocationIcon"></h2>
-              <h2 class="eventLocation" id="event-3-location">Forbes Café @ MIT Stata Center, 32 Vassar St,<br>Cambridge MA</h2>
-              <br>
-              <br>
-              <!--<h2 class="moreInfo" id="ceremony">More Info</h2>-->
-            </div>
+              $checked = "";
 
-      </center>
+              if ($year == $selectedYear) { $checked = " checked "; }
+
+              echo '<input type="radio" name="flight-type" value="'.$year.'" id="'.$year.'" onclick="'.$function_to_run_here.'('.$year.')"'.$checked.'/> <label for="'.$year.'"> '.$year.' </label>';
+
+            }
+
+          ?>
+
+    </div>
+    <h1 class="c1">ATHack <x class="c2" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
+
+    <br>
+    <br>
+
+    <div id="projectsArea">
 
     </div>
 
-    <div class="banner blend thin overflowHidden" id="FAQSection">
+    <div id="moreProjectsArea">
+
+    </div>
+
+    <script>updateWinners("<?php echo $selectedYear ?>");</script>
+
+    <div class="separator"></div>
+
+    </div>
+
+    <div id="popup" class="hidden">
+
+      <div onclick="document.getElementById('popup').className = 'hidden'" class="close"><div class="close1"></div><div class="close2"></div></div>
+
+      <div id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" id="enlarge"></div>
+
+      <div id="pTextDetails">
+
+        <h2 id="pTitle">Project Title</h2>
+
+        <h2 id="pDesc">Project Description</h2>
+
+        <h2 id="pWin">Project Won First Place in Functionality</h2>
+
+      </div>
+
+    </div>                               
+    <?php include 'includes/footer.php' ?>
+    <!--<div class="banner blend thin overflowHidden" id="FAQSection">
 
       <img src="/resources/titles/FAQ.svg">
 
@@ -146,9 +170,7 @@
 
       <br><br>
 
-    </div>
-
-    <?php include 'includes/footer.php' ?>
+    </div>-->
 
   </body>
 

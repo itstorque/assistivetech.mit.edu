@@ -12,13 +12,11 @@
 
       <center>
 
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfYTAeoPAIKOhEMhkcQ4qO5xg0INRs0kh3AiOECHnrgkMPwMg/viewform?usp=sf_link​'"><center>Co-Designer Application</center></div>
+      <!--<div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfYTAeoPAIKOhEMhkcQ4qO5xg0INRs0kh3AiOECHnrgkMPwMg/viewform?usp=sf_link​'"><center>Co-Designer Application</center></div>-->
       <br>
-      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSd7uE-9im0NqPEa_o1qmCkFn8nqgVOz-c-yYGEVNKHZIwgoDQ/viewform?usp=sf_link'"><center>Hacker Application</center></div>
-
-    </center>
-
-  </div>
+      <div class="button loseAnimation" style="margin-bottom: -10px; width: 260px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeN9-AOi3jkfyRY5Y9TtWm5XZozCSTZbLfFXqSTtBl-fcZioQ/viewform?usp=sf_link'"><center>Member Interest Form</center></div>
+  
+    </div>
 
     <!--
 

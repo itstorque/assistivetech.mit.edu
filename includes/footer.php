@@ -10,8 +10,6 @@
 
     <a class="link" href="media">In The Media</a>
 
-    <a class="linkAlt" href="apply">Register For ATHack 2020</a>
-
   </div>
 
 

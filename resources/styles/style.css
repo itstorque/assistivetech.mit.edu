@@ -310,6 +310,87 @@ a:active {
   transition: background-color 0.6s;
   transition: transform 0.2s;
 }
+
+.box2 {
+
+  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
+  width: 30vw;
+  border-radius: 20px;
+  font-size: 20pt;
+}
+
+.box2_mobile {
+
+  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; vertical-align: top;
+  border-radius: 20px;
+  margin: auto;
+  font-size: 20pt;
+}
+
+.box3 {
+
+  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
+  width: 30vw;
+  border-radius: 20px;
+  margin: auto;
+  font-size: 20pt;
+}
+
+.boxtext {
+
+  margin-top: 1vw; text-align: left; color: var(--colorW); font-weight: bold; display: inline-block; vertical-align: middle;
+  margin-left:-1vw;
+  margin-right:3vw;
+  height: 30vw;
+  font-size: 20pt;
+}
+
+.boxTitle {
+  font-size: 40pt;
+  color:#2a007a;
+  
+}
+
+.boxImg {
+  width: 23vw;
+  float: left;
+  margin-right: 0px;
+  height: 30vw;
+  object-fit: cover;
+  margin-left: 100px;
+}
+
+.this_text {
+  font: 100pt;
+}
+
+.buttonBox {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border-color: var(--colorB);
+  border-width: 5px;
+  border-style: solid;
+  color: var(--colorB);
+  margin: 20px;
+  margin-top: 20px;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 0px;
+  animation: 0.7s 0s 1 slide;
+}
+.buttonBox:hover {
+  box-shadow: inset 300px 0px 0px 0px var(--color1);
+  color: #fff;
+  border-color: var(--color1);
+}
 #menuBarButton .open2 {
   background-color: var(--color1);
   width: 40px;
@@ -550,7 +631,11 @@ div.personContainer {
 }
 .personCard h2 {
   font-size: 26px;
-  vertical-align: top
+  text-align: center;
+  vertical-align: top;
+  margin-left: 0px;
+  margin-right: 0px
+  
 }
 .personCard img {
 
@@ -1296,6 +1381,11 @@ h2.projectSection {
     width: 80vw;
     padding-left: 0px;
   }
+  .sectionSmallT {
+    width: 50vw;
+    padding-left: 0px;
+    font: 15pt;
+  }
 }
 @media screen and (max-width: 800px) {
   .card {
@@ -1590,7 +1680,7 @@ h2.projectSection {
     width: 0;
   }
   100% {
-    opacity: 1-;
+    opacity: 1;
     width: 80%;
   }
 }
