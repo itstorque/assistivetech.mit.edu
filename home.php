@@ -34,7 +34,7 @@
 
     </div>
 
-    <div class="banner default centerOnSmall" id="ourMissionSection">
+    <div class="banner default centerOnSmall">
 
       <h1 class="centerOnSmall sideTitle"><x class="black">Our</x><br>Mission</h1>
 
