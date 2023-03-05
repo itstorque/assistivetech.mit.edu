@@ -3,12 +3,7 @@ text_items = ["events-desc",
               "event-2-date", "event-2-time", "event-2-title", "event-2-location",
               "event-3-date", "event-3-time", "event-3-title", "event-3-location"];
 
-$(document).ready(function() {
 
-  loadContent()
-  
-
-});
 
 
 function updateWinners(year) {
