@@ -20,7 +20,7 @@
 
         <br><br>
 
-        <h3>ATHack began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
+        <h3><x class="c2">AT@MIT</x> began in 2014, and has since worked with over 60 community co-designers and 300 student designers</h3>
 
         </center>
 
@@ -28,25 +28,53 @@
 
       </div>
 
-        <br><br>
+      <br><br>
         <div class="ourTeam">
 
-          <h2>Our Team</h2>
+          
+          <h2>Curent Members</h2>
           <br>
-
           <center>
 
+          
           <div class="personContainer">
 
-          <?php include 'helpers/person_cards.php'; ?>
+          <?php include 'helpers/new_person_cards.php'; ?>
+
+
+
+          </div>
+          </center>
+
+          <h2>Mentors</h2>
+          <br>
+          <center>
+          <div class="personContainer">
+
+          <?php include 'helpers/mentor_person_cards.php'; ?>
+          
 
           </div>
 
-        </center>
+          </center>
 
-        <br><br>
+          <br><br>
+          <h2>Former Members</h2>
+          <br>
+          <center>
+          <div class="personContainer">
+
+          <?php include 'helpers/old_person_cards.php'; ?>
+          
+
+          </div>
+
+          </center>
+
+          <br><br>
 
         </div>
+        
 
         <div class="banner blend" id="mediaSection">
 

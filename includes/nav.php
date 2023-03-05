@@ -2,7 +2,7 @@
 
   $showLinks = True;
 
-  $aboutSelection = $applySelection = $projectsSelection = $eventsSelection = $homeSelection = False;
+  $aboutSelection = $applySelection = $projectsSelection = $eventsSelection = $homeSelection = $clubSelection = False;
 
   $pageName = basename($_SERVER["SCRIPT_FILENAME"], '.php');
 
@@ -37,10 +37,11 @@
 <div class="<?php echo $classmap; ?>" id="topNav">
   <?php if ($showLinks): ?>
   <a href="/" class="logo"><div id="logoContent"></div></a>
-  <a href="/about" style="margin-right: 20px;" <?php echo $aboutSelection ?> >About us</a>
+  <a href="/about" style="margin-right: 20px;" <?php echo $aboutSelection ?> >Our Team</a>
   <!--<a href="/apply" <?php echo $applySelection ?> >Apply</a>-->
-  <a href="/projects" <?php echo $projectsSelection ?> >Projects</a>
-  <a href="/events" <?php echo $eventsSelection ?> >Hackathon</a>
+  <!--<a href="/projects" <?php echo $projectsSelection ?> >Projects</a>-->
+  <a href="/events" <?php echo $eventsSelection ?> >ATHack</a>
+  <a href="/club" <?php echo $clubSelection ?> >AT@MIT</a>
   <a href="/home" <?php echo $homeSelection ?> >Home</a>
   <?php endif; ?>
   <a href="javascript:void(0);" class="icon logo" onclick="logoClick()">
