@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<script type="text/javascript" src="js/events.js"></script>
 <html>
 
   <?php include 'includes/head.php'; ?>
