@@ -8,13 +8,13 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div class="banner" id="mainBanner">
+    <div class="banner">
 
       <div class="separator small"></div>
 
       <center>
 
-        <img src="/resources/brand/group_logo.png" class="mainTitle" id="mainTitle">
+        <img src="/resources/brand/group_logo.png" class="mainTitle">
 
         <div class="separator small"></div>
 
@@ -34,11 +34,11 @@
 
     </div>
 
-    <div class="banner default centerOnSmall" id="ourMissionSection">
+    <div class="banner default centerOnSmall">
 
       <h1 class="centerOnSmall sideTitle"><x class="black">Our</x><br>Mission</h1>
 
-        <p class="sectionSmallP" id="home-mission">
+        <p class="sectionSmallP">
 
           Our mission is to make the world more <x class="c1 ub">accessible to everyone</x> by building connections within our community and fostering <x class="c2 ub">collaborative efforts</x> to create <x  class="c1 ub">inclusive technology.</x> Through AT@MIT, we introduce students to the fun (and challenging) design space of assistive technology while <x  class="c2 ub">building connections</x> between community members, engineers, and designers.  We hope to inspire participants to pursue projects in the AT space in the future.
 

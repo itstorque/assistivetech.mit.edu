@@ -8,7 +8,7 @@
 
     <?php include 'includes/nav.php'; ?>
 
-    <div class="banner white_bg" id="mainBanner">
+    <div class="banner white_bg">
 
       <div class="aboutATHack">
 
