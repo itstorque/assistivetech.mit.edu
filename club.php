@@ -38,7 +38,7 @@
           <div>
           <h1 class="boxTitle">Codesigners</h1>
           <p class="box2" id="mission" style="padding-left:0px;">
-            Each project team will work with a specific codesigner to identify and develop a solution for a challenge in their daily life. Teams will meet regularly with their codesigner and receive feedback to further iterate upon their solution.
+            Codesigners are people living with health conditions or impairments which affect their daily lives. Each project team will work with a specific codesigner to identify and develop a solution for a challenge in their daily life. Teams will meet regularly with their codesigner and receive feedback to further iterate upon their solution.
         
           </p>
           <br>
