@@ -2,87 +2,140 @@
 
 <html>
 
-
   <?php include 'includes/head.php'; ?>
 
-
-  <body id="projects">
+  <body>
 
     <?php include 'includes/nav.php'; ?>
+    
+    
+    <div class="separator small"></div>
+    
+    </div>
+    <div class="banner default blueBG centerOnSmall">
 
-    <?php include 'helpers/read_projects.php'; ?>
+      <center>
 
-    <div class="separator"></div>
+        <div class="mobileHide">
 
-    <div class="banner main">
+          <img src="/resources/images/2.jpeg" class="boxImg">
+          <div>
+          <h1 class="boxTitle">Codesigners</h1>
+          <p class="box2" id="mission" style="padding-left:0px;">
+            Codesigners are people living with health conditions or impairments which affect their daily lives. Each project team will work with a specific codesigner to identify and develop a solution for a challenge in their daily life. Teams will meet regularly with their codesigner and receive feedback to further iterate upon their solution.
+        
+          </p>
+          <br>
+          <p class="box3" id="mission" style="padding-left:0px;">
+            If you're interested in working with us as a codesigner, click the button below!      
+          </p>
+          <br>
+          <div class="buttonBox" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScq2JFtkm_ATYlE1bgs0vUp4Mp29riDEGySistsgjjc8aFsqg/viewform?usp=sf_link')">Codesigner Interest</div>
+          </div>
 
-      <h2 class="title">Projects</h2>
+        </div>
+
+        <div class="mobileShow">
+
+          <img src="/resources/images/2s.jpeg" class="boxImg">
+          <div>
+          <h1 class="centerOnSmall"><br>Codesigners</h1>
+          <p class="box2_mobile" id="mission">
+            Each project team will work with a specific codesigner to identify and develop a solution for a specific challenge in their daily life. Teams will meet regularly with their codesigner and recieve feedback to further iterate upon their solution.
+        
+          </p>
+          <br><br>
+          <p class="box2_mobile" id="mission">
+            If you're interested in working with us as a codesigner, click the button below!      
+          </p><br>
+          <br>
+          <div class="buttonBox" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScq2JFtkm_ATYlE1bgs0vUp4Mp29riDEGySistsgjjc8aFsqg/viewform?usp=sf_link')">Codesigner Interest</div>
+          </div>
+
+        </div>
+        
+        
+        <div class="separator small"></div>
+
+      </center>
 
     </div>
 
-      <div class="banner thin">
+    <div class="banner default centerOnSmall" id="main_section">
+    <h1 class="boxTitle" style="padding:20px;color:#000000">Expected Semester Timeline</h1>
+    <center>
+    <img src="/resources/images/at_timeline.png" style="width:80vw;padding:40px;"><hr>
+    </center>
+</div>
+    <div class="banner default centerOnSmall" id="main_section">
+    
+    <center>
+      
+    <div class="mobileHide">
 
-        <div class="flight-types year">
-
-          <?php
-
-            $function_to_run_here = "updateWinners";
-
-            for ($year = $latest_year; $year >= $year_begin; $year--) {
-
-              $checked = "";
-
-              if ($year == $selectedYear) { $checked = " checked "; }
-
-              echo '<input type="radio" name="flight-type" value="'.$year.'" id="'.$year.'" onclick="'.$function_to_run_here.'('.$year.')"'.$checked.'/> <label for="'.$year.'"> '.$year.' </label>';
-
-            }
-
-          ?>
-
-        </div>
-
-        <h1 class="c1">ATHack <x class="c2" id="yearLabel"><?php echo $selectedYear; ?></x></h1>
-
-        <br>
-
-        <div id="projectsArea">
+          <img src="/resources/images/1.jpeg" class="boxImg">
+          <div>
+          <h1 class="boxTitle" style="color:#000000"><br>Funding and Space</h1>
+          <p class="box2"  style="color:#000000;padding-left:0px;">
+          <x class="c1 ub">Funding will be given to each team</x> for projects which require materials, software licenses, or other expenses. For hardware-focused projects, AT@MIT will facilitate<x class="c2 ub"> machine and workshop access </x>for team members.        
+          </p>
+          <br><br><br><br><br><br>
+          </div>
 
         </div>
 
-      <br>
+        <div class="mobileShow">
 
-      <div id="moreProjectsArea">
-
-      </div>
-
-      <script>updateWinners("<?php echo $selectedYear ?>");</script>
-
-      <div class="separator"></div>
-
-      </div>
-
-      <div id="popup" class="hidden">
-
-        <div onclick="document.getElementById('popup').className = 'hidden'" class="close"><div class="close1"></div><div class="close2"></div></div>
-
-        <div id="pImg" onclick="fullScreenPopupImage()"><img src="/resources/icons/enlarge.svg" id="enlarge"></div>
-
-        <div id="pTextDetails">
-
-          <h2 id="pTitle">Project Title</h2>
-
-          <h2 id="pDesc">Project Description</h2>
-
-          <h2 id="pWin">Project Won First Place in Functionality</h2>
+          <img src="/resources/images/1s.jpeg" class="boxImg">
+          <div><br><br><br><br><br><br><br><br><br>
+          <h1 class="centerOnSmall">Funding and Space</h1>
+          <p class="box2_mobile"  style="color:#000000;padding-left:0px;">
+          <x class="c1 ub">Funding will be given to each team</x> for projects which require materials, software licenses, or other expenses. For hardware-focused projects, AT@MIT will facilitate<x class="c2 ub"> machine and workshop access </x>for team members.        
+        
+          </p>
+          <br><br>
+         
+          <br>
+          </div>
 
         </div>
-
-      </div>
-
-      <?php include 'includes/footer.php' ?>
-
+        
+        
+        <div class="separator small"></div>
+      </center>
     </div>
+    <div class="banner default centerOnSmall" id="main_section">
+    
+    <center>
+    <hr>
+    <div class="mobileHide">
+
+          <div>
+          <h1 class="boxTitle" style="color:#000000;margin-left:0px;"><br>Mentorship and Speakers</h1>
+          <p class="box2"  style="color:#000000;margin-left:0px;padding-left:0px;width:50vw;">
+          <x class="c2 ub">Mentorship from industry and academic professionals</x> will facilitate member's skill development, and provide a source of advice on project specifics. Additionally, AT@MIT members will be invited to <x class="c1 ub">guest speaker series</x>, where guests will present their work in assistive technology.
+        </p>
+          <br><br><br><br><br><br>
+          </div>
+
+        </div>
+
+        <div class="mobileShow">
+
+          <div>
+          <h1 class="centerOnSmall"><br>Mentorship and Speakers</h1>
+          <p class="box2_mobile"  style="color:#000000">
+          <x class="c2 ub">Mentorship from industry and academic professionals</x> will facilitate member's skill development, and provide a source of advice on project specifics. Additionally, AT@MIT members will be invited to <x class="c1 ub">guest speaker series</x>, where guests will present their work in assistive technology.
+        
+          </p>
+
+        </div>
+        
+        
+        <div class="separator small"></div>
+      </center>
+    </div>
+    <?php include 'includes/footer.php' ?>  
 
   </body>
 
