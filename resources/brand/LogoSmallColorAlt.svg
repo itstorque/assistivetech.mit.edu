@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="195px" height="120px" viewBox="0 0 195 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>LogoSmallColorAlt@2x</title>
-    <desc>Created with Sketch.</desc>
-    <g id="LogoSmallColorAlt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M51,15 L96,105 L6,105 L51,15 Z M51,54 L35,86 L67,86 L51,54 Z" id="Combined-Shape" fill="#33CCFF"></path>
-        <path d="M159,105 L129,105 L129,41 L99,41 L99,15 L189,15 L189,41 L159,41 L159,105 Z" id="Combined-Shape" fill="#FF6699"></path>
-        <polygon id="Rectangle-20" fill="#000000" points="98 15 122 15 97 105 73 105"></polygon>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="195px" height="120px" viewBox="0 0 195 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>LogoSmallColorAlt@2x</title>
+  <desc>Created with Sketch.</desc>
+  <g id="LogoSmallColorAlt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M51,15 L96,105 L6,105 L51,15 Z M51,54 L35,86 L67,86 L51,54 Z" id="Combined-Shape" style="fill: rgb(62, 185, 118);"/>
+    <path d="M159,105 L129,105 L129,41 L99,41 L99,15 L189,15 L189,41 L159,41 L159,105 Z" id="Combined-Shape" style="fill: rgb(140, 141, 142);"/>
+    <polygon id="Rectangle-20" points="98 15 122 15 97 105 73 105" style="fill: rgb(255, 255, 255);"/>
+  </g>
 </svg>

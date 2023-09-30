@@ -96,10 +96,10 @@ a:active {
   transition: width 0.3s;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('/resources/brand/LogoSmallColorAlt.svg');
+  background-image: url('/resources/brand/LogoSmallColorAlt.png');
 }
 #logoContent {
-  background-image: url('/resources/brand/LogoSmallColor.svg');
+  background-image: url('/resources/brand/LogoSmallColor.png');
 }
 #mainBanner {
   min-height: 100vh;
@@ -313,7 +313,7 @@ a:active {
 
 .box2 {
 
-  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
+  text-align: justify; color: var(--colorB); font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
   width: 30vw;
   border-radius: 20px;
   font-size: 20pt;
@@ -321,7 +321,7 @@ a:active {
 
 .box2_mobile {
 
-  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; vertical-align: top;
+  text-align: justify; color: var(--colorB); font-weight: bold; display: inline-block; vertical-align: top;
   border-radius: 20px;
   margin: auto;
   font-size: 20pt;
@@ -329,7 +329,7 @@ a:active {
 
 .box3 {
 
-  text-align: justify; color: #2a007a; font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
+  text-align: justify; color: --colorDarker; font-weight: bold; display: inline-block; padding-left: 70px; vertical-align: top;
   width: 30vw;
   border-radius: 20px;
   margin: auto;
@@ -347,7 +347,7 @@ a:active {
 
 .boxTitle {
   font-size: 40pt;
-  color:#2a007a;
+  color: var(--colorB);
   
 }
 
@@ -1633,10 +1633,10 @@ h2.projectSection {
 
 /* Predefined variables */
 :root {
-    --color1: #33CCFF;
-    --color2: #FF6699;
+    --color1: #3eb976;
+    --color2: #8c8d8e;
     --colorMain: #7F2AFF;
-    --colorDarker: #2a007a;
+    --colorDarker: #2f2a62;
     --colorDark: #3E098D;
     --colorB: #000;
     --colorW: #fafafa;
