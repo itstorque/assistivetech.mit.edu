@@ -46,7 +46,7 @@
           </div>
           </center>
 
-          <h2>Mentors</h2>
+          <h2>Executive Team</h2>
           <br>
           <center>
           <div class="personContainer">
